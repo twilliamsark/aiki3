@@ -1,0 +1,29 @@
+<h1>Listing attack_heights</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @attack_heights.each do |attack_height| %>
+      <tr>
+        <td><%= attack_height.name %></td>
+        <td><%= attack_height.description %></td>
+        <td><%= link_to 'Show', attack_height %></td>
+        <td><%= link_to 'Edit', edit_attack_height_path(attack_height) %></td>
+        <td><%= link_to 'Destroy', attack_height, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Attack height', new_attack_height_path %>

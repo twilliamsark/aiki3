@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Aiki3</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <%= render 'layouts/shim' %>
+</head>
+<body>
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <% flash.each do |key, value| %>
+      <%= content_tag(:div, value, class: "alert alert-#{key}") %>
+    <% end %>
+  </div>
+  <div class="container">
+    <div class="row pad_all aiki_box">
+      <div class="col-md-12">
+        <%= yield %>
+      </div>      
+    </div>
+  </div>
+  <% if Rails.env.development? %>
+    <div class="container pad_top"><%= debug(params) %></div>
+  <% end %>
+</body>
+</html>

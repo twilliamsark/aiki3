@@ -1,0 +1,27 @@
+<h1>Listing Formats</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aiki_formats.each do |aiki_format| %>
+      <tr>
+        <td><%= aiki_format.name %></td>
+        <td><%= aiki_format.description %></td>
+        <td><%= link_to 'Show', aiki_format %></td>
+        <td><%= link_to 'Edit', edit_aiki_format_path(aiki_format) %></td>
+        <td><%= link_to 'Destroy', aiki_format, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Format', new_aiki_format_path %>

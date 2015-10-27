@@ -1,0 +1,49 @@
+<h1>Listing wazas</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Stance</th>
+      <th>Attack</th>
+      <th>Attack height</th>
+      <th>Hand applied to</th>
+      <th>Maka komi</th>
+      <th>Technique</th>
+      <th>Direction</th>
+      <th>Kaiten</th>
+      <th>Sword</th>
+      <th>Level</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wazas.each do |waza| %>
+      <tr>
+        <td><%= waza.id %></td>
+        <td><%= waza.name %></td>
+        <td><%= waza.stance %></td>
+        <td><%= waza.attack %></td>
+        <td><%= waza.attack_height %></td>
+        <td><%= waza.hand_applied_to %></td>
+        <td><%= waza.maka_komi %></td>
+        <td><%= waza.technique %></td>
+        <td><%= waza.direction %></td>
+        <td><%= waza.kaiten %></td>
+        <td><%= waza.sword %></td>
+        <td><%= waza.level %></td>
+        <td><%= link_to 'Show', waza %></td>
+        <td><%= link_to 'Edit', edit_waza_path(waza) %></td>
+        <td><%= link_to 'Destroy', waza, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Waza', new_waza_path %>

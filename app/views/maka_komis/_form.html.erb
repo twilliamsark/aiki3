@@ -1,0 +1,25 @@
+<%= form_for(@maka_komi) do |f| %>
+  <% if @maka_komi.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@maka_komi.errors.count, "error") %> prohibited this maka_komi from being saved:</h2>
+
+      <ul>
+      <% @maka_komi.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

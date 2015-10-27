@@ -1,0 +1,25 @@
+<%= form_for(@aiki_format) do |f| %>
+  <% if @aiki_format.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@aiki_format.errors.count, "error") %> prohibited this aiki_format from being saved:</h2>
+
+      <ul>
+      <% @aiki_format.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit @aiki_format.new_record? ? 'Create Format' : 'Update Format' %>
+  </div>
+<% end %>

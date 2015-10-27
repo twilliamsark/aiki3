@@ -1,0 +1,36 @@
+<h1>Listing videos</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th colspan="2">Name</th>
+      <th>Waza</th>
+      <th>Aiki format</th>
+      <th>Rank</th>
+      <th>On test</th>
+      <th>Youtube</th>
+      <th colspan="3">Actions</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @videos.each do |video| %>
+      <tr>
+        <td><%= video.name %></td>
+        <td><%= image_tag "http://img.youtube.com/vi/#{video.youtube_id}/default.jpg", class: "header_image", size: "120x90" %></td>
+        <td><%= video.waza %></td>
+        <td><%= video.aiki_format %></td>
+        <td><%= video.rank %></td>
+        <td><%= video.on_test %></td>
+        <td><%= video.youtube_id %></td>
+        <td><%= link_to 'Show', video %></td>
+        <td><%= link_to 'Edit', edit_video_path(video) %></td>
+        <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Video', new_video_path %>

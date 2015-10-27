@@ -1,0 +1,41 @@
+<%= form_for(@video) do |f| %>
+  <% if @video.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@video.errors.count, "error") %> prohibited this video from being saved:</h2>
+
+      <ul>
+      <% @video.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :waza_id %><br>
+    <%= f.select :waza_id, options_for_select(Waza.all.collect { |k| [ k.name, k.id ] }, @video.waza_id), { include_blank: true } %>
+  </div>
+  <div class="field">
+    <%= f.label :aiki_format_id, "Format" %><br>
+    <%= f.select :aiki_format_id, options_for_select(AikiFormat.all.collect { |k| [ k.name, k.id ] }, @video.aiki_format_id), { include_blank: true } %>
+  </div>
+  <div class="field">
+    <%= f.label :rank_id %><br>
+    <%= f.select :rank_id, options_for_select(Rank.all.collect { |k| [ k.name, k.id ] }, @video.rank_id), { include_blank: true } %>
+  </div>
+  <div class="field">
+    <%= f.label :on_test %><br>
+    <%= f.check_box :on_test %>
+  </div>
+  <div class="field">
+    <%= f.label :youtube_id %><br>
+    <%= f.text_field :youtube_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

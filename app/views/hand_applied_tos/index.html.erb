@@ -1,0 +1,29 @@
+<h1>Listing hand_applied_tos</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @hand_applied_tos.each do |hand_applied_to| %>
+      <tr>
+        <td><%= hand_applied_to.name %></td>
+        <td><%= hand_applied_to.description %></td>
+        <td><%= link_to 'Show', hand_applied_to %></td>
+        <td><%= link_to 'Edit', edit_hand_applied_to_path(hand_applied_to) %></td>
+        <td><%= link_to 'Destroy', hand_applied_to, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Hand applied to', new_hand_applied_to_path %>

@@ -1,0 +1,29 @@
+<h1>Listing maka_komis</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @maka_komis.each do |maka_komi| %>
+      <tr>
+        <td><%= maka_komi.name %></td>
+        <td><%= maka_komi.description %></td>
+        <td><%= link_to 'Show', maka_komi %></td>
+        <td><%= link_to 'Edit', edit_maka_komi_path(maka_komi) %></td>
+        <td><%= link_to 'Destroy', maka_komi, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Maka komi', new_maka_komi_path %>

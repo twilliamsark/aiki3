@@ -1,0 +1,2 @@
+module WazasHelper
+end

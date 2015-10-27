@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @hand_applied_to.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @hand_applied_to.description %>
+</p>
+
+<%= link_to 'Edit', edit_hand_applied_to_path(@hand_applied_to) %> |
+<%= link_to 'Back', hand_applied_tos_path %>

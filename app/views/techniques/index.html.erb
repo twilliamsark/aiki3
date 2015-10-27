@@ -1,0 +1,29 @@
+<h1>Listing techniques</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @techniques.each do |technique| %>
+      <tr>
+        <td><%= technique.name %></td>
+        <td><%= technique.description %></td>
+        <td><%= link_to 'Show', technique %></td>
+        <td><%= link_to 'Edit', edit_technique_path(technique) %></td>
+        <td><%= link_to 'Destroy', technique, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Technique', new_technique_path %>

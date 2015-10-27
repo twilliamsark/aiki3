@@ -1,0 +1,29 @@
+<h1>Listing swords</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @swords.each do |sword| %>
+      <tr>
+        <td><%= sword.name %></td>
+        <td><%= sword.description %></td>
+        <td><%= link_to 'Show', sword %></td>
+        <td><%= link_to 'Edit', edit_sword_path(sword) %></td>
+        <td><%= link_to 'Destroy', sword, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Sword', new_sword_path %>

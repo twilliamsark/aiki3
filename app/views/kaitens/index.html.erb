@@ -1,0 +1,29 @@
+<h1>Listing kaitens</h1>
+
+<table class="table table-striped table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @kaitens.each do |kaiten| %>
+      <tr>
+        <td><%= kaiten.name %></td>
+        <td><%= kaiten.description %></td>
+        <td><%= link_to 'Show', kaiten %></td>
+        <td><%= link_to 'Edit', edit_kaiten_path(kaiten) %></td>
+        <td><%= link_to 'Destroy', kaiten, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Kaiten', new_kaiten_path %>

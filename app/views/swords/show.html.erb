@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @sword.name %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @sword.description %>
+</p>
+
+<%= link_to 'Edit', edit_sword_path(@sword) %> |
+<%= link_to 'Back', swords_path %>

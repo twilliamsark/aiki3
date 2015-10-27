@@ -1,0 +1,2 @@
+module KaitensHelper
+end

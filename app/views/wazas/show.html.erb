@@ -1,0 +1,59 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @waza.name || 'n/a' %>
+</p>
+
+<p>
+  <strong>Stance:</strong>
+  <%= @waza.stance || 'n/a' %>
+</p>
+
+<p>
+  <strong>Attack:</strong>
+  <%= @waza.attack || 'n/a' %>
+</p>
+
+<p>
+  <strong>Attack height:</strong>
+  <%= @waza.attack_height || 'n/a' %>
+</p>
+
+<p>
+  <strong>Hand applied to:</strong>
+  <%= @waza.hand_applied_to || 'n/a' %>
+</p>
+
+<p>
+  <strong>Maka komi:</strong>
+  <%= @waza.maka_komi || 'n/a' %>
+</p>
+
+<p>
+  <strong>Technique:</strong>
+  <%= @waza.technique || 'n/a' %>
+</p>
+
+<p>
+  <strong>Direction:</strong>
+  <%= @waza.direction || 'n/a' %>
+</p>
+
+<p>
+  <strong>Kaiten:</strong>
+  <%= @waza.kaiten || 'n/a' %>
+</p>
+
+<p>
+  <strong>Sword:</strong>
+  <%= @waza.sword || 'n/a' %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @waza.level || 'n/a' %>
+</p>
+
+<%= link_to 'Edit', edit_waza_path(@waza) %> |
+<%= link_to 'Back', wazas_path %>
