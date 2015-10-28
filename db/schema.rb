@@ -102,7 +102,8 @@ ActiveRecord::Schema.define(version: 20151027205457) do
     t.integer  "waza_id"
     t.integer  "aiki_format_id"
     t.integer  "rank_id"
-    t.boolean  "on_test"
+    t.boolean  "on_test",        default: false
+    t.boolean  "primary",        default: false
     t.string   "youtube_id"
     t.datetime "created_at"
     t.datetime "updated_at"

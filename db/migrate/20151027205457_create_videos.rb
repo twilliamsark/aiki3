@@ -5,7 +5,8 @@ class CreateVideos < ActiveRecord::Migration
       t.references :waza, index: true
       t.references :aiki_format, index: true
       t.references :rank, index: true
-      t.boolean :on_test
+      t.boolean :on_test, default: false
+      t.boolean :primary, default: false
       t.string :youtube_id
 
       t.timestamps
