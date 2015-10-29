@@ -19,7 +19,13 @@
         <td><%= video.name %></td>
         <td><%= image_tag "http://img.youtube.com/vi/#{video.youtube_id}/default.jpg", class: "header_image", size: "120x90" %></td>
         <td><%= video.waza %></td>
-        <td><%= video.aiki_format %></td>
+        <%
+          format = video.aiki_format.to_s
+          if format == 'Aiki Toho'
+            format += " (#{video.kata})"
+          end
+        %>
+        <td><%= format %></td>
         <td><%= video.rank %></td>
         <td><%= video.on_test %></td>
         <td><%= video.youtube_id %></td>

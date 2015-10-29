@@ -1,25 +1,25 @@
 class Waza < ActiveRecord::Base
-  include WazaAttribute
+  include Printable
 
-  belongs_to :stance
+  belongs_to :stance, inverse_of: :wazas
   accepts_nested_attributes_for :stance
-  belongs_to :attack
+  belongs_to :attack, inverse_of: :wazas
   accepts_nested_attributes_for :attack
-  belongs_to :attack_height
+  belongs_to :attack_height, inverse_of: :wazas
   accepts_nested_attributes_for :attack_height
-  belongs_to :hand_applied_to
+  belongs_to :hand_applied_to, inverse_of: :wazas
   accepts_nested_attributes_for :hand_applied_to
-  belongs_to :maka_komi
+  belongs_to :maka_komi, inverse_of: :wazas
   accepts_nested_attributes_for :maka_komi
-  belongs_to :technique
+  belongs_to :technique, inverse_of: :wazas
   accepts_nested_attributes_for :technique
-  belongs_to :direction
+  belongs_to :direction, inverse_of: :wazas
   accepts_nested_attributes_for :direction
-  belongs_to :kaiten
+  belongs_to :kaiten, inverse_of: :wazas
   accepts_nested_attributes_for :kaiten
-  belongs_to :sword
+  belongs_to :sword, inverse_of: :wazas
   accepts_nested_attributes_for :sword
-  belongs_to :level
+  belongs_to :level, inverse_of: :wazas
   accepts_nested_attributes_for :level
 
   has_many :videos

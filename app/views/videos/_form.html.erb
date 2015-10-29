@@ -24,6 +24,10 @@
     <%= f.select :aiki_format_id, options_for_select(AikiFormat.all.collect { |k| [ k.name, k.id ] }, @video.aiki_format_id), { include_blank: true } %>
   </div>
   <div class="field">
+    <%= f.label :kata_id, "Kata" %><br>
+    <%= f.select :kata_id, options_for_select(Kata.all.collect { |k| [ k.name, k.id ] }, @video.kata_id), { include_blank: true } %>
+  </div>
+  <div class="field">
     <%= f.label :style_id %><br>
     <%= f.select :style_id, options_for_select(Style.all.collect { |k| [ k.name, k.id ] }, @video.style_id), { include_blank: true } %>
   </div>

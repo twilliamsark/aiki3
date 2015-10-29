@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151029020452) do
+ActiveRecord::Schema.define(version: 20151029184134) do
 
   create_table "aiki_formats", force: true do |t|
     t.string   "name"
@@ -51,6 +51,12 @@ ActiveRecord::Schema.define(version: 20151029020452) do
   create_table "kaitens", force: true do |t|
     t.string   "name"
     t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "katas", force: true do |t|
+    t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -123,9 +129,11 @@ ActiveRecord::Schema.define(version: 20151029020452) do
     t.integer  "sensei_id"
     t.integer  "style_id"
     t.text     "keywords"
+    t.integer  "kata_id"
   end
 
   add_index "videos", ["aiki_format_id"], name: "index_videos_on_aiki_format_id"
+  add_index "videos", ["kata_id"], name: "index_videos_on_kata_id"
   add_index "videos", ["rank_id"], name: "index_videos_on_rank_id"
   add_index "videos", ["sensei_id"], name: "index_videos_on_sensei_id"
   add_index "videos", ["style_id"], name: "index_videos_on_style_id"

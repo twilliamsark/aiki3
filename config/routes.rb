@@ -1,4 +1,6 @@
 Aiki3::Application.routes.draw do
+  resources :katas
+
   resources :styles
 
   resources :senseis

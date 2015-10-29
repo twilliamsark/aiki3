@@ -15,6 +15,13 @@
   <%= @video.aiki_format rescue 'n/a' %>
 </p>
 
+<% if @video.aiki_format.to_s == 'Aiki Toho' %>
+  <p>
+    <strong>Kata:</strong>
+    <%= @video.kata rescue 'n/a' %>
+  </p>
+<% end %>
+
 <p>
   <strong>Sensei:</strong>
   <%= @video.sensei rescue 'n/a' %>
