@@ -24,6 +24,14 @@
     <%= f.select :aiki_format_id, options_for_select(AikiFormat.all.collect { |k| [ k.name, k.id ] }, @video.aiki_format_id), { include_blank: true } %>
   </div>
   <div class="field">
+    <%= f.label :style_id %><br>
+    <%= f.select :style_id, options_for_select(Style.all.collect { |k| [ k.name, k.id ] }, @video.style_id), { include_blank: true } %>
+  </div>
+  <div class="field">
+    <%= f.label :sensei_id %><br>
+    <%= f.select :sensei_id, options_for_select(Sensei.all.collect { |k| [ k.name, k.id ] }, @video.sensei_id), { include_blank: true } %>
+  </div>
+  <div class="field">
     <%= f.label :rank_id %><br>
     <%= f.select :rank_id, options_for_select(Rank.all.collect { |k| [ k.name, k.id ] }, @video.rank_id), { include_blank: true } %>
   </div>

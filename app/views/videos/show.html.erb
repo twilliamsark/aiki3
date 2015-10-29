@@ -2,32 +2,42 @@
 
 <p>
   <strong>Name:</strong>
-  <%= @video.name %>
+  <%= @video.name rescue 'n/a' %>
 </p>
 
 <p>
   <strong>Waza:</strong>
-  <%= @video.waza %>
+  <%= @video.waza rescue 'n/a' %>
 </p>
 
 <p>
   <strong>Aiki format:</strong>
-  <%= @video.aiki_format %>
+  <%= @video.aiki_format rescue 'n/a' %>
+</p>
+
+<p>
+  <strong>Sensei:</strong>
+  <%= @video.sensei rescue 'n/a' %>
+</p>
+
+<p>
+  <strong>Style:</strong>
+  <%= @video.style rescue 'n/a' %>
 </p>
 
 <p>
   <strong>Rank:</strong>
-  <%= @video.rank %>
+  <%= @video.rank rescue 'n/a' %>
 </p>
 
 <p>
   <strong>On test:</strong>
-  <%= @video.on_test %>
+  <%= @video.on_test rescue 'n/a' %>
 </p>
 
 <p>
   <strong>Youtube:</strong>
-  <%= @video.youtube_id %>
+  <%= @video.youtube_id rescue 'n/a' %>
 </p>
 
 <%= link_to 'Edit', edit_video_path(@video) %> |

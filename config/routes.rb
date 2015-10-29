@@ -1,4 +1,8 @@
 Aiki3::Application.routes.draw do
+  resources :styles
+
+  resources :senseis
+
   resources :videos
 
   resources :ranks

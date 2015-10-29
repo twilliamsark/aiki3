@@ -9,6 +9,9 @@ class Video < ActiveRecord::Base
   belongs_to :rank
   accepts_nested_attributes_for :rank
 
+  belongs_to :sensei
+  belongs_to :style
+
   def name
     read_attribute(:name).present? ? read_attribute(:name) : waza.name
   end
