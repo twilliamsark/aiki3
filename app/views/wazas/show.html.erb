@@ -1,4 +1,9 @@
-<p id="notice"><%= notice %></p>
+<h1><%= @waza.name || 'Not Set' %></h1>
+
+<%= link_to 'Edit', edit_waza_path(@waza) %> |
+<%= link_to 'Back', wazas_path %>
+<br/>
+<br/>
 
 <p>
   <strong>ID:</strong>
@@ -60,5 +65,4 @@
   <%= @waza.level || 'n/a' %>
 </p>
 
-<%= link_to 'Edit', edit_waza_path(@waza) %> |
-<%= link_to 'Back', wazas_path %>
+<%= render 'videos/list', videos: @waza.videos if @waza.videos.any? %>
