@@ -54,6 +54,7 @@
     <table class="table table-striped table-bordered">
       <thead class="rank_row">
         <th><strong>Waza \ Format</strong></th>
+        <th>Admin</th>
         <% format_names.each do |format_name| %>
           <th><%= format_name %></th>
         <% end %>
@@ -64,9 +65,10 @@
         %>
           <tr>
           <td><strong><%= waza %></strong></td>
+          <td><%= link_to 'Admin', waza_path(format_hash[:waza]) %></td>
           <%
           format_names.each do |format_name|
-            videos = format_hash[format_name]
+            videos = format_hash[:videos][format_name]
             if videos && videos.any?
               videos = videos.sort{|x,y| x.rank.id <=> y.rank.id}
 

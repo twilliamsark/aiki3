@@ -61,10 +61,11 @@ class Waza < ActiveRecord::Base
       end
 
       master[waza_name] ||= Hash.new
-
+      master[waza_name][:waza] = waza
       waza.videos.each do |video|
-        master[waza_name][video.format] ||= Array.new
-        master[waza_name][video.format] << video
+        master[waza_name][:videos] ||= Hash.new
+        master[waza_name][:videos][video.format] ||= Array.new
+        master[waza_name][:videos][video.format] << video
       end
 
     end
