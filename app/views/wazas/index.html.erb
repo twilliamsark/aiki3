@@ -5,6 +5,7 @@
     <tr>
       <th>ID</th>
       <th>Name</th>
+      <th>Videos</th>
       <th>Stance</th>
       <th>Attack</th>
       <th>Attack height</th>
@@ -25,7 +26,8 @@
     <% @wazas.each do |waza| %>
       <tr>
         <td><%= waza.id %></td>
-        <td><%= waza.name %></td>
+        <td><%= link_to waza.name, waza %></td>
+        <td><%= waza.videos.count rescue '0' %></td>
         <td><%= waza.stance %></td>
         <td><%= waza.attack %></td>
         <td><%= waza.attack_height %></td>
