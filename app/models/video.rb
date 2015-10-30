@@ -7,16 +7,16 @@ class Video < ActiveRecord::Base
   belongs_to :waza
   accepts_nested_attributes_for :waza
 
-  delegate :stance, to: :waza
-  delegate :attack, to: :waza
-  delegate :attack_height, to: :waza
-  delegate :hand_applied_to, to: :waza
-  delegate :maka_komi, to: :waza
-  delegate :technique, to: :waza
-  delegate :direction, to: :waza
-  delegate :kaiten, to: :waza
-  delegate :sword, to: :waza
-  delegate :level, to: :waza
+  delegate :stance, to: :waza, allow_nil: true
+  delegate :attack, to: :waza, allow_nil: true
+  delegate :attack_height, to: :waza, allow_nil: true
+  delegate :hand_applied_to, to: :waza, allow_nil: true
+  delegate :maka_komi, to: :waza, allow_nil: true
+  delegate :technique, to: :waza, allow_nil: true
+  delegate :direction, to: :waza, allow_nil: true
+  delegate :kaiten, to: :waza, allow_nil: true
+  delegate :sword, to: :waza, allow_nil: true
+  delegate :level, to: :waza, allow_nil: true
 
   belongs_to :aiki_format
   belongs_to :kata
@@ -37,13 +37,13 @@ class Video < ActiveRecord::Base
   end
 
   def name
-    read_attribute(:name).present? ? read_attribute(:name) : waza.name
+    read_attribute(:name).present? ? read_attribute(:name) : waza.name rescue 'not set'
   end
 
   def set_keywords
     waza_attribs = []
 
-    if waza.read_attribute(:name).present?
+    if waza && waza.read_attribute(:name).present?
       waza_attribs = waza.name.split(" ").map(&:downcase)
     end
 

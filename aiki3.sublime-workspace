@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"waza",
+				"waza_attribs"
+			],
+			[
+				"attack",
+				"attack_height"
+			],
+			[
+				"you",
+				"youtube_id"
+			],
+			[
+				"dir",
+				"direction_id"
+			],
+			[
+				"att",
+				"attack_height_id"
+			],
+			[
+				"ma",
+				"maka_komi"
+			],
+			[
 				"com",
 				"companyName"
 			],
@@ -98,10 +122,6 @@
 			[
 				"des",
 				"description"
-			],
-			[
-				"waza",
-				"waza_format"
 			],
 			[
 				"rec",
@@ -494,31 +514,131 @@
 			[
 				"req",
 				"request_report"
-			],
-			[
-				"reports",
-				"reports_available"
-			],
-			[
-				"incl",
-				"include_renewal"
-			],
-			[
-				"purch",
-				"purchased_product"
-			],
-			[
-				"produ",
-				"product_name"
-			],
-			[
-				"by",
-				"by_category"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "app/views/videos/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 1028,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/aiki_formats/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 687,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/katas/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 552,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/video.rb",
+			"settings":
+			{
+				"buffer_size": 2132,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/layouts/application.html.erb",
+			"settings":
+			{
+				"buffer_size": 760,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/concerns/waza_attribute.rb",
+			"settings":
+			{
+				"buffer_size": 148,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/wazas/show.html.erb",
+			"settings":
+			{
+				"buffer_size": 905,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/directions/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/videos/index.html.erb",
+			"settings":
+			{
+				"buffer_size": 1224,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "config/initializers/inflections.rb",
+			"settings":
+			{
+				"buffer_size": 737,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/kata.rb",
+			"settings":
+			{
+				"buffer_size": 160,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/views/videos/_form.html.erb",
+			"settings":
+			{
+				"buffer_size": 1933,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/concerns/printable.rb",
+			"settings":
+			{
+				"buffer_size": 103,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/concerns/searchable.rb",
+			"settings":
+			{
+				"buffer_size": 188,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/models/sensei.rb",
+			"settings":
+			{
+				"buffer_size": 134,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -547,10 +667,124 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/todd/rails_projects/aiki3"
+		"/Users/todd/rails_projects/aiki3",
+		"/Users/todd/rails_projects/aiki3/app",
+		"/Users/todd/rails_projects/aiki3/app/assets",
+		"/Users/todd/rails_projects/aiki3/app/controllers",
+		"/Users/todd/rails_projects/aiki3/app/models/concerns",
+		"/Users/todd/rails_projects/aiki3/app/views",
+		"/Users/todd/rails_projects/aiki3/app/views/layouts",
+		"/Users/todd/rails_projects/aiki3/app/views/ranks",
+		"/Users/todd/rails_projects/aiki3/app/views/videos",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas",
+		"/Users/todd/rails_projects/aiki3/config",
+		"/Users/todd/rails_projects/aiki3/config/initializers",
+		"/Users/todd/rails_projects/aiki3/db",
+		"/Users/todd/rails_projects/aiki3/db/migrate"
 	],
 	"file_history":
 	[
+		"/Users/todd/rails_projects/aiki3/app/views/videos/index.json.jbuilder",
+		"/Users/todd/rails_projects/aiki3/app/helpers/wazas_helper.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/wazas_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/waza.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/video.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/style.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/katas/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/models/kaiten.rb",
+		"/Users/todd/rails_projects/aiki3/db/migrate/20151029182112_add_kata_to_video.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/kata.rb",
+		"/Users/todd/rails_projects/aiki3/config/initializers/inflections.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/aiki_format.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/concerns/waza_attribute.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/rank.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/sensei.rb",
+		"/Users/todd/rails_projects/aiki3/config/routes.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/stance.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/attack.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/attack_height.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/hand_applied_to.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/maka_komi.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/technique.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/direction.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/sword.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/level.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/videos_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/layouts/_header.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/kata/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/videos/show.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/models/concerns/searchable.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/kata_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/models/katum.rb",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/cffd775d018f68ce5dba1ee0d951a994",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/b5c6766dc28b6f0b8e9eb43062dbb9fe",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/8736e2352997fd679ed9c3f2428edc08",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/35708a9e1338f7cca45e431fc8b0d87e",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/2f5173deea6c795b8fdde723bb4b63af",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/28837e9899564c83700e2e9029934d4c",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/14ee269c35231bd6fdc7054b15a53f6f",
+		"/Users/todd/rails_projects/aiki3/tmp/cache/assets/development/sprockets/045834d7bfe3feff8b4190235bc4f537",
+		"/Users/todd/rails_projects/aiki3/app/helpers/videos_helper.rb",
+		"/Users/todd/rails_projects/aiki3/db/migrate/20151029020452_add_keywords_to_video.rb",
+		"/Users/todd/rails_projects/aiki3/db/seeds.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/layouts/application.html.erb",
+		"/Users/todd/rails_projects/aiki3/config/environments/development.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/techniques_controller.rb",
+		"/Users/todd/rails_projects/aiki3/config/environments/test.rb",
+		"/Users/todd/rails_projects/aiki3/app/helpers/attacks_helper.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/attacks_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/videos/_form.html.erb",
+		"/Users/todd/rails_projects/aiki3/db/migrate/20151029020154_add_sensei_and_style_to_video.rb",
+		"/Users/todd/rails_projects/aiki3/.gitignore",
+		"/Users/todd/rails_projects/aiki3/app/models/concerns/printable.rb",
+		"/Users/todd/rails_projects/aiki3/.ruby-gemset",
+		"/Users/todd/rails_projects/aiki3/app/assets/javascripts/videos.js.coffee",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas/_form.html.erb",
+		"/Users/todd/rails_projects/aiki3/config/initializers/filter_parameter_logging.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/aiki_formats/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/ranks/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/videos/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/db/migrate/20151027205457_create_videos.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/senseis/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/styles/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/Rakefile",
+		"/Users/todd/rails_projects/aiki3/aiki3.sublime-project",
+		"/Users/todd/rails_projects/aiki3/app/views/aiki_formats/_form.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/aiki_formats/edit.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/aiki_formats/new.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/assets/stylesheets/application.css.scss",
+		"/Users/todd/rails_projects/aiki3/app/assets/stylesheets/submenus.css.scss",
+		"/Users/todd/rails_projects/aiki3/app/views/directions/new.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/videos/new.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/formats_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/kaitens_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/assets/stylesheets/custom.css.scss",
+		"/Users/todd/rails_projects/aiki3/app/views/attack_heights/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/attacks/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/directions/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/hand_applied_tos/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/kaitens/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/levels/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/maka_komis/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/stances/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/swords/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/techniques/index.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/assets/javascripts/application.js",
+		"/Users/todd/rails_projects/aiki3/Gemfile",
+		"/Users/todd/rails_projects/aiki3/.ruby-version",
+		"/Users/todd/rails_projects/aiki3/Gemfile.lock",
+		"/Users/todd/rails_projects/aiki3/app/views/layouts/_shim.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/helpers/application_helper.rb",
+		"/Users/todd/rails_projects/aiki3/app/controllers/application_controller.rb",
+		"/Users/todd/rails_projects/aiki3/app/assets/stylesheets/application.css",
+		"/Users/todd/rails_projects/aiki3/config/application.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas/show.json.jbuilder",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas/show.html.erb",
+		"/Users/todd/rails_projects/aiki3/app/views/wazas/index.json.jbuilder",
+		"/Users/todd/rails_projects/aiki3/config/initializers/secret_token.rb",
+		"/Users/todd/rails_projects/aiki3/db/schema.rb",
+		"/Users/todd/rails_projects/aiki3/app/views/attack_heights/_form.html.erb",
 		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/transax.rb",
 		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_network_merchants_test.rb",
 		"/Users/todd/rails_projects/active_merchant/test/test_helper.rb",
@@ -577,112 +811,11 @@
 		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/payflow/payflow_response.rb",
 		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/payex_test.rb",
 		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paystation.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/payscout.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paypal.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paymill.rb",
-		"/Users/todd/rails_projects/active_merchant/test/schema/paypal/CoreComponentTypes.xsd",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_spreedly_core_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paypal_express_common.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/payflow/payflow_express_response.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/so_easy_pay.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/quickpay_v10_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/fixtures.yml",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/trust_commerce.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/merchant_e_solutions.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant.rb",
-		"/Users/todd/rails_projects/active_merchant/test/support/mercury_helper.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/sage_virtual_check_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/viaklix.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/version.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/firstdata_e4.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/federated_canada.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/federated_canada_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/adyen.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/stripe_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_orbital_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/orbital.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/global_transport.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_metrics_global_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/orbital_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/blue_pay.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_global_transport_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/metrics_global_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/metrics_global.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/global_transport_test.rb",
-		"/Users/todd/rails_projects/active_merchant/Gemfile.lock",
-		"/Users/todd/rails_projects/active_merchant/MIT-LICENSE",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paypal_digital_goods.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/ideal/ideal_rabobank.pem",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/ogone.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/empty.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateway.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/posts_data.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_firstdata_e4_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/firstdata_e4_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_mercury_certification_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/secure_net_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/secure_net.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/orbital/orbital_soft_descriptors.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/orbital_cvv_result_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/orbital_avs_result_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/ogone_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/braintree_blue_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/braintree_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/braintree.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/wirecard_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/wirecard.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/psigate.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/sage.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/psigate_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/credit_card.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/merchant_ware.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_adyen_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/paybox_direct.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/secure_pay_au.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/flo2cash_simple.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/webpay.rb",
-		"/Users/todd/rails_projects/active_merchant/Gemfile",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/inspire.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/barclays_epdq_extra_plus.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/cyber_source.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/credit_card_methods.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/paymill_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/authorize_net.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/hps.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/response.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/hdfc.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/payment_token.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/payflow/payflow_common_api.rb",
-		"/Users/todd/rails_projects/active_merchant/Gemfile.rails32",
-		"/Users/todd/rails_projects/active_merchant/Gemfile.rails40",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/model.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/credit_card_formatting.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/authorize_net_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/plugnpay_test.rb",
-		"/Users/todd/rails_projects/active_merchant/activemerchant.gemspec",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_pac_net_raven_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_nab_transact_test.rb",
-		"/Users/todd/rails_projects/active_merchant/CONTRIBUTORS",
-		"/Users/todd/rails_projects/active_merchant/test/unit/gateways/merchant_one_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/merchant_one.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_migs_test.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/money_movers.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/barclays_epdq.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/first_giving.rb",
-		"/Users/todd/rails_projects/active_merchant/test/schema/paypal/EnhancedDataTypes.xsd",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/quickpay.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/quickbooks.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/quantum.rb",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/qbms.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_merchant_e_solutions_test.rb",
-		"/Users/todd/rails_projects/active_merchant/test/remote/gateways/remote_efsnet_test.rb",
-		"/Users/todd/rails_projects/active_merchant/Rakefile",
-		"/Users/todd/rails_projects/active_merchant/shipit.rubygems.yml",
-		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/certo_direct.rb"
+		"/Users/todd/rails_projects/active_merchant/lib/active_merchant/billing/gateways/payscout.rb"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -697,6 +830,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"to: :waza",
+			"kata",
+			"<table>",
+			" %>",
+			"string",
+			"rank_id",
+			"<table>",
+			"waza_id",
+			"stance_id",
+			"\", ",
+			"format.new",
+			"format.all",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"Kaiten",
+			"kaiten",
+			"kaiten_params",
+			"pad_",
+			"<table>",
+			"construct_name",
+			"_id",
+			"</strong>",
+			"] }, :",
+			"options_from_collection_for_select",
+			"_id",
+			"accpets_nested_attributes_for",
 			"transaction_histor",
 			"add_invoice",
 			"merchant_account_id",
@@ -789,42 +957,7 @@
 			"d3d",
 			"add_payment_source",
 			"add_d3d",
-			"language",
-			"default",
-			"def void",
-			"money",
-			"def purch",
-			"creditcard.",
-			"creditcard",
-			"CreditCard",
-			"creditcard",
-			"card_brand",
-			"email",
-			"Password",
-			"password",
-			"Password",
-			"password",
-			"\n      ",
-			"Password",
-			"password",
-			"login",
-			"add_merchant_data",
-			"order_id",
-			"payid",
-			"starting",
-			"starting ",
-			"starting SSL",
-			"tls",
-			"signature",
-			"def void",
-			"def commit",
-			"request_id",
-			"else",
-			"add_address",
-			"production",
-			"proxy_address",
-			"test_url",
-			"live_url"
+			"language"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -832,6 +965,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			"<table class=\"table table-striped table-bordered\">",
 			"backfill_entry",
 			"mark_premium_purchased_products_as_replaced",
 			"has_pending_start_purchased_product",
@@ -900,8 +1034,456 @@
 	"groups":
 	[
 		{
+			"selected": 8,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "app/views/videos/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1028,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								910,
+								910
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 444.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/views/aiki_formats/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								32,
+								75
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/views/katas/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 552,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								318,
+								318
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 102.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/models/video.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2132,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1553,
+								1553
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 729.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/views/layouts/application.html.erb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 760,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								636,
+								744
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "app/models/concerns/waza_attribute.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 148,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								148,
+								148
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "app/views/wazas/show.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "app/views/directions/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "app/views/videos/index.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1224,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								906,
+								906
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 162.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "config/initializers/inflections.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 737,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								608,
+								608
+							]
+						],
+						"settings":
+						{
+							"history_list_is_closing": true,
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 13.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "app/models/kata.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 160,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								160,
+								160
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "app/views/videos/_form.html.erb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1933,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								517,
+								517
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Rails/HTML (Rails).tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 177.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "app/models/concerns/printable.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "app/models/concerns/searchable.rb",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 188,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "app/models/sensei.rb",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 134,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								34,
+								130
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -922,6 +1504,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -932,6 +1520,7 @@
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -955,6 +1544,178 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"videoinde",
+				"app/views/videos/index.html.erb"
+			],
+			[
+				"videoshow",
+				"app/views/videos/show.html.erb"
+			],
+			[
+				"wazasho",
+				"app/views/wazas/show.html.erb"
+			],
+			[
+				"vid",
+				"app/models/video.rb"
+			],
+			[
+				"videosindex",
+				"app/views/videos/index.html.erb"
+			],
+			[
+				"vidind",
+				"app/views/directions/index.html.erb"
+			],
+			[
+				"videofor",
+				"app/views/videos/_form.html.erb"
+			],
+			[
+				"sens",
+				"app/models/sensei.rb"
+			],
+			[
+				"kata.",
+				"app/models/kata.rb"
+			],
+			[
+				"vide",
+				"app/models/video.rb"
+			],
+			[
+				"katain",
+				"app/views/katas/index.html.erb"
+			],
+			[
+				"inde",
+				"app/views/aiki_formats/index.html.erb"
+			],
+			[
+				"inf",
+				"config/initializers/inflections.rb"
+			],
+			[
+				"routes",
+				"config/routes.rb"
+			],
+			[
+				"head",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"kat",
+				"app/models/katum.rb"
+			],
+			[
+				"add_",
+				"db/migrate/20151029182112_add_kata_to_video.rb"
+			],
+			[
+				"st",
+				"app/models/style.rb"
+			],
+			[
+				"sen",
+				"app/models/sensei.rb"
+			],
+			[
+				"rank",
+				"app/models/rank.rb"
+			],
+			[
+				"video",
+				"app/models/video.rb"
+			],
+			[
+				"level",
+				"app/models/level.rb"
+			],
+			[
+				"sw",
+				"app/models/sword.rb"
+			],
+			[
+				"kai",
+				"app/models/kaiten.rb"
+			],
+			[
+				"dir",
+				"app/models/direction.rb"
+			],
+			[
+				"tech",
+				"app/models/technique.rb"
+			],
+			[
+				"mak",
+				"app/models/maka_komi.rb"
+			],
+			[
+				"hand",
+				"app/models/hand_applied_to.rb"
+			],
+			[
+				"att",
+				"app/models/attack_height.rb"
+			],
+			[
+				"stan",
+				"app/models/stance.rb"
+			],
+			[
+				"wa",
+				"app/models/waza.rb"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"videoform",
+				"app/views/videos/_form.html.erb"
+			],
+			[
+				"header",
+				"app/views/layouts/_header.html.erb"
+			],
+			[
+				"aikifor",
+				"app/models/aiki_format.rb"
+			],
+			[
+				"waza",
+				"app/models/waza.rb"
+			],
+			[
+				"cus",
+				"app/assets/stylesheets/custom.css.scss"
+			],
+			[
+				".ru",
+				".ruby-gemset"
+			],
+			[
+				"gem",
+				"Gemfile"
+			],
+			[
+				"app",
+				"app/views/layouts/application.html.erb"
+			],
+			[
+				"sta",
+				"app/models/stance.rb"
+			],
+			[
+				"form",
+				"app/views/wazas/_form.html.erb"
+			],
+			[
+				"w",
+				"app/models/waza.rb"
+			],
 			[
 				"ew",
 				"lib/active_merchant/billing/gateways/eway.rb"
@@ -1200,10 +1961,6 @@
 				"spec/requests/pay_dollar_spec.rb"
 			],
 			[
-				"inf",
-				"app/models/infusionsoft_response.rb"
-			],
-			[
 				"tracon",
 				"app/controllers/transactions_controller.rb"
 			],
@@ -1234,10 +1991,6 @@
 			[
 				"gemfil",
 				"Gemfile.lock"
-			],
-			[
-				"gem",
-				"Gemfile"
 			],
 			[
 				"rout",
@@ -1302,170 +2055,6 @@
 			[
 				".r",
 				".rspec"
-			],
-			[
-				"trco",
-				"app/controllers/transactions_controller.rb"
-			],
-			[
-				"paydosp",
-				"spec/requests/pay_dollar_spec.rb"
-			],
-			[
-				"infus",
-				"app/models/infusionsoft_response.rb"
-			],
-			[
-				"gemf",
-				"Gemfile"
-			],
-			[
-				".rspe",
-				".rspec"
-			],
-			[
-				".git",
-				".gitignore"
-			],
-			[
-				"paydol",
-				"app/models/gateway/pay_dollar.rb"
-			],
-			[
-				"resell",
-				"app/models/reseller.rb"
-			],
-			[
-				"process",
-				"app/views/static/processing.html.erb"
-			],
-			[
-				"stat",
-				"app/controllers/static_controller.rb"
-			],
-			[
-				"rou",
-				"config/routes.rb"
-			],
-			[
-				"gemfile",
-				"Gemfile"
-			],
-			[
-				"data",
-				"config/database.yml"
-			],
-			[
-				"video",
-				"app/controllers/videos_controller.rb"
-			],
-			[
-				"lay",
-				"app/views/layouts/application.html.erb"
-			],
-			[
-				"cust",
-				"app/assets/stylesheets/custom.css.scss"
-			],
-			[
-				"app",
-				"config/application.rb"
-			],
-			[
-				"wazaforvid",
-				"app/models/waza_format_video.rb"
-			],
-			[
-				"waza_f",
-				"app/models/waza_format.rb"
-			],
-			[
-				"wa",
-				"app/controllers/wazas_controller.rb"
-			],
-			[
-				"appc",
-				"app/controllers/application_controller.rb"
-			],
-			[
-				"se",
-				"app/models/concerns/seed_fu_serializeable.rb"
-			],
-			[
-				"has",
-				"app/models/concerns/has_videos.rb"
-			],
-			[
-				"not",
-				"tmp/notes.txt"
-			],
-			[
-				"no",
-				"tmp/notes.txt"
-			],
-			[
-				"user",
-				"app/models/user.rb"
-			],
-			[
-				"master",
-				"app/views/wazas/_master_grid.html.erb"
-			],
-			[
-				"reviewtex",
-				"app/views/user_mailer/invite_review_user.text.erb"
-			],
-			[
-				"wafor",
-				"app/models/waza_format.rb"
-			],
-			[
-				"vidcon",
-				"app/controllers/videos_controller.rb"
-			],
-			[
-				"mastgrid",
-				"app/views/wazas/_master_grid.html.erb"
-			],
-			[
-				"mast",
-				"app/views/wazas/master_view.html.erb"
-			],
-			[
-				"revi",
-				"app/views/user_mailer/invite_review_user.text.erb"
-			],
-			[
-				"head",
-				"app/views/layouts/_header.html.erb"
-			],
-			[
-				"video.rb",
-				"app/models/video.rb"
-			],
-			[
-				"wazfor",
-				"app/models/waza_format.rb"
-			],
-			[
-				"videolist",
-				"app/views/wazas/_video_list.html.erb"
-			],
-			[
-				"user_note.html",
-				"app/views/user_notes/_user_note.html.erb"
-			],
-			[
-				"err",
-				"app/views/shared/_error_messages.html.erb"
-			],
-			[
-				"reset",
-				"app/controllers/password_resets_controller.rb"
-			],
-			[
-				"usercon",
-				"app/controllers/users_controller.rb"
 			]
 		],
 		"width": 0.0

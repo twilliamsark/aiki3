@@ -21,7 +21,9 @@ database.yml
 doc/
 *.swp
 *~
+aiki3.sublime-workspace
 .project
 .DS_Store
 .idea
 .secret
+

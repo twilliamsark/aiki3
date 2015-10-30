@@ -7,7 +7,11 @@
 
 <p>
   <strong>Waza:</strong>
-  <%= @video.waza rescue 'n/a' %>
+  <% if @video.waza %>
+    <%= link_to @video.waza, @video.waza %>
+  <% else %>
+    'n/a'
+  <% end %>
 </p>
 
 <p>
@@ -46,6 +50,14 @@
   <strong>Youtube:</strong>
   <%= @video.youtube_id rescue 'n/a' %>
 </p>
+
+<% if Rails.env.development? %>
+<p>
+  <strong>Keywords:</strong>
+  <%= @video.keywords rescue 'n/a' %>
+</p>
+<% end %>
+
 
 <%= link_to 'Edit', edit_video_path(@video) %> |
 <%= link_to 'Back', videos_path %>
