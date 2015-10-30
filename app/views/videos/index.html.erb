@@ -28,7 +28,7 @@
         <td><%= format %></td>
         <td><%= video.rank %></td>
         <td><%= video.on_test %></td>
-        <td><%= video.youtube_id %></td>
+        <td><%= link_to video.youtube_id, "https://www.youtube.com/watch?v=#{video.youtube_id}" %></td>
         <td><%= link_to 'Show', video %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
         <td><%= link_to 'Destroy', video, method: :delete, data: { confirm: 'Are you sure?' } %></td>
