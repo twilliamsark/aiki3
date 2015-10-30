@@ -39,6 +39,7 @@ class Waza < ActiveRecord::Base
 
   def self.master_hash(options={})
     master = Hash.new
+    duplicates = Hash.new
     Waza.all.sort_by(&:name).each do |waza|
       next unless waza.videos.any?
       next unless include_based_on?(waza, options)
@@ -60,12 +61,22 @@ class Waza < ActiveRecord::Base
         waza_name += " (#{includes.join(', ')})"
       end
 
-      master[waza_name] ||= Hash.new
-      master[waza_name][:waza] = waza
+      master[waza] ||= Hash.new
+
+      if duplicates[waza_name]
+        master[waza][:sub_name] = waza.technical_name
+        unless master[duplicates[waza_name]][:sub_name].present?
+          master[duplicates[waza_name]][:sub_name] = waza.technical_name
+        end
+      else
+        duplicates[waza_name] = waza
+      end
+
+      master[waza][:name] = waza_name
       waza.videos.each do |video|
-        master[waza_name][:videos] ||= Hash.new
-        master[waza_name][:videos][video.format] ||= Array.new
-        master[waza_name][:videos][video.format] << video
+        master[waza][:videos] ||= Hash.new
+        master[waza][:videos][video.format] ||= Array.new
+        master[waza][:videos][video.format] << video
       end
 
     end

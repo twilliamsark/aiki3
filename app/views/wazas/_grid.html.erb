@@ -44,7 +44,7 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <%= submit_tag 'Go' %>
+      <%= submit_tag 'Go', class: "btn btn-large btn-primary" %>
     </div>
   </div>
 <% end %>
@@ -64,8 +64,13 @@
         master_hash.each do |waza, format_hash|
         %>
           <tr>
-          <td><strong><%= waza %></strong></td>
-          <td><%= link_to 'Admin', waza_path(format_hash[:waza]) %></td>
+          <td>
+            <strong><%= format_hash[:name] %></strong>
+            <% if format_hash[:sub_name].present? %>
+              <br/><span class="small"><%= format_hash[:sub_name] %></span>
+            <% end %>
+          </td>
+          <td><%= link_to 'Admin', waza_path(waza) %></td>
           <%
           format_names.each do |format_name|
             videos = format_hash[:videos][format_name]
