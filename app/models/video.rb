@@ -36,8 +36,17 @@ class Video < ActiveRecord::Base
     results
   end
 
+  def self.wazas(videos)
+    videos.to_a unless videos.instance_of? Array
+    videos.map(&:waza)
+  end
+
   def name
     read_attribute(:name).present? ? read_attribute(:name) : waza.name rescue 'not set'
+  end
+
+  def format
+    aiki_format.to_s rescue 'Other'
   end
 
   def set_keywords

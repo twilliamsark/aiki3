@@ -42,4 +42,29 @@ class Waza < ActiveRecord::Base
                     level].map{|a| a.name rescue nil}.compact.join(' ')
     @constructed
   end
+
+  def self.wazas_hash(wazas)
+    h = {}
+
+    wazas.each do |waza|
+      name, whash = waza.waza_hash
+      h[name] = whash
+    end
+
+    h
+  end
+
+  def waza_hash
+    h = {
+      waza: self,
+      formats: {}
+    }
+
+    videos.each do |v|
+      h[:formats][v.format] ||= []
+      h[:formats][v.format] << v
+    end
+
+    [name, h]
+  end
 end
