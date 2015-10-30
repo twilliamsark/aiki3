@@ -65,4 +65,11 @@
   <%= @waza.level || 'n/a' %>
 </p>
 
-<%= render 'videos/list', videos: @waza.videos if @waza.videos.any? %>
+<br/>
+<%= link_to 'Edit', edit_waza_path(@waza) %> |
+<%= link_to 'Back', wazas_path %>
+
+<% if @waza.videos.any? %>
+  <h2>Videos</h2>
+  <%= render 'videos/list', videos: @waza.videos %>
+<% end %>
