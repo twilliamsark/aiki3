@@ -66,7 +66,7 @@ class Waza < ActiveRecord::Base
       if duplicates[waza_name]
         master[waza][:sub_name] = waza.technical_name
         unless master[duplicates[waza_name]][:sub_name].present?
-          master[duplicates[waza_name]][:sub_name] = waza.technical_name
+          master[duplicates[waza_name]][:sub_name] = duplicates[waza_name].technical_name
         end
       else
         duplicates[waza_name] = waza
