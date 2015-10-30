@@ -1,19 +1,20 @@
 <header class="aiki_box navbar container" role="navigation">
   <div class="row">
-    <div class="col-md-2 center">
+    <div class="col-md-4 center">
       <%= image_tag 'ssj_mon_color_web.gif', class: "header_image", size: "50x50" %>
     </div>
-    <div class="col-md-8 center">
+    <div class="col-md-4 center">
       <h4>Aikido Center of San Antonio: Video Library</h4>
       <p>a Yurusu Aikido Dojo</p>
     </div>
-    <div class="col-md-2 center">
-      <%= image_tag 'Nishio_patch_dark.png', class: "header_image", size: "50x50" %>
+    <div class="col-md-4">
+      <%= image_tag 'Nishio_patch_dark.png', class: "header_image pull-right", size: "50x50" %>
     </div>
   </div>
 
   <ul class="ul_big nav nav-pills">
     <li><%= link_to "Dojo", "http://www.aikipeace.com/aikido/index.html" %></li>
+    <li><%= link_to "Master Grid", master_grid_wazas_path %></li>
     <li class="dropdown">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admin<b class="caret"></b></a>
       <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">

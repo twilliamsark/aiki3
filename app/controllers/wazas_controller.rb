@@ -1,6 +1,51 @@
 class WazasController < ApplicationController
   before_action :set_waza, only: [:show, :edit, :update, :destroy]
 
+  def master_grid
+    options = {}
+    if params[:stance].present?
+      @stance = Stance.find_by(id: params[:stance]) rescue nil
+      if @stance
+        options[:stance] = @stance.name
+        @stance = @stance.id
+      end
+    end
+
+    if params[:attack].present?
+      @attack = Attack.find_by(id: params[:attack]) rescue nil
+      if @attack
+        options[:attack] = @attack.name
+        @attack = @attack.id
+      end
+    end
+
+    if params[:technique].present?
+      @technique = Technique.find_by(id: params[:technique]) rescue nil
+      if @technique
+        options[:technique] = @technique.name
+        @technique = @technique.id
+      end
+    end
+
+    if params[:format].present?
+      @format = AikiFormat.find_by(id: params[:format]) rescue nil
+      if @format
+        options[:format] = @format.to_s
+        @format = @format.id
+      end
+    end
+
+    if params[:rank].present?
+      @rank = Rank.find_by(id: params[:rank]) rescue nil
+      if @rank
+        options[:rank] = @rank.to_s
+        @rank = @rank.id
+      end
+    end
+
+    @master_hash = Waza.master_hash(options)
+  end
+
   # GET /wazas
   # GET /wazas.json
   def index

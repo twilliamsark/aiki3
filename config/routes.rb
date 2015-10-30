@@ -11,7 +11,9 @@ Aiki3::Application.routes.draw do
 
   resources :aiki_formats
 
-  resources :wazas
+  resources :wazas do
+    get 'master_grid', on: :collection
+  end
 
   resources :levels
 
@@ -33,7 +35,7 @@ Aiki3::Application.routes.draw do
 
   resources :stances
 
-  root 'wazas#index'
+  root 'wazas#master_grid'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

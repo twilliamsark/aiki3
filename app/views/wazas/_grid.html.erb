@@ -1,0 +1,100 @@
+<%= form_tag master_grid_wazas_path, method: :get do %>
+  <div class="row">
+    <div class="col-md-12"><h4>Filters</h4></div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= label_tag "stance", "Stance:" %>
+    </div>
+    <div class="col-md-6">
+      <%= select_tag "stance", options_for_select(Stance.order(:name).map{|s| [s.name, s.id]}, @stance), include_blank: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= label_tag "attack", "Attack:" %>
+    </div>
+    <div class="col-md-6">
+      <%= select_tag "attack", options_for_select(Attack.order(:name).map{|s| [s.name, s.id]}, @attack), include_blank: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= label_tag "technique", "Technique:" %>
+    </div>
+    <div class="col-md-6">
+      <%= select_tag "technique", options_for_select(Technique.order(:name).map{|s| [s.name, s.id]}, @technique), include_blank: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= label_tag "format", "Format:" %>
+    </div>
+    <div class="col-md-6">
+      <%= select_tag "format", options_for_select(AikiFormat.all.map{|s| [s.name, s.id]}, @format), include_blank: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <%= label_tag "rank", "Rank:" %>
+    </div>
+    <div class="col-md-6">
+      <%= select_tag "rank", options_for_select(Rank.all.map{|s| [s.name, s.id]}, @rank), include_blank: true %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <%= submit_tag 'Go' %>
+    </div>
+  </div>
+<% end %>
+
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped table-bordered">
+      <thead class="rank_row">
+        <th><strong>Waza \ Format</strong></th>
+        <% format_names.each do |format_name| %>
+          <th><%= format_name %></th>
+        <% end %>
+      </thead>
+      <tbody>
+        <%
+        master_hash.each do |waza, format_hash|
+        %>
+          <tr>
+          <td><strong><%= waza %></strong></td>
+          <%
+          format_names.each do |format_name|
+            videos = format_hash[format_name]
+            if videos && videos.any?
+              videos = videos.sort{|x,y| x.rank.id <=> y.rank.id}
+
+              video_rank_hash = Hash.new(0)
+              videos.each do |vid|
+                video_rank_hash[vid.rank.to_s] += 1
+              end
+
+          %>
+                <td>
+
+                  <%
+                    video_rank_hash.each do |rank, count|
+                  %>
+                    <%= "#{rank} - #{count}" %><br/>
+
+                  <% end %>
+
+                </td>
+            <% else %>
+                <td>0</td>
+          <%
+            end
+          end
+          %>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
