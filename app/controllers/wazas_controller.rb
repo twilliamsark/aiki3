@@ -70,7 +70,7 @@ class WazasController < ApplicationController
   # GET /wazas
   # GET /wazas.json
   def index
-    @wazas = Waza.all.order(:stance_id, :attack_id, :technique_id, :direction_id)
+    @wazas = Waza.all.sort_by(&:name)
     render action: "index", layout: "admin"
   end
 
