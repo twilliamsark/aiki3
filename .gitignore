@@ -27,3 +27,7 @@ aiki3.sublime-workspace
 .idea
 .secret
 
+
+*.sublime-workspace
+
+aiki3.sublime-workspace
