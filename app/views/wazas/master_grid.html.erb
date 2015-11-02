@@ -1,10 +1,4 @@
 <h1>Master Grid</h1>
-<%
-  @format_names = AikiFormat.all.map(&:name)
-  @stance ||= nil
-  @technique ||= nil
-  @format ||= nil  
-%>
 <div class="pad_all aiki_box">
-  <%= render 'grid', format_names: @format_names, master_hash: @master_hash %>
+  <%= render 'grid', master_hash: @master_hash %>
 </div>

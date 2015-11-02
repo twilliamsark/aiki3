@@ -40,7 +40,14 @@ class Waza < ActiveRecord::Base
   def self.master_hash(options={})
     master = Hash.new
     duplicates = Hash.new
-    Waza.all.sort_by(&:name).each do |waza|
+
+    if options[:search].present?
+      wazas = Video.wazas(Video.search(options[:search])) rescue []
+    else
+      wazas = Waza.all
+    end
+
+    wazas.sort_by(&:name).each do |waza|
       next unless waza.videos.any?
       next unless include_based_on?(waza, options)
       next if options[:format].present? && !include_format?(waza.aiki_formats.map(&:name), options)
@@ -63,13 +70,17 @@ class Waza < ActiveRecord::Base
 
       master[waza] ||= Hash.new
 
-      if duplicates[waza_name]
+      if options[:search].present?
         master[waza][:sub_name] = waza.technical_name
-        unless master[duplicates[waza_name]][:sub_name].present?
-          master[duplicates[waza_name]][:sub_name] = duplicates[waza_name].technical_name
-        end
       else
-        duplicates[waza_name] = waza
+        if duplicates[waza_name]
+          master[waza][:sub_name] = waza.technical_name
+          unless master[duplicates[waza_name]][:sub_name].present?
+            master[duplicates[waza_name]][:sub_name] = duplicates[waza_name].technical_name
+          end
+        else
+          duplicates[waza_name] = waza
+        end
       end
 
       master[waza][:name] = waza_name

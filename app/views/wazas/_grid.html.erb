@@ -1,56 +1,15 @@
 <%= form_tag master_grid_wazas_path, method: :get do %>
   <div class="row">
-    <div class="col-md-12"><h4>Filters</h4></div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <%= label_tag "stance", "Stance:" %>
+    <div class="col-md-6">
+      <%= render 'filter_form' %>
     </div>
     <div class="col-md-6">
-      <%= select_tag "stance", options_for_select(Stance.order(:name).map{|s| [s.name, s.id]}, @stance), include_blank: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <%= label_tag "attack", "Attack:" %>
-    </div>
-    <div class="col-md-6">
-      <%= select_tag "attack", options_for_select(Attack.order(:name).map{|s| [s.name, s.id]}, @attack), include_blank: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <%= label_tag "technique", "Technique:" %>
-    </div>
-    <div class="col-md-6">
-      <%= select_tag "technique", options_for_select(Technique.order(:name).map{|s| [s.name, s.id]}, @technique), include_blank: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <%= label_tag "format", "Format:" %>
-    </div>
-    <div class="col-md-6">
-      <%= select_tag "format", options_for_select(AikiFormat.all.map{|s| [s.name, s.id]}, @format), include_blank: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-2">
-      <%= label_tag "rank", "Rank:" %>
-    </div>
-    <div class="col-md-6">
-      <%= select_tag "rank", options_for_select(Rank.all.map{|s| [s.name, s.id]}, @rank), include_blank: true %>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-12">
-      <%= submit_tag 'Go', class: "btn", role: "button" %>
-      <% if @stance || @attack || @technique || @format || @rank %>
-        <%= link_to 'Clear Filters', master_grid_wazas_path , class: "btn", role: "button" %>
-      <% end %>
+      <%= render 'search_form' %>
     </div>
   </div>
 <% end %>
+
+<% formats = AikiFormat.all %>
 
 <div class="row">
   <div class="col-md-12">
@@ -58,8 +17,8 @@
       <thead class="rank_row">
         <th><strong>Waza \ Format</strong></th>
         <th>Admin</th>
-        <% format_names.each do |format_name| %>
-          <th><%= format_name %></th>
+        <% formats.each do |format| %>
+          <th><%= format %></th>
         <% end %>
       </thead>
       <tbody>
@@ -74,21 +33,25 @@
                                   attack: @attack,
                                   technique: @technique,
                                   format: @format,
-                                  rank: @rank) %></strong>
+                                  rank: @rank,
+                                  search: @search) %></strong>
             <% if format_hash[:sub_name].present? %>
               <br/><span class="small"><%= format_hash[:sub_name] %></span>
             <% end %>
           </td>
           <td><%= link_to 'Admin', waza_path(waza) %></td>
           <%
-          format_names.each do |format_name|
-            videos = format_hash[:videos][format_name]
+          formats.each do |format|
+            videos = format_hash[:videos][format.to_s]
             if videos && videos.any?
               videos = videos.sort{|x,y| x.rank.id <=> y.rank.id}
 
-              video_rank_hash = Hash.new(0)
+              video_rank_hash = Hash.new
               videos.each do |vid|
-                video_rank_hash[vid.rank.to_s] += 1
+                video_rank_hash[vid.rank.to_s] ||= {}
+                video_rank_hash[vid.rank.to_s][:count] = 0 unless video_rank_hash[vid.rank.to_s][:count]
+                video_rank_hash[vid.rank.to_s][:count] += 1
+                video_rank_hash[vid.rank.to_s][:vid_id] = vid.id unless video_rank_hash[vid.rank.to_s][:vid_id]
               end
 
           %>
@@ -97,7 +60,16 @@
                   <%
                     video_rank_hash.each do |rank, count|
                   %>
-                    <%= "#{rank} - #{count}" %><br/>
+
+                      <%= link_to "#{rank} - #{count[:count]}", 
+                                waza_display_path(waza,
+                                  video_id: count[:vid_id],
+                                  stance: @stance,
+                                  attack: @attack,
+                                  technique: @technique,
+                                  format: @format,
+                                  rank: @rank,
+                                  search: @search) %></br>                 
 
                   <% end %>
 

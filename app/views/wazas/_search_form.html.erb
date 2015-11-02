@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-12"><h4>Search</h4></div>
+</div>
+<div class="row">
+  <div class="col-md-2">
+    <%= label_tag "search", "Search:" %>
+  </div>
+  <div class="col-md-6">
+    <%= text_field_tag 'search', @search, placeholder: 'Enter search term...' %>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <%= submit_tag 'Go', class: "btn", role: "button" %>
+  </div>
+</div>

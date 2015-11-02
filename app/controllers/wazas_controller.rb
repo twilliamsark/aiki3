@@ -12,6 +12,7 @@ class WazasController < ApplicationController
     @rank = Rank.find_by(id: params[:rank]) rescue nil if params[:rank]
     @waza = Waza.find_by(id: params[:waza_id]) rescue nil if params[:waza_id]
     @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
+    @search = params[:search]
   end
 
   def remote_display
@@ -62,6 +63,11 @@ class WazasController < ApplicationController
         options[:rank] = @rank.to_s
         @rank = @rank.id
       end
+    end
+
+    if params[:search].present?
+      @search = params[:search]
+      options[:search] = params[:search]
     end
 
     @master_hash = Waza.master_hash(options)
