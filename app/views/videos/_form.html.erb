@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :waza_id %><br>
-    <%= f.select :waza_id, options_for_select(Waza.all.collect { |k| [ "#{k.id}-#{k.name}", k.id ] }, @video.waza_id), { include_blank: true } %>
+    <%= f.select :waza_id, options_for_select(Waza.all.sort_by(&:name).collect { |k| [ "#{k.id}-#{k.name}", k.id ] }, @video.waza_id), { include_blank: true } %>
   </div>
   <div class="field">
     <%= f.label :aiki_format_id, "Format" %><br>
