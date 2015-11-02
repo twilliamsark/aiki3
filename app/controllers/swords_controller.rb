@@ -1,4 +1,4 @@
-class SwordsController < ApplicationController
+class SwordsController < AdminController
   before_action :set_sword, only: [:show, :edit, :update, :destroy]
 
   # GET /swords

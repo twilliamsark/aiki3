@@ -1,4 +1,4 @@
-class KaitensController < ApplicationController
+class KaitensController < AdminController
   before_action :set_kaiten, only: [:show, :edit, :update, :destroy]
 
   # GET /kaitens

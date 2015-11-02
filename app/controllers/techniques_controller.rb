@@ -1,4 +1,4 @@
-class TechniquesController < ApplicationController
+class TechniquesController < AdminController
   before_action :set_technique, only: [:show, :edit, :update, :destroy]
 
   # GET /techniques

@@ -1,6 +1,24 @@
 class WazasController < ApplicationController
   before_action :set_waza, only: [:show, :edit, :update, :destroy]
 
+  def display
+    @stance = Stance.find_by(id: params[:stance]) rescue nil if params[:stance]
+    @attack = Attack.find_by(id: params[:attack]) rescue nil if params[:attack]
+    @technique = Technique.find_by(id: params[:technique]) rescue nil if params[:technique]
+    @format = AikiFormat.find_by(id: params[:format]) rescue nil if params[:format]
+    @rank = Rank.find_by(id: params[:rank]) rescue nil if params[:rank]
+    @waza = Waza.find_by(id: params[:waza_id]) rescue nil if params[:waza_id]
+    @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
+  end
+
+  def remote_display
+    @waza = Waza.find_by(id: params[:waza_id]) rescue nil if params[:waza_id]
+    @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
+    if @waza && @video && @video.waza.id != @waza.id
+      @video = nil
+    end
+  end
+
   def master_grid
     options = {}
     if params[:stance].present?
@@ -50,20 +68,24 @@ class WazasController < ApplicationController
   # GET /wazas.json
   def index
     @wazas = Waza.all.order(:stance_id, :attack_id, :technique_id, :direction_id)
+    render action: "index", layout: "admin"
   end
 
   # GET /wazas/1
   # GET /wazas/1.json
   def show
+    render action: "show", layout: "admin"
   end
 
   # GET /wazas/new
   def new
     @waza = Waza.new
+    render action: "new", layout: "admin"
   end
 
   # GET /wazas/1/edit
   def edit
+    render action: "edit", layout: "admin"
   end
 
   # POST /wazas

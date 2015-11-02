@@ -1,4 +1,4 @@
-class DirectionsController < ApplicationController
+class DirectionsController < AdminController
   before_action :set_direction, only: [:show, :edit, :update, :destroy]
 
   # GET /directions

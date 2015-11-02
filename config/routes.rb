@@ -13,6 +13,8 @@ Aiki3::Application.routes.draw do
 
   resources :wazas do
     get 'master_grid', on: :collection
+    get 'display'
+    get 'remote_display'
   end
 
   resources :levels

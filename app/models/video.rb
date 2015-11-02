@@ -19,6 +19,8 @@ class Video < ActiveRecord::Base
   delegate :level, to: :waza, allow_nil: true
 
   belongs_to :aiki_format
+  delegate :iaido?, to: :aiki_format, allow_nil: true
+
   belongs_to :kata
   belongs_to :rank
   belongs_to :sensei

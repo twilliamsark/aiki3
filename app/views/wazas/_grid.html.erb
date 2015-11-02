@@ -44,7 +44,10 @@
   </div>
   <div class="row">
     <div class="col-md-12">
-      <%= submit_tag 'Go', class: "btn btn-large btn-primary" %>
+      <%= submit_tag 'Go', class: "btn", role: "button" %>
+      <% if @stance || @attack || @technique || @format || @rank %>
+        <%= link_to 'Clear Filters', master_grid_wazas_path , class: "btn", role: "button" %>
+      <% end %>
     </div>
   </div>
 <% end %>
@@ -65,7 +68,13 @@
         %>
           <tr>
           <td>
-            <strong><%= format_hash[:name] %></strong>
+            <strong><%= link_to format_hash[:name], 
+                                waza_display_path(waza, 
+                                  stance: @stance,
+                                  attack: @attack,
+                                  technique: @technique,
+                                  format: @format,
+                                  rank: @rank) %></strong>
             <% if format_hash[:sub_name].present? %>
               <br/><span class="small"><%= format_hash[:sub_name] %></span>
             <% end %>

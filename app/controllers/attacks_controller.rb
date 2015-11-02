@@ -1,4 +1,4 @@
-class AttacksController < ApplicationController
+class AttacksController < AdminController
   before_action :set_attack, only: [:show, :edit, :update, :destroy]
 
   # GET /attacks

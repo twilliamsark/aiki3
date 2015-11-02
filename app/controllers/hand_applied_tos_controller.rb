@@ -1,4 +1,4 @@
-class HandAppliedTosController < ApplicationController
+class HandAppliedTosController < AdminController
   before_action :set_hand_applied_to, only: [:show, :edit, :update, :destroy]
 
   # GET /hand_applied_tos

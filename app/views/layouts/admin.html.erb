@@ -14,8 +14,12 @@
       <%= content_tag(:div, value, class: "alert alert-#{key}") %>
     <% end %>
   </div>
-  <div id="content" class="container no_pad_sides">
-    <%= yield %>
+  <div id="content" class="container">
+    <div class="row pad_all aiki_box">
+      <div class="col-md-12">
+        <%= yield %>
+      </div>      
+    </div>
   </div>
   <% if Rails.env.development? %>
     <div class="container pad_top"><%= debug(params) %></div>

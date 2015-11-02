@@ -1,4 +1,4 @@
-class AttackHeightsController < ApplicationController
+class AttackHeightsController < AdminController
   before_action :set_attack_height, only: [:show, :edit, :update, :destroy]
 
   # GET /attack_heights

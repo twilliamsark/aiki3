@@ -1,4 +1,4 @@
-class MakaKomisController < ApplicationController
+class MakaKomisController < AdminController
   before_action :set_maka_komi, only: [:show, :edit, :update, :destroy]
 
   # GET /maka_komis

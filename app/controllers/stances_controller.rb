@@ -1,4 +1,4 @@
-class StancesController < ApplicationController
+class StancesController < AdminController
   before_action :set_stance, only: [:show, :edit, :update, :destroy]
 
   # GET /stances

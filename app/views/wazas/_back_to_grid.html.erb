@@ -1,0 +1,7 @@
+<% if @stance || @attack || @technique || @format || @rank %>
+  <%= link_to 'Back to Grid', master_grid_wazas_path(stance: @stance,
+                                                     attack: @attack,
+                                                     technique: @technique,
+                                                     format: @format,
+                                                     rank: @rank) %>
+<% end %>

@@ -1,0 +1,5 @@
+<% if @waza %>
+  $("#vid").replaceWith("<%= escape_javascript(render('display')) %>")
+<% else %>
+  $("#vid").replaceWith("<%= escape_javascript(render('wazas/video_not_uploaded')) %>")
+<% end %>

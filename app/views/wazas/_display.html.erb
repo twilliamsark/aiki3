@@ -1,0 +1,23 @@
+<div id="vid">
+
+  <div id="waza_format">
+    <%
+      waza_formats = @waza.formats
+      vid_format = waza_formats.first
+
+      if !@video
+        format = @format ? @format : vid_format
+        @video = @waza.videos.where(aiki_format: format).first rescue nil
+      end
+
+      if @video
+        vid_format = @video.aiki_format
+      end
+    %>
+
+    <%= render 'video_tab_head', waza: @waza, waza_formats: waza_formats.map(&:name), vid_format: vid_format %>
+
+    <%= render 'video_tab_pane', waza: @waza, video: @video, vid_format: vid_format %>
+  </div>
+
+</div>

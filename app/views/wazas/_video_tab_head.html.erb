@@ -1,0 +1,15 @@
+<ul class="nav nav-tabs">
+  <% 
+    AikiFormat.all.each do |format|
+      tab_state = 'disabled'
+      tab_state = 'active' if format.id == vid_format.id
+  %>
+    <% if vid_format.id == format.id %>
+      <li class="active"><%= link_to format, format %></li>
+    <% elsif waza_formats.include?(format.to_s) %>
+      <li><%= link_to format, waza_remote_display_path(waza_id: @waza.id, video_id: @waza.videos.where(aiki_format: format).first.id), remote: true %></li>
+    <% else %>
+      <li class="disabled"><%= link_to format, '#', class: "disabled_link" %></li>
+    <% end %>
+  <% end %>
+</ul>

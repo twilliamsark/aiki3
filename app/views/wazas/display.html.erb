@@ -1,0 +1,24 @@
+<% if @waza %>
+  <div class="row">
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-md-12">
+          <h1><%= @waza %></h1>
+          <h3><%= @waza.technical_name %></h3>
+        </div>
+      </div>
+      <div class="aiki_box pad_all">
+        <%= render 'detail', waza: @waza %>
+        <%= render 'back_to_grid' %>
+        <br/>
+        <br/>
+        <%= link_to 'Waza Admin', waza_path(@waza) %>
+      </div>
+    </div>
+    <div class="col-md-9 left_border">
+      <div class="aiki_box">
+        <%= render 'display' %>    
+      </div>
+    </div>
+  </div>
+<% end %>
