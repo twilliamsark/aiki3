@@ -10,7 +10,10 @@ class WazasController < ApplicationController
     @technique = Technique.find_by(id: params[:technique]) rescue nil if params[:technique]
     @format = AikiFormat.find_by(id: params[:format]) rescue nil if params[:format]
     @rank = Rank.find_by(id: params[:rank]) rescue nil if params[:rank]
-    @waza = Waza.find_by(id: params[:waza_id]) rescue nil if params[:waza_id]
+    if params[:waza_id]
+      @waza = Waza.find_by(id: params[:waza_id]) rescue nil
+    end
+    @waza = Video.first.waza unless @waza
     @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
     @search = params[:search]
   end
@@ -139,7 +142,7 @@ class WazasController < ApplicationController
   private
     
     def set_waza
-      @waza = Waza.find(params[:id])
+      @waza = Waza.find(params[:id]) rescue Video.first.waza
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
