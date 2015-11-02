@@ -69,6 +69,19 @@ body {
   border-left: 1px solid black;
 }
 
+.smaller_text {
+  font-size: smaller;
+}
+
+td {
+  ul {
+    @extend .no_pad_sides;
+    li {
+      display: table-row;
+    }
+  }  
+}
+
 input[type=submit] {
   @extend .btn;
   @extend .btn-primary;
