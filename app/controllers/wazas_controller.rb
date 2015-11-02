@@ -1,6 +1,9 @@
 class WazasController < ApplicationController
   before_action :set_waza, only: [:show, :edit, :update, :destroy]
 
+  def rows
+  end
+
   def display
     @stance = Stance.find_by(id: params[:stance]) rescue nil if params[:stance]
     @attack = Attack.find_by(id: params[:attack]) rescue nil if params[:attack]

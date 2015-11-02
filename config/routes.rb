@@ -15,6 +15,7 @@ Aiki3::Application.routes.draw do
     get 'master_grid', on: :collection
     get 'display'
     get 'remote_display'
+    get 'rows', on: :collection
   end
 
   resources :levels
