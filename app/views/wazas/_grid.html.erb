@@ -26,7 +26,7 @@
         master_hash.each do |waza, format_hash|
         %>
           <tr>
-          <td>
+          <td class="smaller_text">
             <strong><%= link_to format_hash[:name], 
                                 waza_display_path(waza, 
                                   stance: @stance,
@@ -39,43 +39,34 @@
               <br/><span class="small"><%= format_hash[:sub_name] %></span>
             <% end %>
           </td>
-          <td><%= link_to 'Admin', waza_path(waza) %></td>
+          <td class="smaller_text"><%= link_to 'Admin', waza_path(waza) %></td>
           <%
-          formats.each do |format|
-            videos = format_hash[:videos][format.to_s]
-            if videos && videos.any?
-              videos = videos.sort{|x,y| x.rank.id <=> y.rank.id}
-
-              video_rank_hash = Hash.new
-              videos.each do |vid|
-                video_rank_hash[vid.rank.to_s] ||= {}
-                video_rank_hash[vid.rank.to_s][:count] = 0 unless video_rank_hash[vid.rank.to_s][:count]
-                video_rank_hash[vid.rank.to_s][:count] += 1
-                video_rank_hash[vid.rank.to_s][:vid_id] = vid.id unless video_rank_hash[vid.rank.to_s][:vid_id]
-              end
-
+            formats.each do |format|
+              videos = format_hash[:videos][format.to_s]
+              if videos && videos.any?
+                videos = videos.sort{|x,y| x.rank.id <=> y.rank.id}
           %>
-                <td>
-
+                <td class="smaller_text">
+                <ul>
                   <%
-                    video_rank_hash.each do |rank, count|
+                    videos.each do |video|
                   %>
-
-                      <%= link_to "#{rank} - #{count[:count]}", 
+                    <li>
+                      <%= link_to "#{video} (#{video.rank})", 
                                 waza_display_path(waza,
-                                  video_id: count[:vid_id],
+                                  video_id: video,
                                   stance: @stance,
                                   attack: @attack,
                                   technique: @technique,
                                   format: @format,
                                   rank: @rank,
                                   search: @search) %></br>                 
-
+                    </li>
                   <% end %>
-
+                </ul>
                 </td>
             <% else %>
-                <td>0</td>
+                <td class="smaller_text"></td>
           <%
             end
           end
