@@ -2,50 +2,52 @@
   <div class="col-md-12"><h4>Filters</h4></div>
 </div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= label_tag "stance", "Stance:" %>
   </div>
-  <div class="col-md-6">
-    <%= select_tag "stance", options_for_select(Stance.order(:name).map{|s| [s.name, s.id]}, @stance), include_blank: true %>
+  <div class="col-md-7">
+    <%= select_tag "stance", options_for_select(Stance.order(:name).map{|s| [s.name, s.id]}, @stance), include_blank: true, class: 'full_width' %>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= label_tag "attack", "Attack:" %>
   </div>
-  <div class="col-md-6">
-    <%= select_tag "attack", options_for_select(Attack.order(:name).map{|s| [s.name, s.id]}, @attack), include_blank: true %>
+  <div class="col-md-7">
+    <%= select_tag "attack", options_for_select(Attack.order(:name).map{|s| [s.name, s.id]}, @attack), include_blank: true, class: 'full_width' %>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= label_tag "technique", "Technique:" %>
   </div>
-  <div class="col-md-6">
-    <%= select_tag "technique", options_for_select(Technique.order(:name).map{|s| [s.name, s.id]}, @technique), include_blank: true %>
+  <div class="col-md-7">
+    <%= select_tag "technique", options_for_select(Technique.order(:name).map{|s| [s.name, s.id]}, @technique), include_blank: true, class: 'full_width' %>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= label_tag "format", "Format:" %>
   </div>
-  <div class="col-md-6">
-    <%= select_tag "format", options_for_select(AikiFormat.all.map{|s| [s.name, s.id]}, @format), include_blank: true %>
+  <div class="col-md-7">
+    <%= select_tag "format", options_for_select(AikiFormat.all.map{|s| [s.name, s.id]}, @format), include_blank: true, class: 'full_width' %>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-2">
+  <div class="col-md-3">
     <%= label_tag "rank", "Rank:" %>
   </div>
-  <div class="col-md-6">
-    <%= select_tag "rank", options_for_select(Rank.all.map{|s| [s.name, s.id]}, @rank), include_blank: true %>
+  <div class="col-md-7">
+    <%= select_tag "rank", options_for_select(Rank.all.map{|s| [s.name, s.id]}, @rank), include_blank: true, class: 'full_width' %>
   </div>
 </div>
 <div class="row">
-  <div class="col-md-12">
-    <%= submit_tag 'Go', class: "btn", role: "button" %>
-    <% if @stance || @attack || @technique || @format || @rank || @search %>
-      <%= link_to 'Clear Search/Filters', master_grid_wazas_path , class: "btn", role: "button" %>
-    <% end %>
+  <div class="col-md-offset-3 col-md-7">
+    <span class="pull-right">
+      <% if @stance || @attack || @technique || @format || @rank || @search %>
+        <%= link_to 'Clear Search/Filters', master_grid_wazas_path , class: "btn", role: "button" %>
+      <% end %>
+      <%= submit_tag 'Go', class: "btn", role: "button" %>
+    </span>
   </div>
 </div>
