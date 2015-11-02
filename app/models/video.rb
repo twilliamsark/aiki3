@@ -78,6 +78,14 @@ class Video < ActiveRecord::Base
       waza_attribs << self.send(attrib, true).to_s.downcase
     end
 
+    if kata
+      waza_attribs << "iaido"
+    else
+      waza_attribs << "aikido"
+    end
+
+    waza_attribs << youtube_id if youtube_id
+
     waza_attribs.reject!(&:blank?)
     waza_attribs.uniq!
 
