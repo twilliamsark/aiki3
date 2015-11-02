@@ -15,6 +15,12 @@
 </p>
 
 <p>
+  <strong>Video:</strong>
+  <%= link_to image_tag("http://img.youtube.com/vi/#{@video.youtube_id}/default.jpg", class: "header_image", size: "120x90"),
+                waza_display_path(waza_id: @video.waza.id, video_id: @video.id) %>
+</p>
+
+<p>
   <strong>Aiki format:</strong>
   <%= @video.aiki_format rescue 'n/a' %>
 </p>
