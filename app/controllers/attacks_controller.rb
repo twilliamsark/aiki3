@@ -62,7 +62,7 @@ class AttacksController < AdminController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
     def set_attack
       @attack = Attack.find(params[:id])
     end

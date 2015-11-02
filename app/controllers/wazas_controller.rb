@@ -131,7 +131,7 @@ class WazasController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
     def set_waza
       @waza = Waza.find(params[:id])
     end

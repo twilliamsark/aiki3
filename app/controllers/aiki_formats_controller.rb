@@ -62,7 +62,7 @@ class AikiFormatsController < AdminController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
     def set_aiki_format
       @aiki_format = AikiFormat.find(params[:id])
     end
