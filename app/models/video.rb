@@ -86,6 +86,8 @@ class Video < ActiveRecord::Base
 
     waza_attribs << youtube_id if youtube_id
 
+    waza_attribs << self.read_attribute(:name).downcase if self.read_attribute(:name).present?
+
     waza_attribs.reject!(&:blank?)
     waza_attribs.uniq!
 
