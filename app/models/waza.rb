@@ -1,5 +1,6 @@
 class Waza < ActiveRecord::Base
   include Printable
+  include Searchable
 
   belongs_to :stance, inverse_of: :wazas
   accepts_nested_attributes_for :stance
