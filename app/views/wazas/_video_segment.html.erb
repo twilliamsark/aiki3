@@ -1,0 +1,9 @@
+<div class="pad_sides">
+  <div class="videowrapper">
+    <% if video.youtube_id %>
+      <iframe id="player" class="movie" width="560" height="315" src="<%= @ssl ? 'https' : 'http' %>://www.youtube.com/embed/<%= video.youtube_id %>?start=<%= start_seconds %>&end=<%= end_seconds %>&version=3&modestBranding=1&rel=0&showinfo=0" frameborder="1" html5="1" allowfullscreen></iframe>
+    <% else %>
+      <%= render 'wazas/video_not_uploaded' %>
+    <% end %>
+  </div>
+</div>
