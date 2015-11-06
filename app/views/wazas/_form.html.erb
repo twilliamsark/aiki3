@@ -20,6 +20,10 @@
     <%= f.select :stance_id, options_for_select(Stance.all.collect { |k| [ k.name, k.id ] }, @waza.stance_id), { include_blank: true } %>
   </div>
   <div class="field">
+    <%= f.label :entrance_id %><br>
+    <%= f.select :entrance_id, options_for_select(Entrance.all.collect { |k| [ k.name, k.id ] }, @waza.entrance_id), { include_blank: true } %>
+  </div>
+  <div class="field">
     <%= f.label :attack_id %><br>
     <%= f.select :attack_id, options_for_select(Attack.all.collect { |k| [ k.name, k.id ] }, @waza.attack_id), { include_blank: true } %>
   </div>

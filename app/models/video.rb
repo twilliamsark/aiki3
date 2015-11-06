@@ -8,6 +8,7 @@ class Video < ActiveRecord::Base
   accepts_nested_attributes_for :waza
 
   delegate :stance, to: :waza, allow_nil: true
+  delegate :entrance, to: :waza, allow_nil: true
   delegate :attack, to: :waza, allow_nil: true
   delegate :attack_height, to: :waza, allow_nil: true
   delegate :hand_applied_to, to: :waza, allow_nil: true
@@ -59,6 +60,7 @@ class Video < ActiveRecord::Base
     end
 
     single_attribs = [:stance,
+                      :entrance,
                       :attack, 
                       :attack_height,
                       :hand_applied_to,

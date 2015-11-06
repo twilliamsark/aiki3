@@ -4,6 +4,8 @@ class Waza < ActiveRecord::Base
 
   belongs_to :stance, inverse_of: :wazas
   accepts_nested_attributes_for :stance
+  belongs_to :entrance, inverse_of: :wazas
+  accepts_nested_attributes_for :entrance
   belongs_to :attack, inverse_of: :wazas
   accepts_nested_attributes_for :attack
   belongs_to :attack_height, inverse_of: :wazas
@@ -136,7 +138,8 @@ class Waza < ActiveRecord::Base
 
   def technical_name
     return @constructed if @constructed
-    @constructed = [stance, 
+    @constructed = [stance,
+                    entrance, 
                     attack, 
                     attack_height, 
                     hand_applied_to, 

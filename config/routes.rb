@@ -1,4 +1,6 @@
 Aiki3::Application.routes.draw do
+  resources :entrances
+
   resources :katas
 
   resources :styles

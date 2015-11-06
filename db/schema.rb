@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151029184134) do
+ActiveRecord::Schema.define(version: 20151106154326) do
 
   create_table "aiki_formats", force: true do |t|
     t.string   "name"
@@ -35,6 +35,13 @@ ActiveRecord::Schema.define(version: 20151029184134) do
   end
 
   create_table "directions", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "entrances", force: true do |t|
     t.string   "name"
     t.string   "description"
     t.datetime "created_at"
@@ -81,6 +88,15 @@ ActiveRecord::Schema.define(version: 20151029184134) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "sensei_notes", force: true do |t|
+    t.string   "note"
+    t.integer  "video_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sensei_notes", ["video_id"], name: "index_sensei_notes_on_video_id"
 
   create_table "senseis", force: true do |t|
     t.string   "name"
@@ -153,11 +169,13 @@ ActiveRecord::Schema.define(version: 20151029184134) do
     t.integer  "level_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "entrance_id"
   end
 
   add_index "wazas", ["attack_height_id"], name: "index_wazas_on_attack_height_id"
   add_index "wazas", ["attack_id"], name: "index_wazas_on_attack_id"
   add_index "wazas", ["direction_id"], name: "index_wazas_on_direction_id"
+  add_index "wazas", ["entrance_id"], name: "index_wazas_on_entrance_id"
   add_index "wazas", ["hand_applied_to_id"], name: "index_wazas_on_hand_applied_to_id"
   add_index "wazas", ["kaiten_id"], name: "index_wazas_on_kaiten_id"
   add_index "wazas", ["level_id"], name: "index_wazas_on_level_id"

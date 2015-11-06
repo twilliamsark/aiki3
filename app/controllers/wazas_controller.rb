@@ -147,6 +147,6 @@ class WazasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def waza_params
-      params.require(:waza).permit(:name, :stance_id, :attack_id, :attack_height_id, :hand_applied_to_id, :maka_komi_id, :technique_id, :direction_id, :kaiten_id, :sword_id, :level_id)
+      params.require(:waza).permit(:name, :stance_id, :entrance_id, :attack_id, :attack_height_id, :hand_applied_to_id, :maka_komi_id, :technique_id, :direction_id, :kaiten_id, :sword_id, :level_id)
     end
 end
