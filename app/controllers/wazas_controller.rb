@@ -16,6 +16,7 @@ class WazasController < ApplicationController
     @waza = Video.first.waza unless @waza
     @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
     @search = params[:search]
+    @include_waza_form = true
   end
 
   def remote_display
@@ -24,6 +25,10 @@ class WazasController < ApplicationController
     if @waza && @video && @video.waza.id != @waza.id
       @video = nil
     end
+  end
+
+  def remote_waza
+    @waza = Waza.find_by(id: params.fetch(:waza_id, 0)) || Waza.new
   end
 
   def master_grid
@@ -140,7 +145,7 @@ class WazasController < ApplicationController
   end
 
   private
-    
+
     def set_waza
       @waza = Waza.find(params[:id]) rescue Video.first.waza
     end

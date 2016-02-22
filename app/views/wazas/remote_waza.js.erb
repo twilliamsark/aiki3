@@ -1,0 +1,3 @@
+<% if @waza %>
+  $("#waza_form").replaceWith("<%= escape_javascript(render('videos/video_waza', waza: @waza)) %>")
+<% end %>

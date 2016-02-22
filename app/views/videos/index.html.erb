@@ -2,6 +2,8 @@
 <%= link_to 'New Video', new_video_path %>
 <br/>
 <br/>
-<%= render 'list', videos: @videos %>
+<%= will_paginate @videos %>
+  <%= render 'list', videos: @videos %>
+<%= will_paginate @videos %>
 <br/>
 <%= link_to 'New Video', new_video_path %>

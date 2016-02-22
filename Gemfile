@@ -7,6 +7,8 @@ gem 'faker', '1.1.2'
 gem 'will_paginate', '3.0.4'
 gem 'bootstrap-will_paginate'
 
+gem 'object_identifier'
+
 # in dev launch with unicorn -p 3000 -c ./config/unicorn.rb
 gem 'unicorn'
 
@@ -29,11 +31,17 @@ group :doc do
 end
 
 group :development do
-  gem 'awesome_print'
+  gem 'quiet_assets'
 end
 
 group :development, :test do
-  gem 'pry-byebug'
+  gem 'pry'
+  gem 'pry-nav'
+  gem 'pry-rails'
+  gem 'pry-stack_explorer'
+end
+
+group :development, :test do
   gem 'rspec-rails', '2.13.1'
   gem 'sqlite3'
   gem 'factory_girl_rails', '4.2.1'

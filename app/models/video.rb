@@ -27,6 +27,10 @@ class Video < ActiveRecord::Base
   belongs_to :sensei
   belongs_to :style
 
+  scope :has_waza, -> { where(arel_table[:waza_id].not_eq(nil)) }
+  scope :missing_waza, -> { where(waza: nil) }
+  scope :by_waza_name, -> { joins(:waza).order("wazas.name") }
+
   def self.search(keyword)
     results = []
     if keyword.present?
@@ -44,12 +48,26 @@ class Video < ActiveRecord::Base
     videos.map(&:waza)
   end
 
+  def update_video(video_params, waza_params={})
+    return unless video_params && !video_params.empty?
+    self.assign_attributes(video_params)
+    unless waza_params.empty?
+      waza = Waza.find_or_create_by(waza_params)
+      self.waza = waza if waza
+    end
+    save
+  end
+
   def name
     read_attribute(:name).present? ? read_attribute(:name) : waza.name rescue 'not set'
   end
 
   def format
     aiki_format.to_s rescue 'Other'
+  end
+
+  def inspect
+    "<#{identify(:id, :waza_id, :youtube_id)}(#{name})>"
   end
 
   def set_keywords
@@ -61,11 +79,11 @@ class Video < ActiveRecord::Base
 
     single_attribs = [:stance,
                       :entrance,
-                      :attack, 
+                      :attack,
                       :attack_height,
                       :hand_applied_to,
                       :maka_komi,
-                      :technique, 
+                      :technique,
                       :direction,
                       :kaiten,
                       :sword,

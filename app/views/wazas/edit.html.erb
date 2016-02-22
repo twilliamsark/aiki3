@@ -1,6 +1,9 @@
-<h1>Editing waza</h1>
-
-<%= render 'form' %>
+<%= form_for(@waza) do |waza_form| %>
+  <%= render 'form', waza: @waza, waza_form: waza_form %>
+  <div class="actions">
+    <%= waza_form.submit %>
+  </div>
+<% end %>
 
 <%= link_to 'Show', @waza %> |
 <%= link_to 'Back', wazas_path %>

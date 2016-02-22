@@ -1,0 +1,5 @@
+<div id="waza_form">
+  <%= fields_for :waza, waza do |waza_form| %>
+    <%= render 'wazas/form', waza_form: waza_form, hide_name: true %>
+  <% end %>
+</div>

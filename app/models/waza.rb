@@ -2,26 +2,38 @@ class Waza < ActiveRecord::Base
   include Printable
   include Searchable
 
+  before_save :set_waza_name
+
   belongs_to :stance, inverse_of: :wazas
   accepts_nested_attributes_for :stance
+
   belongs_to :entrance, inverse_of: :wazas
   accepts_nested_attributes_for :entrance
+
   belongs_to :attack, inverse_of: :wazas
   accepts_nested_attributes_for :attack
+
   belongs_to :attack_height, inverse_of: :wazas
   accepts_nested_attributes_for :attack_height
+
   belongs_to :hand_applied_to, inverse_of: :wazas
   accepts_nested_attributes_for :hand_applied_to
+
   belongs_to :maka_komi, inverse_of: :wazas
   accepts_nested_attributes_for :maka_komi
+
   belongs_to :technique, inverse_of: :wazas
   accepts_nested_attributes_for :technique
+
   belongs_to :direction, inverse_of: :wazas
   accepts_nested_attributes_for :direction
+
   belongs_to :kaiten, inverse_of: :wazas
   accepts_nested_attributes_for :kaiten
+
   belongs_to :sword, inverse_of: :wazas
   accepts_nested_attributes_for :sword
+
   belongs_to :level, inverse_of: :wazas
   accepts_nested_attributes_for :level
 
@@ -29,14 +41,24 @@ class Waza < ActiveRecord::Base
   has_many :aiki_formats, through: :videos
   has_many :ranks, through: :videos
 
+  scope :for_stance, ->(stance) { where(stance: stance) }
+  scope :for_entrance, ->(entrance) { where(entrance: entrance) }
+  scope :for_attack, ->(attack) { where(attack: attack) }
+  scope :for_attack_height, ->(attack_height) { where(attack_height: attack_height) }
+  scope :for_hand_applied_to, ->(hand_applied_to) { where(hand_applied_to: hand_applied_to) }
+  scope :for_maka_komi, ->(maka_komi) { where(maka_komi: maka_komi) }
+  scope :for_technique, ->(technique) { where(technique: technique) }
+  scope :for_direction, ->(direction) { where(direction: direction) }
+  scope :for_kaiten, ->(kaiten) { where(kaiten: kaiten) }
+  scope :for_sword, ->(sword) { where(sword: sword) }
+  scope :for_level, ->(level) { where(level: level) }
+
   def self.wazas_hash(wazas)
     h = {}
-
     wazas.each do |waza|
       name, whash = waza.waza_hash
       h[name] = whash
     end
-
     h
   end
 
@@ -132,24 +154,28 @@ class Waza < ActiveRecord::Base
     aiki_formats
   end
 
-  def name
-    read_attribute(:name).present? ? read_attribute(:name) : technical_name
+  def technical_name
+    @tech_name ||= [stance,
+                    entrance,
+                    attack,
+                    attack_height,
+                    hand_applied_to,
+                    maka_komi,
+                    technique,
+                    direction,
+                    kaiten,
+                    sword,
+                    level].map{|a| a.name rescue nil}.compact.join(' ')
   end
 
-  def technical_name
-    return @constructed if @constructed
-    @constructed = [stance,
-                    entrance, 
-                    attack, 
-                    attack_height, 
-                    hand_applied_to, 
-                    maka_komi, 
-                    technique, 
-                    direction, 
-                    kaiten, 
-                    sword, 
-                    level].map{|a| a.name rescue nil}.compact.join(' ')
-    @constructed
+  def short_name
+    @short_tech_name ||= [stance,
+                          technique,
+                          direction].map{|a| a.name rescue nil}.compact.join(' ')
+  end
+
+  def inspect
+    "<#{identify(:id, :technique)}(#{name})>"
   end
 
   def waza_hash
@@ -164,5 +190,9 @@ class Waza < ActiveRecord::Base
     end
 
     [name, h]
+  end
+
+  def set_waza_name
+    self.name = short_name unless name.present?
   end
 end

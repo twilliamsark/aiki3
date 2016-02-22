@@ -7,7 +7,9 @@ Aiki3::Application.routes.draw do
 
   resources :senseis
 
-  resources :videos
+  resources :videos do
+    get 'unassigned', on: :collection
+  end
 
   resources :ranks
 
@@ -17,6 +19,7 @@ Aiki3::Application.routes.draw do
     get 'master_grid', on: :collection
     get 'display'
     get 'remote_display'
+    get 'remote_waza'
     get 'rows', on: :collection
   end
 
@@ -83,7 +86,7 @@ Aiki3::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'

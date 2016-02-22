@@ -1,6 +1,11 @@
-<h1>Editing video</h1>
-
-<%= render 'form' %>
+<div class="row">
+  <div class="col-md-6">
+    <%= render 'wazas/video', video: @video %>
+  </div>
+  <div class="col-md-6">
+    <%= render 'form' %>
+  </div>
+</div>
 
 <%= link_to 'Show', @video %> |
 <%= link_to 'Back', videos_path %>
