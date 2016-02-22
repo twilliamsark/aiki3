@@ -7,5 +7,6 @@
   </div>
 </div>
 
+<%= link_to @video.youtube_id, "https://www.youtube.com/watch?v=#{@video.youtube_id}" %> |
 <%= link_to 'Show', @video %> |
 <%= link_to 'Back', videos_path %>
