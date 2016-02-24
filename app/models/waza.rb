@@ -53,6 +53,10 @@ class Waza < ActiveRecord::Base
   scope :for_sword, ->(sword) { where(sword: sword) }
   scope :for_level, ->(level) { where(level: level) }
 
+  def to_h
+    attributes.select{|k,_| !%w(id created_at updated_at name).include?(k)}
+  end
+
   def self.wazas_hash(wazas)
     h = {}
     wazas.each do |waza|
@@ -73,7 +77,7 @@ class Waza < ActiveRecord::Base
     end
 
     wazas.sort_by(&:name).each do |waza|
-      next unless waza.videos.any?
+      next unless waza.videos.has_aiki_format.any?
       next unless include_based_on?(waza, options)
       next if options[:format].present? && !include_format?(waza.aiki_formats.map(&:name), options)
       next if options[:rank].present? && !include_rank?(waza.ranks.map(&:name), options)

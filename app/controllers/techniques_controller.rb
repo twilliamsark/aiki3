@@ -4,7 +4,7 @@ class TechniquesController < AdminController
   # GET /techniques
   # GET /techniques.json
   def index
-    @techniques = Technique.all
+    @techniques = Technique.order(:name)
   end
 
   # GET /techniques/1
@@ -62,7 +62,7 @@ class TechniquesController < AdminController
   end
 
   private
-    
+
     def set_technique
       @technique = Technique.find(params[:id])
     end

@@ -7,8 +7,8 @@ class VideosController < AdminController
     @videos = Video.has_waza.by_waza_name.page(params[:page])
   end
 
-  def unassigned
-    @videos = Video.missing_waza.page(params[:page])
+  def needs_review
+    @videos = Video.needs_review.page(params[:page])
   end
 
   # GET /videos/1

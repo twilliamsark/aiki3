@@ -8,7 +8,7 @@ Aiki3::Application.routes.draw do
   resources :senseis
 
   resources :videos do
-    get 'unassigned', on: :collection
+    get 'needs_review', on: :collection
   end
 
   resources :ranks

@@ -15,6 +15,7 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+/rcs
 
 # Ignore other unneeded files.
 database.yml

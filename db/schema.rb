@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151108174907) do
+ActiveRecord::Schema.define(version: 20160223210909) do
 
   create_table "aiki_formats", force: true do |t|
     t.string   "name"
@@ -181,6 +181,7 @@ ActiveRecord::Schema.define(version: 20151108174907) do
     t.integer  "style_id"
     t.text     "keywords"
     t.integer  "kata_id"
+    t.boolean  "needs_review"
   end
 
   add_index "videos", ["aiki_format_id"], name: "index_videos_on_aiki_format_id"

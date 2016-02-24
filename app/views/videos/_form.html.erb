@@ -14,60 +14,69 @@
   <% display ||= 'video_display' %>
   <%= hidden_field_tag 'display', display %>
 
-  <h2>Video</h2>
-
   <div class="row">
-    <div class="col-md-4">
-      <div class="field">
-        <%= vid_form.label :name %><br>
-        <%= vid_form.text_field :name %>
-      </div>
+    <div class="col-md-2">
+      <h2>Video</h2>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-9"  style="padding-top: 25px;">
       <div class="field">
-        <%= vid_form.label :youtube_id %><br>
-        <%= vid_form.text_field :youtube_id %>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="field">
-        <%= vid_form.label :on_test %><br>
-        <%= vid_form.check_box :on_test %>
+        <%= vid_form.label :needs_review %>
+        <%= vid_form.check_box :needs_review %>
       </div>
     </div>
   </div>
 
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-3">
+      <div class="field">
+        <%= vid_form.label :name %><br>
+        <%= vid_form.text_field :name %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="field">
+        <%= vid_form.label :youtube_id %><br>
+        <%= vid_form.text_field :youtube_id %>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="field">
+        <%= vid_form.label :on_test %><br>
+        <%= vid_form.check_box :on_test %>
+      </div>
+    </div>
+    <div class="col-md-3">
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-2">
       <div class="field">
         <%= vid_form.label :aiki_format_id, "Format" %><br>
         <%= vid_form.select :aiki_format_id, options_for_select(AikiFormat.all.collect { |k| [ k.name, k.id ] }, @video.aiki_format_id), { include_blank: true } %>
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="field">
         <%= vid_form.label :kata_id, "Kata" %><br>
         <%= vid_form.select :kata_id, options_for_select(Kata.all.collect { |k| [ k.name, k.id ] }, @video.kata_id), { include_blank: true } %>
       </div>
     </div>
 
-    <div class="col-md-4">
+    <div class="col-md-3">
       <div class="field">
         <%= vid_form.label :style_id %><br>
         <%= vid_form.select :style_id, options_for_select(Style.all.collect { |k| [ k.name, k.id ] }, @video.style_id), { include_blank: true } %>
       </div>
     </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="field">
         <%= vid_form.label :sensei_id %><br>
         <%= vid_form.select :sensei_id, options_for_select(Sensei.all.collect { |k| [ k.name, k.id ] }, @video.sensei_id), { include_blank: true } %>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-2">
       <div class="field">
         <%= vid_form.label :rank_id %><br>
         <%= vid_form.select :rank_id, options_for_select(Rank.all.collect { |k| [ k.name, k.id ] }, @video.rank_id), { include_blank: true } %>
@@ -80,24 +89,6 @@
       waza = @video.waza ||= @video.build_waza
       # binding.pry
   %>
-
-<script type="text/javascript">
-jQuery(function($) {
-  $("#waza_list").change(function() {
-    var state = $('select#waza_list :selected').val();
-    if(state == "") state="0";
-    jQuery.getScript('/wazas/' + state + '/remote_waza')
-    return false;
-  });
-})
-</script>
-
-    <h2>Waza</h2>
-    <%= select_tag "waza_list",
-      options_for_select(Waza.order(:stance_id, :technique_id, :direction_id).collect {|k| [k.technical_name, k.id] },
-                         waza.id),
-      { include_blank: true } %>
-
     <%= render 'videos/video_waza', waza: waza %>
   <% end %>
 

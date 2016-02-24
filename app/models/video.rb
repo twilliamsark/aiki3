@@ -28,7 +28,10 @@ class Video < ActiveRecord::Base
   belongs_to :style
 
   scope :has_waza, -> { where(arel_table[:waza_id].not_eq(nil)) }
+  scope :has_aiki_format, -> { where(arel_table[:aiki_format_id].not_eq(nil)) }
   scope :missing_waza, -> { where(waza: nil) }
+  scope :missing_aiki_format, -> { where(aiki_format: nil) }
+  scope :needs_review, -> { where( arel_table[:needs_review].eq(true).or(arel_table[:aiki_format_id].eq(nil).or(arel_table[:waza_id].eq(nil))) ) }
   scope :by_waza_name, -> { joins(:waza).order("wazas.name") }
 
   def self.search(keyword)
@@ -52,7 +55,7 @@ class Video < ActiveRecord::Base
     return unless video_params && !video_params.empty?
     self.assign_attributes(video_params)
     unless waza_params.empty?
-      waza = Waza.find_or_create_by(waza_params)
+      waza = Waza.find_or_create_by(Waza.new(waza_params).to_h)
       self.waza = waza if waza
     end
     save
@@ -67,7 +70,7 @@ class Video < ActiveRecord::Base
   end
 
   def inspect
-    "<#{identify(:id, :waza_id, :youtube_id)}(#{name})>"
+    "<#{identify(:id, :waza_id, :youtube_id)}(#{name})>#{needs_review? ? ' Needs Review' : ''}"
   end
 
   def set_keywords

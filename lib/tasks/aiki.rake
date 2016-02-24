@@ -1,0 +1,2 @@
+namespace :aiki do
+end
