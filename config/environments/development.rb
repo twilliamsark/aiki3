@@ -1,3 +1,17 @@
+EMAIL_ADDR = 'twilliamsark@gmail.com'
+DEV_EMAIL = 'twilliamsark+yurusu@gmail.com'
+EMAIL_PWD = ENV['EMAIL_KEY']
+SEND_EMAILS = true
+VIDEOS_ONLINE = true
+FILTERING = true
+ALLOW_SEARCH = true
+SHOW_MENU = true
+SHOW_DEBUG = true
+CHECK_YOUTUBE = false
+SHOW_ADMIN_FIELDS = true
+DEVELOPMENT_REQUIRE_LOGIN = true
+DEVELOPMENT_LOGIN = 'example@example.com'
+
 Aiki3::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 

@@ -1,4 +1,5 @@
 class WazasController < ApplicationController
+  before_action :signed_in_user
   before_action :set_waza, only: [:show, :edit, :update, :destroy]
 
   def rows

@@ -1,0 +1,32 @@
+<% provide(:title, "Sign in") %>
+<div class="row">
+  <div class="col-md-12 center">
+    <h1>Sign in</h1>
+  </div>
+</div>
+<%= form_for(:session, url: sessions_path, html: { class: "input_form" }) do |f| %>
+  <div class="row">
+    <div class="col-md-12"><%= render 'shared/error_messages', object: f.object %></div>
+  </div>
+  <div class="row pad_bottom">
+    <div class="col-md-1 col-md-offset-2">
+      <%= f.label :email %>
+    </div>
+    <div class="col-md-9">
+      <%= f.email_field :email %>
+    </div>
+  </div>
+  <div class="row pad_bottom">
+    <div class="col-md-1 col-md-offset-2">
+      <%= f.label :password %>
+    </div>
+    <div class="col-md-9">
+      <%= f.password_field :password %>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-9 col-md-offset-3">
+      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+    </div>
+  </div>
+<% end %>

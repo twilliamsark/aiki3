@@ -1,4 +1,5 @@
 class VideosController < AdminController
+  before_action :signed_in_user
   before_action :set_video, only: [:show, :edit, :update, :destroy]
 
   # GET /videos

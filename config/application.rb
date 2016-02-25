@@ -5,7 +5,7 @@ require 'rails/all'
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env)
-WillPaginate.per_page = 10
+WillPaginate.per_page = 20
 
 module Aiki3
   class Application < Rails::Application

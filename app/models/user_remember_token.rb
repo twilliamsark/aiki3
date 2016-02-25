@@ -22,6 +22,7 @@ class UserRememberToken < ActiveRecord::Base
 
   def self.sign_in(user, options={})
     options.reverse_merge!(expires_at: nil, ip: nil)
+    options[:ip] = options[:ip].to_s unless options[:ip].nil?
     urt = user.user_remember_tokens.create(options)
     urt.token
   end
