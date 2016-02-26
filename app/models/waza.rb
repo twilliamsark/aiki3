@@ -53,6 +53,8 @@ class Waza < ActiveRecord::Base
   scope :for_sword, ->(sword) { where(sword: sword) }
   scope :for_level, ->(level) { where(level: level) }
 
+  validates :technique, presence: true
+
   def to_h
     attributes.select{|k,_| !%w(id created_at updated_at name).include?(k)}
   end

@@ -31,8 +31,11 @@ class Video < ActiveRecord::Base
   scope :has_aiki_format, -> { where(arel_table[:aiki_format_id].not_eq(nil)) }
   scope :missing_waza, -> { where(waza: nil) }
   scope :missing_aiki_format, -> { where(aiki_format: nil) }
-  scope :needs_review, -> { where( arel_table[:needs_review].eq(true).or(arel_table[:aiki_format_id].eq(nil).or(arel_table[:waza_id].eq(nil))) ) }
+  scope :needs_review, -> { where( arel_table[:needs_review].eq(true).or(arel_table[:aiki_format_id].eq(nil).or(arel_table[:waza_id].eq(nil).or(arel_table[:youtube_id].eq(nil)))) ) }
   scope :by_waza_name, -> { joins(:waza).order("wazas.name") }
+
+  validates :aiki_format, presence: true
+  validates :youtube_id, presence: true
 
   def self.search(keyword)
     results = []
