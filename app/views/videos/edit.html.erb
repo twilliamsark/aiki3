@@ -3,11 +3,13 @@
     <%= render 'wazas/video', video: @video %>
   </div>
 </div>
-<div class="row">
-  <div class="col-md-10 col-md-offset-1">
-    <%= render 'form' %>
+<% if can?(:update, :video) %>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <%= render 'form' %>
+    </div>
   </div>
-</div>
+<% end %>
 
 <%= link_to @video.youtube_id, "https://www.youtube.com/watch?v=#{@video.youtube_id}" %> |
 <%= link_to 'Show', @video %> |

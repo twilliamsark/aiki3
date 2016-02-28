@@ -85,7 +85,7 @@
   </div>
 
   <%
-    if @include_waza_form
+    if @include_waza_form && can?(:update, :waza)
       waza = @video.waza ||= @video.build_waza
       # binding.pry
   %>

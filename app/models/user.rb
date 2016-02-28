@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  rolify
   before_create :create_remember_token
   before_save { email.downcase! }
 
@@ -87,7 +88,7 @@ class User < ActiveRecord::Base
 
   def to_h
     # {id: id, email: email, admin: admin?, demo: demo?, regular: regular?}
-    h = attributes.keys.select do |k| 
+    h = attributes.keys.select do |k|
       k != "created_at" && k != "updated_at" && k != "current_sign_in_at" && k != "last_sign_in_at" && k != "password_reset_sent_at" && k != "demo_user_expires_on"
     end.map{|k| "#{k}: #{k}"}.join(', ')
     eval("{#{h}}")
@@ -101,6 +102,10 @@ class User < ActiveRecord::Base
   def send_password_reset
     set_password_reset_token
     UserMailer.password_reset(self).deliver
+  end
+
+  def inspect
+    "<#{identify(:id)}(#{email})>[#{roles.map(&:name).join(', ')}]"
   end
 
   private
