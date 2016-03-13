@@ -1,6 +1,6 @@
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding AikiFormat
 # Written with the command:
 #
@@ -19,7 +19,7 @@ AikiFormat.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Attack
 # Written with the command:
 #
@@ -35,7 +35,7 @@ Attack.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding AttackHeight
 # Written with the command:
 #
@@ -49,7 +49,7 @@ AttackHeight.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Direction
 # Written with the command:
 #
@@ -62,30 +62,35 @@ Direction.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Entrance
 # Written with the command:
 #
 #   /Users/todd/.rvm/gems/ruby-2.1.3@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Entrance.seed(:id,
-  {:id=>1, :name=>"Gyakuhanmi Entrance", :description=>""}
+  {:id=>1, :name=>"Gyakuhanmi Entrance", :description=>""},
+  {:id=>2, :name=>"Aihanmi Entrance", :description=>""},
+  {:id=>3, :name=>"Sword Entrance", :description=>""},
+  {:id=>4, :name=>"Aikiki Entrance", :description=>""}
 )
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding HandAppliedTo
 # Written with the command:
 #
 #   /Users/todd/.rvm/gems/ruby-2.1.3@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
-HandAppliedTo.seed(:id
+HandAppliedTo.seed(:id,
+  {:id=>1, :name=>"Attacking Hand", :description=>"Apply technique to attacking hand"},
+  {:id=>2, :name=>"Grabbing Hand", :description=>"Apply technique to grabbing hand"}
 )
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Kaiten
 # Written with the command:
 #
@@ -98,7 +103,7 @@ Kaiten.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Kata
 # Written with the command:
 #
@@ -125,18 +130,21 @@ Kata.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Level
 # Written with the command:
 #
 #   /Users/todd/.rvm/gems/ruby-2.1.3@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
-Level.seed(:id
+Level.seed(:id,
+  {:id=>1, :name=>"1", :description=>""},
+  {:id=>2, :name=>"2", :description=>""},
+  {:id=>3, :name=>"3", :description=>""}
 )
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding MakaKomi
 # Written with the command:
 #
@@ -149,7 +157,7 @@ MakaKomi.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Rank
 # Written with the command:
 #
@@ -169,7 +177,7 @@ Rank.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Role
 # Written with the command:
 #
@@ -185,7 +193,7 @@ Role.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Sensei
 # Written with the command:
 #
@@ -197,7 +205,7 @@ Sensei.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Stance
 # Written with the command:
 #
@@ -210,7 +218,7 @@ Stance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Style
 # Written with the command:
 #
@@ -224,7 +232,7 @@ Style.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Sword
 # Written with the command:
 #
@@ -237,7 +245,7 @@ Sword.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Technique
 # Written with the command:
 #
@@ -265,7 +273,7 @@ Technique.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding User
 # Written with the command:
 #
@@ -300,7 +308,7 @@ User.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding UserRememberToken
 # Written with the command:
 #
@@ -319,7 +327,7 @@ UserRememberToken.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Video
 # Written with the command:
 #
@@ -454,7 +462,7 @@ Video.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 22:36:06 -0600
+# Date: 2016-03-12 23:06:45 -0600
 # Seeding Waza
 # Written with the command:
 #
