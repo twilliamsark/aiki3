@@ -116,12 +116,19 @@ class Waza < ActiveRecord::Base
 
       master[waza][:name] = waza_name
       waza.videos.each do |video|
+        next if video.needs_review?
+        next if options[:format] && options[:format] != video.format
+        next if options[:rank] && options[:rank] != video.rank.name
+        next if options[:stance] && options[:stance] != video.stance.name
+        next if options[:attack] && options[:attack] != video.attack.name
+        next if options[:technique] && options[:technique] != video.technique.name
         master[waza][:videos] ||= Hash.new
         master[waza][:videos][video.format] ||= Array.new
         master[waza][:videos][video.format] << video
       end
-
+      master.delete(waza) if master[waza][:videos].nil? || master[waza][:videos].empty?
     end
+
     master
   end
 
