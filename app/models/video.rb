@@ -73,7 +73,13 @@ class Video < ActiveRecord::Base
   end
 
   def inspect
-    "<#{identify(:id, :waza_id, :youtube_id)}(#{name})>#{needs_review? ? ' Needs Review' : ''}"
+    labels = [
+      name,
+      rank ? rank.name : 'Un-Ranked',
+      format,
+      needs_review? ? 'Needs Review' : nil
+    ].compact.join(' / ')
+    "<#{identify(:id, :waza_id, :youtube_id)} #{labels}"
   end
 
   def set_keywords
