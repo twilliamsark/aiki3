@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby '2.2.4'
 
 gem 'rails', '4.1.0'
 gem 'bootstrap-sass', '~> 3.1.1.1'
@@ -26,7 +27,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'rr'
 gem 'seed-fu'
 
-gem 'activeadmin', github: 'gregbell/active_admin'
+# gem 'activeadmin', github: 'gregbell/active_admin'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.

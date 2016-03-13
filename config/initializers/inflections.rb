@@ -17,4 +17,5 @@
 
 ActiveSupport::Inflector.inflections do |inflect|
   inflect.irregular 'kata', 'katas'
+  inflect.acronym 'API'
 end
