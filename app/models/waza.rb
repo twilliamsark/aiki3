@@ -123,6 +123,7 @@ class Waza < ActiveRecord::Base
         next if options[:stance] && options[:stance] != video.stance.name
         next if options[:attack] && options[:attack] != video.attack.name
         next if options[:technique] && options[:technique] != video.technique.name
+        next if options[:only_on_test] && !video.on_test?
         master[waza][:videos] ||= Hash.new
         master[waza][:videos][video.format] ||= Array.new
         master[waza][:videos][video.format] << video

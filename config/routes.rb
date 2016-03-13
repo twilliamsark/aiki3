@@ -21,6 +21,7 @@ Aiki3::Application.routes.draw do
 
   resources :wazas do
     get 'master_grid', on: :collection
+    get 'show_master_grid', on: :collection
     get 'display'
     get 'remote_display'
     get 'remote_waza'
@@ -47,7 +48,7 @@ Aiki3::Application.routes.draw do
 
   resources :stances
 
-  root 'wazas#master_grid'
+  root 'wazas#show_master_grid'
   # root 'wazas#display'
 
   # The priority is based upon order of creation: first created -> highest priority.

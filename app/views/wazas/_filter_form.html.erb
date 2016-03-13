@@ -42,10 +42,18 @@
   </div>
 </div>
 <div class="row pad_top_bottom">
+  <div class="col-md-3">
+    <%= label_tag "on_test", "Only On Test:" %>
+  </div>
+  <div class="col-md-2" style="padding-left: 0px; margin-left: -5px;">
+    <%= check_box_tag "only_on_test", '1', @only_on_test %>
+  </div>
+</div>
+<div class="row pad_top_bottom">
   <div class="col-md-offset-3 col-md-7">
     <span class="pull-right">
-      <% if @stance || @attack || @technique || @format || @rank || @search %>
-        <%= link_to 'Clear Search/Filters', master_grid_wazas_path , class: "btn", role: "button" %>
+      <% if @stance || @attack || @technique || @format || @rank || @search || @only_on_test %>
+        <%= link_to 'Clear Search/Filters', show_master_grid_wazas_path , class: "btn", role: "button" %>
       <% end %>
       <%= submit_tag 'Go', class: "btn", role: "button" %>
     </span>

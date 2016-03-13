@@ -32,6 +32,11 @@ class WazasController < ApplicationController
     @waza = Waza.find_by(id: params.fetch(:waza_id, 0)) || Waza.new
   end
 
+  def show_master_grid
+    @master_hash = {}
+    render :master_grid
+  end
+
   def master_grid
     options = {}
     if params[:stance].present?
@@ -78,6 +83,8 @@ class WazasController < ApplicationController
       @search = params[:search]
       options[:search] = params[:search]
     end
+
+    @only_on_test = options[:only_on_test] = params.fetch("only_on_test", "0") == "1" ? true : false
 
     @master_hash = Waza.master_hash(options)
   end
