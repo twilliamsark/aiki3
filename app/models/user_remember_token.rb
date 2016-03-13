@@ -1,4 +1,6 @@
 class UserRememberToken < ActiveRecord::Base
+  include SeedFuSerializeable
+
   belongs_to :user, inverse_of: :user_remember_tokens
 
   validates_presence_of :remember_token

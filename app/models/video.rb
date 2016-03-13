@@ -1,6 +1,7 @@
 #  http://img.youtube.com/vi/C5IWhAqQYfg/default.jpg
 class Video < ActiveRecord::Base
   include Printable
+  include SeedFuSerializeable
 
   after_save :set_keywords
 

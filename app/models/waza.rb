@@ -1,6 +1,7 @@
 class Waza < ActiveRecord::Base
   include Printable
   include Searchable
+  include SeedFuSerializeable
 
   before_save :set_waza_name
 
