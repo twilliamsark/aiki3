@@ -35,8 +35,16 @@ class Ability
       can :manage, :all
     elsif user.has_role? :sensei
       can :manage, :all
+      cannot :create, :video
+      cannot :create, :waza
+      cannot :update, :video
+      cannot :update, :waza
     elsif user.has_role? :sempi
       can :manage, :all
+      cannot :create, :video
+      cannot :create, :waza
+      cannot :update, :video
+      cannot :update, :waza
     else
       can :read, :video
       can :read, :waza

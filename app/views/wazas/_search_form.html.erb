@@ -1,7 +1,7 @@
-<div class="row">
+<div class="row pad_top_bottom">
   <div class="col-md-12"><h4>Search</h4></div>
 </div>
-<div class="row">
+<div class="row pad_top_bottom">
   <div class="col-md-2">
     <%= label_tag "search", "Search:" %>
   </div>
@@ -9,7 +9,7 @@
     <%= text_field_tag 'search', @search, placeholder: 'Enter search term...', class: 'full_width' %>
   </div>
 </div>
-<div class="row">
+<div class="row pad_top_bottom">
   <div class="col-md-offset-2 col-md-9">
     <span class="pull-right">
       <%= submit_tag 'Go', class: "btn", role: "button" %>

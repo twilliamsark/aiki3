@@ -11,7 +11,7 @@
 
 <% formats = AikiFormat.all %>
 
-<div class="row">
+<div class="row pad_left_right">
   <div class="col-md-12">
     <table class="table table-striped table-bordered">
       <thead class="rank_row">
@@ -27,8 +27,8 @@
         %>
           <tr>
           <td class="smaller_text">
-            <strong><%= link_to format_hash[:name], 
-                                waza_display_path(waza, 
+            <strong><%= link_to format_hash[:name],
+                                waza_display_path(waza,
                                   stance: @stance,
                                   attack: @attack,
                                   technique: @technique,
@@ -52,7 +52,7 @@
                     videos.each do |video|
                   %>
                     <li>
-                      <%= link_to "#{video} (#{video.rank})", 
+                      <%= link_to "#{video} (#{video.rank})",
                                 waza_display_path(waza,
                                   video_id: video,
                                   stance: @stance,
@@ -60,7 +60,7 @@
                                   technique: @technique,
                                   format: @format,
                                   rank: @rank,
-                                  search: @search) %></br>                 
+                                  search: @search) %></br>
                     </li>
                   <% end %>
                 </ul>

@@ -33,6 +33,10 @@ input:not([type="submit"]) {
   // margin-bottom: 15px;
 }
 
+.input_inline {
+  display: inline-flex;
+}
+
 input[type="submit"] {
   margin-bottom: 5px;
 }
@@ -77,6 +81,10 @@ input.no_margin_bottom {
   padding: 10px 5px 0px;
 }
 
+.pad_all {
+  padding: 5px 5px 5px 5px;
+}
+
 .pad_sides {
   padding: 0 5px;
 }
@@ -100,6 +108,11 @@ input.no_margin_bottom {
 .pad_top_bottom {
   padding-top: 5px;
   padding-bottom: 5px;
+}
+
+.pad_left_right {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .pull_up {

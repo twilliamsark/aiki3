@@ -14,19 +14,19 @@
   <% display ||= 'video_display' %>
   <%= hidden_field_tag 'display', display %>
 
-  <div class="row">
+  <div class="row pad_top_bottom">
     <div class="col-md-2">
       <h2>Video</h2>
     </div>
-    <div class="col-md-9"  style="padding-top: 25px;">
-      <div class="field">
+    <div class="col-md-3"  style="padding-top: 25px;">
+      <div class="field input_inline">
         <%= vid_form.label :needs_review %>
         <%= vid_form.check_box :needs_review %>
       </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row pad_top_bottom">
     <div class="col-md-3">
       <div class="field">
         <%= vid_form.label :name %><br>
@@ -40,7 +40,7 @@
       </div>
     </div>
     <div class="col-md-3">
-      <div class="field">
+      <div class="field input_inline">
         <%= vid_form.label :on_test %><br>
         <%= vid_form.check_box :on_test %>
       </div>
@@ -49,7 +49,7 @@
     </div>
   </div>
 
-  <div class="row">
+  <div class="row pad_top_bottom">
     <div class="col-md-2">
       <div class="field">
         <%= vid_form.label :aiki_format_id, "Format" %><br>
@@ -87,7 +87,6 @@
   <%
     if @include_waza_form && can?(:update, :waza)
       waza = @video.waza ||= @video.build_waza
-      # binding.pry
   %>
     <%= render 'videos/video_waza', waza: waza %>
   <% end %>
