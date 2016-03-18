@@ -7,7 +7,7 @@
 
       if !@video
         format = @format ? @format : vid_format
-        @video = @waza.videos.where(aiki_format: format).first rescue nil
+        @video = @waza.videos.where(aiki_format: format).order(primary: :desc).order(:rank_id).first rescue nil
       end
 
       if @video

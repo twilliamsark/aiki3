@@ -23,8 +23,10 @@ class WazasController < ApplicationController
   def remote_display
     @waza = Waza.find_by(id: params[:waza_id]) rescue nil if params[:waza_id]
     @video = Video.find_by(id: params[:video_id]) rescue nil if params[:video_id]
+    @include_waza_form = true
     if @waza && @video && @video.waza.id != @waza.id
       @video = nil
+      @include_waza_form = false
     end
   end
 

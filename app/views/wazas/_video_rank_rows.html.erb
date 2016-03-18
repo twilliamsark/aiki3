@@ -2,7 +2,7 @@
   videos = waza.videos.where(aiki_format: video.aiki_format)
   ranks = videos.map(&:rank).sort_by(&:id).uniq
 
-  iaido = video.iaido? 
+  iaido = video.iaido?
 
   ranks.each do |rank|
 %>
@@ -25,10 +25,7 @@
         </thead>
         <tbody>
 
-          <% videos.each do |vid| %>
-            <%
-              next unless vid.rank.id == rank.id
-            %>
+          <% videos.where(rank: rank).order(primary: :desc).order(on_test: :desc).each do |vid| %>
             <tr>
               <td>
                 <% if vid.id == video.id %>
@@ -47,7 +44,7 @@
                 <%= vid.format %>
               </td>
               <td>
-                <%= video.on_test? ? 'Yes' : 'No' %>
+                <%= vid.on_test? ? 'Yes' : 'No' %>
               </td>
               <td>
                 <%= vid.sensei rescue '' %>

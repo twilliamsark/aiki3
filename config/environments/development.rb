@@ -9,7 +9,7 @@ SHOW_MENU = true
 SHOW_DEBUG = true
 CHECK_YOUTUBE = false
 SHOW_ADMIN_FIELDS = true
-DEVELOPMENT_REQUIRE_LOGIN = false
+DEVELOPMENT_REQUIRE_LOGIN = true
 DEVELOPMENT_LOGIN = 'example@example.com'
 
 Aiki3::Application.configure do

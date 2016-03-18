@@ -93,6 +93,7 @@ class VideosController < AdminController
                                     :rank_id,
                                     :on_test,
                                     :needs_review,
+                                    :primary,
                                     :youtube_id).reject!{|k,v| k != "name" && v.blank?}
     end
 
