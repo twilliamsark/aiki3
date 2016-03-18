@@ -5,6 +5,12 @@
   <%= @video.name rescue 'n/a' %>
 </p>
 
+<% if @video.needs_review %>
+<p>
+  <strong>Needs Review</strong>
+</p>
+<% end %>
+
 <p>
   <strong>Waza:</strong>
   <% if @video.waza %>
