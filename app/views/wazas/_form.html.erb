@@ -22,8 +22,9 @@
     </div>
     <div class="col-md-9"  style="padding-top: 25px;">
       <div class="field">
+        <%= label_tag "waza_list", "Pre-Populate with:" %>
         <%= select_tag "waza_list",
-      options_for_select(Waza.order(:stance_id, :technique_id, :direction_id).collect {|k| [k.technical_name, k.id] },
+      options_for_select(Waza.order(:stance_id, :attack_id, :technique_id, :direction_id).collect {|k| [k.technical_name, k.id] },
                          waza.id),
       { include_blank: true } %>
       </div>
@@ -57,31 +58,31 @@
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :stance_id %><br>
-        <%= waza_form.select :stance_id, options_for_select(Stance.all.collect { |k| [ k.name, k.id ] }, waza.stance_id), { include_blank: true } %>
+        <%= waza_form.select :stance_id, options_for_select(Stance.order(:name).collect { |k| [ k.name, k.id ] }, waza.stance_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-3">
       <div class="field">
         <%= waza_form.label :entrance_id %><br>
-        <%= waza_form.select :entrance_id, options_for_select(Entrance.all.collect { |k| [ k.name, k.id ] }, waza.entrance_id), { include_blank: true } %>
+        <%= waza_form.select :entrance_id, options_for_select(Entrance.order(:name).collect { |k| [ k.name, k.id ] }, waza.entrance_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :attack_id %><br>
-        <%= waza_form.select :attack_id, options_for_select(Attack.all.collect { |k| [ k.name, k.id ] }, waza.attack_id), { include_blank: true } %>
+        <%= waza_form.select :attack_id, options_for_select(Attack.order(:name).collect { |k| [ k.name, k.id ] }, waza.attack_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :attack_height_id %><br>
-        <%= waza_form.select :attack_height_id, options_for_select(AttackHeight.all.collect { |k| [ k.name, k.id ] }, waza.attack_height_id), { include_blank: true } %>
+        <%= waza_form.select :attack_height_id, options_for_select(AttackHeight.order(:name).collect { |k| [ k.name, k.id ] }, waza.attack_height_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :hand_applied_to_id %><br>
-        <%= waza_form.select :hand_applied_to_id, options_for_select(HandAppliedTo.all.collect { |k| [ k.name, k.id ] }, waza.hand_applied_to_id), { include_blank: true } %>
+        <%= waza_form.select :hand_applied_to_id, options_for_select(HandAppliedTo.order(:name).collect { |k| [ k.name, k.id ] }, waza.hand_applied_to_id), { include_blank: true } %>
       </div>
     </div>
   </div>
@@ -90,31 +91,31 @@
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :maka_komi_id %><br>
-        <%= waza_form.select :maka_komi_id, options_for_select(MakaKomi.all.collect { |k| [ k.name, k.id ] }, waza.maka_komi_id), { include_blank: true } %>
+        <%= waza_form.select :maka_komi_id, options_for_select(MakaKomi.order(:name).collect { |k| [ k.name, k.id ] }, waza.maka_komi_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-3">
       <div class="field">
         <%= waza_form.label :technique_id %><br>
-        <%= waza_form.select :technique_id, options_for_select(Technique.all.collect { |k| [ k.name, k.id ] }, waza.technique_id), { include_blank: true } %>
+        <%= waza_form.select :technique_id, options_for_select(Technique.order(:name).collect { |k| [ k.name, k.id ] }, waza.technique_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :direction_id %><br>
-        <%= waza_form.select :direction_id, options_for_select(Direction.all.collect { |k| [ k.name, k.id ] }, waza.direction_id), { include_blank: true } %>
+        <%= waza_form.select :direction_id, options_for_select(Direction.order(:name).collect { |k| [ k.name, k.id ] }, waza.direction_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :kaiten_id %><br>
-        <%= waza_form.select :kaiten_id, options_for_select(Kaiten.all.collect { |k| [ k.name, k.id ] }, waza.kaiten_id), { include_blank: true } %>
+        <%= waza_form.select :kaiten_id, options_for_select(Kaiten.order(:name).collect { |k| [ k.name, k.id ] }, waza.kaiten_id), { include_blank: true } %>
       </div>
     </div>
     <div class="col-md-2">
       <div class="field">
         <%= waza_form.label :sword_id %><br>
-        <%= waza_form.select :sword_id, options_for_select(Sword.all.collect { |k| [ k.name, k.id ] }, waza.sword_id), { include_blank: true } %>
+        <%= waza_form.select :sword_id, options_for_select(Sword.order(:name).collect { |k| [ k.name, k.id ] }, waza.sword_id), { include_blank: true } %>
       </div>
     </div>
   </div>
