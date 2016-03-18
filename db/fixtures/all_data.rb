@@ -1,10 +1,10 @@
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding AikiFormat
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 AikiFormat.seed(:id,
   {:id=>1, :name=>"Tiado", :description=>"Hand vs hand"},
@@ -19,11 +19,11 @@ AikiFormat.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Attack
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Attack.seed(:id,
   {:id=>1, :name=>"Katatedori", :description=>"One hand grip on one wrist"},
@@ -35,11 +35,11 @@ Attack.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding AttackHeight
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 AttackHeight.seed(:id,
   {:id=>1, :name=>"Jodan", :description=>"Upper level, neck and above"},
@@ -49,11 +49,11 @@ AttackHeight.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Direction
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Direction.seed(:id,
   {:id=>1, :name=>"Omote", :description=>"Finishing move is across the front"},
@@ -62,26 +62,27 @@ Direction.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Entrance
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Entrance.seed(:id,
   {:id=>1, :name=>"Gyakuhanmi Entrance", :description=>""},
   {:id=>2, :name=>"Aihanmi Entrance", :description=>""},
   {:id=>3, :name=>"Sword Entrance", :description=>""},
-  {:id=>4, :name=>"Aikiki Entrance", :description=>""}
+  {:id=>4, :name=>"Aikiki Entrance", :description=>""},
+  {:id=>5, :name=>"Zempo Gedan Kushushi", :description=>"Quick gyakuhanmi entrance (used with Oyo)"}
 )
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding HandAppliedTo
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 HandAppliedTo.seed(:id,
   {:id=>1, :name=>"Attacking Hand", :description=>"Apply technique to attacking hand"},
@@ -90,11 +91,11 @@ HandAppliedTo.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Kaiten
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Kaiten.seed(:id,
   {:id=>1, :name=>"Soto Kaiten", :description=>"Rotate out"},
@@ -103,11 +104,11 @@ Kaiten.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Kata
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Kata.seed(:id,
   {:id=>1, :name=>"Kata 1"},
@@ -130,11 +131,11 @@ Kata.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Level
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Level.seed(:id,
   {:id=>1, :name=>"1", :description=>""},
@@ -144,11 +145,11 @@ Level.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding MakaKomi
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 MakaKomi.seed(:id,
   {:id=>1, :name=>"Uchi Makakomi", :description=>"Wrap inside"},
@@ -157,11 +158,11 @@ MakaKomi.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Rank
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Rank.seed(:id,
   {:id=>1, :name=>"5th Kyu", :description=>"Goyku"},
@@ -177,11 +178,11 @@ Rank.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Role
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Role.seed(:id,
   {:id=>1, :name=>"superuser", :resource_id=>nil, :resource_type=>nil},
@@ -193,11 +194,11 @@ Role.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Sensei
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Sensei.seed(:id,
   {:id=>1, :name=>"John Bollinger"}
@@ -205,11 +206,11 @@ Sensei.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Stance
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Stance.seed(:id,
   {:id=>1, :name=>"Aihanmi", :description=>"Mirroring stance (i.e. uke and nage have same foot forward)"},
@@ -218,11 +219,11 @@ Stance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Style
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Style.seed(:id,
   {:id=>1, :name=>"Tachi Waza", :description=>"Standing technique"},
@@ -232,11 +233,11 @@ Style.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Sword
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Sword.seed(:id,
   {:id=>1, :name=>"Sword In", :description=>"Sword sheathed"},
@@ -245,11 +246,11 @@ Sword.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:45 -0500
 # Seeding Technique
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Technique.seed(:id,
   {:id=>1, :name=>"Ikkyo", :description=>"Wrist technique, generally palm down"},
@@ -268,51 +269,17 @@ Technique.seed(:id,
   {:id=>14, :name=>"Kokyuho", :description=>"Breath Exercise"},
   {:id=>15, :name=>"Kokyunage", :description=>"Breath thow"},
   {:id=>16, :name=>"Udekimenage", :description=>"pressure to the underside of the elbow"},
-  {:id=>17, :name=>"Yonkyo", :description=>"Wrist press, pressure is applied against Uke's forearm"}
+  {:id=>17, :name=>"Yonkyo", :description=>"Wrist press, pressure is applied against Uke's forearm"},
+  {:id=>18, :name=>"Iriminage", :description=>"Entering Throw"}
 )
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
-# Seeding User
-# Written with the command:
-#
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
-#
-User.seed(:id,
-  {:id=>1, :email=>"example@example.com", :password_digest=>"$2a$10$Xk9BdGfh8.4C./hgZ4YaN.K.x9mAmSkLrAnZoMR5BjrN0XtZTiThu", :remember_token=>"ef6f4540c756107fa4a6b1857e7a3615fc03ae1a", :admin=>true, :sign_in_count=>9, :current_sign_in_ip=>"127.0.0.1", :last_sign_in_ip=>"127.0.0.1", :demo=>nil, :cotu=>false, :reviewer=>nil, :password_reset_token=>nil},
-  {:id=>2, :email=>"aikido@aikipeace.com", :password_digest=>"$2a$10$PLJu3cb1WXsQKd1mwmSSne/a1b2wjxXhLFvB9.JFTDO.w7vq1H/l2", :remember_token=>"74c035fafb2a19d86f0c11ab78fb9a51ad50adaf", :admin=>true, :sign_in_count=>8, :current_sign_in_ip=>"184.62.25.210", :last_sign_in_ip=>"70.195.199.32", :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"8KASkUUz8JWWaAvvojmqKA"},
-  {:id=>3, :email=>"guest1@aikipeace.com", :password_digest=>"$2a$10$kUdn4ADbrPXLoRyfeHFR9.kOXhgnTjY0BV45w.0QeqgGIZ7TgSCYa", :remember_token=>"e1de62126a4673a76ead64f08c48a7548db0b42d", :admin=>false, :sign_in_count=>10, :current_sign_in_ip=>"70.121.211.146", :last_sign_in_ip=>"70.195.201.170", :demo=>true, :cotu=>false, :reviewer=>false, :password_reset_token=>nil},
-  {:id=>4, :email=>"yurusu.aikikai@gmail.com", :password_digest=>"$2a$10$5KlNz7S/JgKLH1kES1koQ.qa2lka8dZNFqMuFedDPd/.K49weUpfW", :remember_token=>"544cf17aa4b0bc141e2420168a3d09e2b081ec39", :admin=>false, :sign_in_count=>2, :current_sign_in_ip=>"70.196.134.230", :last_sign_in_ip=>"70.195.200.103", :demo=>false, :cotu=>false, :reviewer=>false, :password_reset_token=>nil},
-  {:id=>8, :email=>"mattsahobby@yahoo.com", :password_digest=>"$2a$10$0QEZw.hGe.jSXN/LJX4DguSYsgPivrNElf3Anjt0dgX4Sw51y1MI2", :remember_token=>"a912bcb58703f838528384a9570629a6b035da6a", :admin=>nil, :sign_in_count=>1, :current_sign_in_ip=>"75.106.52.171", :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>9, :email=>"aikiteah@swbell.net", :password_digest=>"$2a$10$.gU6GTdYL0d4XZyctHyevuolT0ICgNhbLLMtsBMab9XSiQag77DKG", :remember_token=>"f0acb0df5cc73429eaa361557a844f62c3533933", :admin=>nil, :sign_in_count=>2, :current_sign_in_ip=>"74.192.241.251", :last_sign_in_ip=>"74.192.241.251", :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>10, :email=>"cmartinez1499@gmail.com", :password_digest=>"$2a$10$SE/Q1tAkSMM4jDlg0Izclud/8nlV8/b/h/m2Ts7hw4Va9FAqX24gK", :remember_token=>"7f60447f84de1438e4e8751e2a8427eacdf6b0be", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"PsIso1uZ3GPHSzunr-BkDw"},
-  {:id=>11, :email=>"esq4130eq@gmail.com", :password_digest=>"$2a$10$cRYfaAD8RjfzrwLiMWHb/uypaH7pSSQ2GCV5zY99IygMVnxUWKU4i", :remember_token=>"36774ba16410f72749370006a8cefa607d0cd8df", :admin=>nil, :sign_in_count=>3, :current_sign_in_ip=>"173.7.255.181", :last_sign_in_ip=>"107.33.180.141", :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>12, :email=>"jimmy@aikipeace.com", :password_digest=>"$2a$10$.WuJB9E8DPn4Ir3/UhVOHuj06nKroHrP/3ykDTUCHLBPhI6qmL5gy", :remember_token=>"27877c7c6fc2d8bc2aed33fb80367e013e06ab86", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"A2Mk1-56LkrGIigCCMvekg"},
-  {:id=>13, :email=>"larry@aikipeace.com", :password_digest=>"$2a$10$R1CqyRERt7sgOveB6JoxDOmuTlDOLakPILH/f2EJfeDpWdBGQryCS", :remember_token=>"ae05dc796728ec55d5d5a21cdf42b20ee33cc12b", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"5m5X75K9RsOrgw77bb1gwA"},
-  {:id=>14, :email=>"lou.arocha@gmail.com", :password_digest=>"$2a$10$/hqb9ZdgwIRCZnI70G6.IuHtugX8/F6PKew0TAte3LAlr.Ce0TyG.", :remember_token=>"86a3c3cc3348103a9b1d9f22b9773d2deb1d7e9a", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"jiFwXsMulDQ9NbfzO8sO8w"},
-  {:id=>15, :email=>"luis.r.vegamaldonado.mil@mail.mil", :password_digest=>"$2a$10$RsMvkC95gfUez5vKEtcsM.kRIXKxa9LUjKqgNG6Fej9UvMhGIgJ9y", :remember_token=>"f86e0bff57bf5cbf4a48fd70860e9c548e563621", :admin=>nil, :sign_in_count=>1, :current_sign_in_ip=>"67.78.99.21", :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>16, :email=>"neal.mailman@satx.rr.com", :password_digest=>"$2a$10$KchQ5YXiGCqo5SvKUFiW8O9cj7E2H7ssoYjo5VHVB4BjfRc3.yuxe", :remember_token=>"9bc3fb33fc39745c5c67ff43980cabe69190c6b1", :admin=>nil, :sign_in_count=>1, :current_sign_in_ip=>"72.177.230.151", :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>17, :email=>"rag87_com@yahoo.com", :password_digest=>"$2a$10$sLlX1mNVoVRSr4B56jaS/.nNHHbOZ217FsDXJU.C.bIuUU63/uWX6", :remember_token=>"6d9dcf899c91190ee725bd0804ac504061dcf299", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"Zd0Nr9Tlc2ihap-nJ55sUw"},
-  {:id=>18, :email=>"silvia@aikipeace.com", :password_digest=>"$2a$10$bqpnqTLBafQ2saBmqsGQ0uQWNexOgWcRqBhB74EhMFtmZONfg2IJ.", :remember_token=>"45b997db0fbe01df8869d1c908afc32977f953fe", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"6qwCrflnoz1VgbpBJPyLNA"},
-  {:id=>19, :email=>"strongarma@gmail.com", :password_digest=>"$2a$10$Bs./LMNCWZQxoEjC5ya/.Om.83bXvnYjE8Rk4kqOhjsPAK085I/zC", :remember_token=>"c781213e74ec520cd55ee5efa06e21081fb4c55d", :admin=>nil, :sign_in_count=>1, :current_sign_in_ip=>"66.249.83.177", :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>20, :email=>"corybwelch@gmail.com", :password_digest=>"$2a$10$iwrfbL5rfJxRAjfW6l8DRuimZ0R2ZbmtC1l.PfmwE8vhjYsH0Wd8i", :remember_token=>"d7157e553c7ab5b6ae9ecbf5b9ce6a6e14010a95", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"iwmr-OvaRiLlWVvE2VTE_w"},
-  {:id=>21, :email=>"njakpais@trinity.edu", :password_digest=>"$2a$10$V1qDbWk9J8jcdzIn3WfJ1enDJGtehVaVDAIBusGDTMiIPzowIvpIS", :remember_token=>"1b159668de9533c3323a8a72d19c91184a222ab8", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"7vD5CJu2Qweg4c5XDRYgZw"},
-  {:id=>22, :email=>"twosidesofacoin@gmail.com", :password_digest=>"$2a$10$jfTuvMHiLAMkS53CxO7hW.OKbMzxw2IAtGhsBZHqNRPVxq..ShK/e", :remember_token=>"8b83d54f732ed066346ded8fbfeea45b91d59d24", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"Bo9Swnj5PbCc96DyFkwOBw"},
-  {:id=>23, :email=>"tony.rho4des@gmail.com", :password_digest=>"$2a$10$uAumriqCm2G.5WEZG0l1uOalH/3eKJ/7HIcYz6E.1ajpu5HiUmW32", :remember_token=>"62aa994f4cc6d76a7177fd39997a1c1576e06acc", :admin=>nil, :sign_in_count=>nil, :current_sign_in_ip=>nil, :last_sign_in_ip=>nil, :demo=>nil, :cotu=>false, :reviewer=>true, :password_reset_token=>"HnceJqEZlwCK10mvIACnTA"},
-  {:id=>24, :email=>"teratorn@gmail.com", :password_digest=>"$2a$10$olt3y9arPQWvjwpm4BQ9PegTCw44s/lw5lB3UyYtq6A606Kc4f8ry", :remember_token=>"537a39032da883413bc2ec91a1f9e21c3ac13d97", :admin=>false, :sign_in_count=>1, :current_sign_in_ip=>"71.42.153.33", :last_sign_in_ip=>nil, :demo=>false, :cotu=>false, :reviewer=>false, :password_reset_token=>nil},
-  {:id=>25, :email=>"nitaigiri@gmail.com", :password_digest=>"$2a$10$VATyJeipQi6mxE8GLCsCy.WqTCo7tfveGI3f39fUGsXf9p3ByYcuK", :remember_token=>"589382f873655667cf842e415ec341e1f65151f5", :admin=>false, :sign_in_count=>1, :current_sign_in_ip=>"129.115.2.53", :last_sign_in_ip=>nil, :demo=>false, :cotu=>false, :reviewer=>true, :password_reset_token=>nil},
-  {:id=>26, :email=>"tonyl7900@yahoo.com", :password_digest=>"$2a$10$e8B1eWn22Cs8louxDalHiOHHGyFhSm100szmoso2SHqnPtzk1JE.m", :remember_token=>"7c064cd2041d2ff199ab47e6169e4c8d663f7858", :admin=>false, :sign_in_count=>1, :current_sign_in_ip=>"72.191.3.79", :last_sign_in_ip=>nil, :demo=>false, :cotu=>false, :reviewer=>false, :password_reset_token=>nil},
-  {:id=>27, :email=>"twilliamsark@gmail.com", :password_digest=>"$2a$10$MNjEudFV92hCUhfX63vfO.D1lxViAnnz5pK1d7mTCf77d/7CqJLNi", :remember_token=>"8d6e122429210126c892dc5d975436c27764ae5e", :admin=>true, :sign_in_count=>155, :current_sign_in_ip=>"127.0.0.1", :last_sign_in_ip=>"127.0.0.1", :demo=>nil, :cotu=>true, :reviewer=>true, :password_reset_token=>nil}
-)
-# End auto-generated file.
-# DO NOT MODIFY THIS FILE, it was auto-generated.
-#
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:46 -0500
 # Seeding Video
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Video.seed(:id,
   {:id=>1, :name=>"Aihanmi Ikkyo Omote", :waza_id=>8, :aiki_format_id=>1, :rank_id=>2, :on_test=>true, :primary=>false, :youtube_id=>"Z-FwOJQi1_c", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi ikkyo omote katatedori chudan uchi kaiten sword in tiado 4th kyu john bollinger tachi waza aikido Z-FwOJQi1_c", :kata_id=>nil, :needs_review=>nil},
@@ -338,19 +305,19 @@ Video.seed(:id,
   {:id=>21, :name=>"Gyakuhanmi Kotegaeshi", :waza_id=>15, :aiki_format_id=>4, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"to_iNoLmKak", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi kotegaeshi katatedori jodan ura soto kaiten sword out ken no tebiki miscellaneous john bollinger tachi waza aikido to_iNoLmKak", :kata_id=>nil, :needs_review=>nil},
   {:id=>22, :name=>"Gyakuhanmi Kotegaeshi", :waza_id=>15, :aiki_format_id=>7, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"AZ8PfWKlNDE", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi kotegaeshi katatedori jodan ura soto kaiten sword out oyo miscellaneous john bollinger tachi waza aikido AZ8PfWKlNDE", :kata_id=>nil, :needs_review=>nil},
   {:id=>23, :name=>"Kotegaeshi Knife Takeaway", :waza_id=>13, :aiki_format_id=>8, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"5JRfSq1J8bQ", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi kotegaeshi katatedori jodan soto makakomi ura soto kaiten sword out other miscellaneous john bollinger tachi waza aikido 5JRfSq1J8bQ kotegaeshi knife takeaway", :kata_id=>nil, :needs_review=>nil},
-  {:id=>24, :name=>"not set", :waza_id=>nil, :aiki_format_id=>2, :rank_id=>1, :on_test=>true, :primary=>false, :youtube_id=>"8j42pvdMEvU", :sensei_id=>1, :style_id=>nil, :keywords=>"aiki toho supplemental 5th kyu john bollinger iaido 8j42pvdMEvU", :kata_id=>16, :needs_review=>true},
-  {:id=>25, :name=>"Ryotedori Shihonage Omote", :waza_id=>nil, :aiki_format_id=>1, :rank_id=>1, :on_test=>true, :primary=>false, :youtube_id=>"hD7Rbrnp-aA", :sensei_id=>1, :style_id=>1, :keywords=>"tiado 5th kyu john bollinger tachi waza aikido hD7Rbrnp-aA ryotedori shihonage omote", :kata_id=>nil, :needs_review=>true},
-  {:id=>26, :name=>"Gyaku Hanmi Katate Dori Shiho Nage", :waza_id=>18, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"G1NHjOGYXbU", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi shihonage aikido G1NHjOGYXbU gyaku hanmi katate dori shiho nage", :kata_id=>nil, :needs_review=>true},
+  {:id=>24, :name=>"Kiriage", :waza_id=>44, :aiki_format_id=>2, :rank_id=>1, :on_test=>true, :primary=>false, :youtube_id=>"8j42pvdMEvU", :sensei_id=>1, :style_id=>nil, :keywords=>"aihanmi ikkyo omote shomenuchi aiki toho supplemental 5th kyu john bollinger iaido 8j42pvdMEvU kiriage", :kata_id=>16, :needs_review=>false},
+  {:id=>25, :name=>"Ryotedori Shihonage Omote", :waza_id=>6, :aiki_format_id=>1, :rank_id=>1, :on_test=>true, :primary=>false, :youtube_id=>"hD7Rbrnp-aA", :sensei_id=>1, :style_id=>1, :keywords=>"ryotedori shihonage omote jodan uchi kaiten sword out tiado 5th kyu john bollinger tachi waza aikido hD7Rbrnp-aA ryotedori shihonage omote", :kata_id=>nil, :needs_review=>false},
+  {:id=>26, :name=>"Gyakuhanmi Shihonage Omote", :waza_id=>45, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"G1NHjOGYXbU", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi shihonage omote katatedori jodan uchi kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido G1NHjOGYXbU gyakuhanmi shihonage omote", :kata_id=>nil, :needs_review=>false},
   {:id=>27, :name=>"Shohatto Maegiri", :waza_id=>19, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"lYLsqOANqZ4", :sensei_id=>nil, :style_id=>nil, :keywords=>"iaido only iaido only aikido lYLsqOANqZ4 shohatto maegiri", :kata_id=>nil, :needs_review=>true},
   {:id=>28, :name=>"Gyaku Hanmi Irimi Nage", :waza_id=>20, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"hH21Xdivvo0", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi aikido hH21Xdivvo0 gyaku hanmi irimi nage", :kata_id=>nil, :needs_review=>true},
-  {:id=>29, :name=>"Gyaku Hanmi Katate Dori Ikkyo Ura", :waza_id=>21, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"sk9YHsTBQck", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi ikkyo ura aikido sk9YHsTBQck gyaku hanmi katate dori ikkyo ura", :kata_id=>nil, :needs_review=>true},
-  {:id=>30, :name=>"Gyaku Hanmi Katate Dori Ikkyo Ura", :waza_id=>21, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"oSlynDDLxAE", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi ikkyo ura aikido oSlynDDLxAE gyaku hanmi katate dori ikkyo ura", :kata_id=>nil, :needs_review=>true},
+  {:id=>29, :name=>"Gyakuhanmi Katatedori Ikkyo Ura", :waza_id=>46, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"sk9YHsTBQck", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi ikkyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido sk9YHsTBQck gyakuhanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>false},
+  {:id=>30, :name=>"Gyakuhanmi Katatedori Ikkyo Ura", :waza_id=>46, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"oSlynDDLxAE", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi ikkyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido oSlynDDLxAE gyakuhanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>false},
   {:id=>31, :name=>"Hiji Kata Both Sides", :waza_id=>22, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"EjWTPWkA0aw", :sensei_id=>nil, :style_id=>nil, :keywords=>"hiji kata hiji kata aikido EjWTPWkA0aw hiji kata both sides", :kata_id=>nil, :needs_review=>true},
   {:id=>32, :name=>"Gyaku Hanmi Kokyu Ho", :waza_id=>23, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"C4cXvwoLASs", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kokyuho aikido C4cXvwoLASs gyaku hanmi kokyu ho", :kata_id=>nil, :needs_review=>true},
-  {:id=>33, :name=>"Zempo Gaidan Kushushi Nikyo", :waza_id=>24, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"9TqbdW6RfSg", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi nikyo aikido 9TqbdW6RfSg zempo gaidan kushushi nikyo", :kata_id=>nil, :needs_review=>true},
-  {:id=>34, :name=>"Zempo Gaidan Kushushi Nikyo", :waza_id=>24, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"yZylPH2fZ8s", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi nikyo aikido yZylPH2fZ8s zempo gaidan kushushi nikyo", :kata_id=>nil, :needs_review=>true},
+  {:id=>33, :name=>"Zempo Gaidan Kushushi Nikyo", :waza_id=>49, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"9TqbdW6RfSg", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura zempo gedan kushushi katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido 9TqbdW6RfSg zempo gaidan kushushi nikyo", :kata_id=>nil, :needs_review=>false},
+  {:id=>34, :name=>"Zempo Gaidan Kushushi Nikyo (free hand)", :waza_id=>49, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"yZylPH2fZ8s", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura zempo gedan kushushi katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido yZylPH2fZ8s zempo gaidan kushushi nikyo (free hand)", :kata_id=>nil, :needs_review=>false},
   {:id=>35, :name=>"Ai Hanmi Udekimenage", :waza_id=>25, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"nZ1e6eDOq_M", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi udekimenage aikido nZ1e6eDOq_M ai hanmi udekimenage", :kata_id=>nil, :needs_review=>true},
-  {:id=>36, :name=>"Gyaku Hanmi Irimi Nage", :waza_id=>20, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"9uhFT_mfjgw", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi aikido 9uhFT_mfjgw gyaku hanmi irimi nage", :kata_id=>nil, :needs_review=>true},
+  {:id=>36, :name=>"Gyakuhanmi Katatedori Iriminage", :waza_id=>48, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"9uhFT_mfjgw", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi iriminage omote katatedori jodan soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido 9uhFT_mfjgw gyakuhanmi katatedori iriminage", :kata_id=>nil, :needs_review=>false},
   {:id=>37, :name=>"Ken ti Ken Kote Gaeshi", :waza_id=>26, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"QQAX8ZqBkMA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi kotegaeshi aikido QQAX8ZqBkMA ken ti ken kote gaeshi", :kata_id=>nil, :needs_review=>true},
   {:id=>38, :name=>"Ken ti Jo Kote Gaeshi", :waza_id=>26, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"PZGCyP5rAu8", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi kotegaeshi aikido PZGCyP5rAu8 ken ti jo kote gaeshi", :kata_id=>nil, :needs_review=>true},
   {:id=>39, :name=>"Ai Hanmi Nikyo", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"AuqYgpe3L2g", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido AuqYgpe3L2g ai hanmi nikyo", :kata_id=>nil, :needs_review=>true},
@@ -361,7 +328,7 @@ Video.seed(:id,
   {:id=>44, :name=>"Katadori Menuchi Ikkyo Ura", :waza_id=>29, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"yRI3pvVzP1g", :sensei_id=>nil, :style_id=>nil, :keywords=>"ikkyo ura aikido yRI3pvVzP1g katadori menuchi ikkyo ura", :kata_id=>nil, :needs_review=>true},
   {:id=>45, :name=>"Aihanmi Katatedori Ikkyo Ura", :waza_id=>30, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"hi2UNIuXzPA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi ikkyo ura aikido hi2UNIuXzPA aihanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>true},
   {:id=>46, :name=>"Katadori Menuchi Exercise", :waza_id=>31, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"xylUslH5CKA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aikido xylUslH5CKA katadori menuchi exercise", :kata_id=>nil, :needs_review=>true},
-  {:id=>47, :name=>"Gyakuhanmi Katatedori Nikyo (advanced)", :waza_id=>24, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"vsZk1BRlgXQ", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi nikyo aikido vsZk1BRlgXQ gyakuhanmi katatedori nikyo (advanced)", :kata_id=>nil, :needs_review=>true},
+  {:id=>47, :name=>"Gyakuhanmi Katatedori Nikyo (advanced)", :waza_id=>47, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"vsZk1BRlgXQ", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido vsZk1BRlgXQ gyakuhanmi katatedori nikyo (advanced)", :kata_id=>nil, :needs_review=>false},
   {:id=>48, :name=>"Tsuki Kotegaeshi", :waza_id=>32, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"aREff-Q21lI", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kotegaeshi aikido aREff-Q21lI tsuki kotegaeshi", :kata_id=>nil, :needs_review=>true},
   {:id=>49, :name=>"Tsuki Iriminage", :waza_id=>20, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"LQFSfg8dUHk", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi aikido LQFSfg8dUHk tsuki iriminage", :kata_id=>nil, :needs_review=>true},
   {:id=>50, :name=>"Jo Kata 2", :waza_id=>28, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"bEx3dfiopfg", :sensei_id=>nil, :style_id=>nil, :keywords=>"jo kata jo kata aikido bEx3dfiopfg jo kata 2", :kata_id=>nil, :needs_review=>true},
@@ -371,8 +338,8 @@ Video.seed(:id,
   {:id=>54, :name=>"Variation to Kata 3", :waza_id=>19, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"tPfAGrzrxo8", :sensei_id=>nil, :style_id=>nil, :keywords=>"iaido only iaido only aikido tPfAGrzrxo8 variation to kata 3", :kata_id=>nil, :needs_review=>true},
   {:id=>55, :name=>"Ai Hanmi Kata Dori Ikkyo Omote Variation", :waza_id=>35, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"n52w3Oc36Sk", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi ikkyo omote aikido n52w3Oc36Sk ai hanmi kata dori ikkyo omote variation", :kata_id=>nil, :needs_review=>true},
   {:id=>56, :name=>"Tomesuemono", :waza_id=>19, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"krwUoWyKtRk", :sensei_id=>nil, :style_id=>nil, :keywords=>"iaido only iaido only aikido krwUoWyKtRk tomesuemono", :kata_id=>nil, :needs_review=>true},
-  {:id=>57, :name=>"Gyakuhanmi Katatedori Nikyo", :waza_id=>24, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"PhHXZO8a8oc", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi nikyo aikido PhHXZO8a8oc gyakuhanmi katatedori nikyo", :kata_id=>nil, :needs_review=>true},
-  {:id=>58, :name=>"Gyakuhanmi Katatedori Nikyo", :waza_id=>24, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"xxyGZ2TWmKE", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi nikyo aikido xxyGZ2TWmKE gyakuhanmi katatedori nikyo", :kata_id=>nil, :needs_review=>true},
+  {:id=>57, :name=>"Gyakuhanmi Nikyo (elbow discussion)", :waza_id=>47, :aiki_format_id=>1, :rank_id=>3, :on_test=>false, :primary=>false, :youtube_id=>"PhHXZO8a8oc", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido PhHXZO8a8oc gyakuhanmi nikyo (elbow discussion)", :kata_id=>nil, :needs_review=>false},
+  {:id=>58, :name=>"Gyakuhanmi Katatedori Nikyo", :waza_id=>47, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>true, :youtube_id=>"xxyGZ2TWmKE", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido xxyGZ2TWmKE gyakuhanmi katatedori nikyo", :kata_id=>nil, :needs_review=>false},
   {:id=>59, :name=>"Shomenuchi Nikyo", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"_juXxWmuNok", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido _juXxWmuNok shomenuchi nikyo", :kata_id=>nil, :needs_review=>true},
   {:id=>60, :name=>"Suwariwaza Shomenuchi Iriminage", :waza_id=>33, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"7sW00HvCMBg", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi aikido 7sW00HvCMBg suwariwaza shomenuchi iriminage", :kata_id=>nil, :needs_review=>true},
   {:id=>61, :name=>"Suwari Waza Kokyuho", :waza_id=>36, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"tiAntIn4H4c", :sensei_id=>nil, :style_id=>nil, :keywords=>"kokyuho aikido tiAntIn4H4c suwari waza kokyuho", :kata_id=>nil, :needs_review=>true},
@@ -443,11 +410,11 @@ Video.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-12 23:58:05 -0600
+# Date: 2016-03-18 18:08:46 -0500
 # Seeding Waza
 # Written with the command:
 #
-#   /Users/todd/.rvm/rubies/ruby-2.2.4/bin/rake aiki:dump_to_seed_fu
+#   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Waza.seed(:id,
   {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
@@ -491,6 +458,12 @@ Waza.seed(:id,
   {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>15, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>15, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil}
+  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>4, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>18, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>5}
 )
 # End auto-generated file.
