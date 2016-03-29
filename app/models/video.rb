@@ -34,6 +34,7 @@ class Video < ActiveRecord::Base
   scope :missing_aiki_format, -> { where(aiki_format: nil) }
   scope :needs_review, -> { where( arel_table[:needs_review].eq(true).or(arel_table[:aiki_format_id].eq(nil).or(arel_table[:waza_id].eq(nil).or(arel_table[:youtube_id].eq(nil)))) ) }
   scope :by_waza_name, -> { joins(:waza).order("wazas.name") }
+  scope :on_test, -> { where(on_test: true) }
 
   validates :aiki_format, presence: true
   validates :youtube_id, presence: true

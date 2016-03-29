@@ -58,6 +58,10 @@ input.no_margin_bottom {
   font-size: larger;
 }
 
+.sub_description {
+  font-size: smaller;
+}
+
 #error_explanation {
   color: #f00;
   border: 1px solid;
@@ -93,8 +97,20 @@ input.no_margin_bottom {
   padding-top: 1px;
 }
 
+.margin_top {
+  margin-top: 5px;
+}
+
+.margin_top_double {
+  margin-top: 10px;
+}
+
 .pad_top {
   padding-top: 5px;
+}
+
+.pad_top_double {
+  padding-top: 10px;
 }
 
 .pad_bottom {
@@ -117,6 +133,10 @@ input.no_margin_bottom {
 
 .pull_up {
   margin-top: -5px;
+}
+
+.pull_up_big {
+  margin-top: -20px;
 }
 
 .aiki_box {
@@ -159,6 +179,12 @@ input.no_margin_bottom {
 }
 
 .no_bullet_list_indented {
+  @extend %no_bullet_list;
+  font-size: em(15px);
+  margin-left: -20px;
+}
+
+.no_bullet_list_indented_smaller {
   @extend %no_bullet_list;
   font-size: em(10px);
   margin-left: -20px;

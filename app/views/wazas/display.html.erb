@@ -1,19 +1,30 @@
 <% if @waza %>
   <div class="row" style="margin-right: 0px">
-    <div class="col-md-3">
+    <div class="col-md-3 pull_up_big">
       <div class="row">
         <div class="col-md-12">
           <h1><%= @waza %></h1>
           <h3><%= @waza.technical_name %></h3>
         </div>
       </div>
-      <div class="aiki_box pad_all">
-        <%= render 'detail', waza: @waza %>
-        <br/>
-        <%= render 'back_to_grid' %>
-        <br/>
-        <br/>
-        <%= link_to 'Waza Admin', waza_path(@waza) %>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aiki_box pad_all">
+            <%= render 'detail', waza: @waza %>
+            <br/>
+            <%= render 'back_to_grid' %>
+            <br/>
+            <br/>
+            <%= link_to 'Waza Admin', waza_path(@waza) %>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="aiki_box margin_top_double">
+            <%= render 'waza_list', source_waza: @waza %>
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-md-9 left_border">

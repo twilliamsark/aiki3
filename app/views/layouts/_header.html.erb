@@ -14,7 +14,7 @@
 
   <ul class="ul_big nav nav-pills">
     <li><%= link_to "Dojo", "http://www.aikipeace.com/aikido/index.html" %></li>
-    <li><%= link_to "Video List", show_master_grid_wazas_path %></li>
+    <li><%= link_to "Video List", only_on_test_wazas_path %></li>
 
     <% if current_user && can?(:update, :video) %>
 

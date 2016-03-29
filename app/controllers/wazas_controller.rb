@@ -39,6 +39,10 @@ class WazasController < ApplicationController
     render :master_grid
   end
 
+  def only_on_test
+    redirect_to master_grid_wazas_path(only_on_test: 1)
+  end
+
   def master_grid
     options = {}
     if params[:stance].present?

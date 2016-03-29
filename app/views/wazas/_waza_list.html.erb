@@ -1,0 +1,33 @@
+<%
+  technique = source_waza.technique
+  wazas = technique.wazas.order(:name).select{|w| w.videos.has_aiki_format.any? }
+  unique_wazas = Hash.new(0)
+  wazas.each do |w|
+    unique_wazas[w.name] += 1
+  end
+%>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title">
+      <ul class="ul_big">
+        <li class="no_bullet_list">All <%= technique.name %></li>
+        <li class="no_bullet_list_indented">(<%= technique.description %>)</li>
+      </ul>
+    </h4>
+  </div>
+  <div class="panel-body">
+    <ul class="ul_big">
+      <% wazas.each do |waza| %>
+        <li class="no_bullet_list">
+          <%= link_to waza.name, waza_display_path(waza) %>
+        </li>
+        <% if unique_wazas[waza.name] > 1 %>
+          <li class="no_bullet_list_indented">
+            (<%= waza.technical_name %>)
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </div>
+</div>

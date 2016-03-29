@@ -53,6 +53,7 @@ class Waza < ActiveRecord::Base
   scope :for_kaiten, ->(kaiten) { where(kaiten: kaiten) }
   scope :for_sword, ->(sword) { where(sword: sword) }
   scope :for_level, ->(level) { where(level: level) }
+  scope :on_test, -> { joins(:videos).merge(Video.on_test) }
 
   validates :technique, presence: true
 
@@ -77,6 +78,9 @@ class Waza < ActiveRecord::Base
       wazas = Video.wazas(Video.search(options[:search])) rescue []
     else
       wazas = Waza.all
+      if options[:only_on_test]
+        wazas = wazas.on_test
+      end
     end
 
     wazas.sort_by(&:name).each do |waza|
@@ -102,19 +106,6 @@ class Waza < ActiveRecord::Base
 
       master[waza] ||= Hash.new
 
-      if options[:search].present?
-        master[waza][:sub_name] = waza.technical_name
-      else
-        if duplicates[waza_name]
-          master[waza][:sub_name] = waza.technical_name
-          unless master[duplicates[waza_name]][:sub_name].present?
-            master[duplicates[waza_name]][:sub_name] = duplicates[waza_name].technical_name
-          end
-        else
-          duplicates[waza_name] = waza
-        end
-      end
-
       master[waza][:name] = waza_name
       waza.videos.each do |video|
         next if video.needs_review?
@@ -126,9 +117,28 @@ class Waza < ActiveRecord::Base
         next if options[:only_on_test] && !video.on_test?
         master[waza][:videos] ||= Hash.new
         master[waza][:videos][video.format] ||= Array.new
-        master[waza][:videos][video.format] << video
+        unless master[waza][:videos][video.format].include? video
+          master[waza][:videos][video.format] << video
+        end
       end
-      master.delete(waza) if master[waza][:videos].nil? || master[waza][:videos].empty?
+
+      if master[waza][:videos].nil? || master[waza][:videos].empty?
+        master.delete(waza)
+      else
+        if options[:search].present?
+          master[waza][:sub_name] = waza.technical_name
+        else
+          if duplicates[waza_name]
+            master[waza][:sub_name] = waza.technical_name
+            unless master[duplicates[waza_name]][:sub_name].present?
+              master[duplicates[waza_name]][:sub_name] = duplicates[waza_name].technical_name
+            end
+          else
+            duplicates[waza_name] = waza
+          end
+        end
+      end
+
     end
 
     master
