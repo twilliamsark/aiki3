@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th colspan="3"></th>
@@ -12,6 +13,7 @@
   <tbody>
     <% @styles.each do |style| %>
       <tr>
+        <td><%= style.id %></td>
         <td><%= style.name %></td>
         <td><%= style.description %></td>
         <td><%= link_to 'Show', style %></td>

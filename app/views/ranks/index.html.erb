@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th colspan="3"></th>
@@ -12,6 +13,7 @@
   <tbody>
     <% @ranks.each do |rank| %>
       <tr>
+        <td><%= rank.id %></td>
         <td><%= rank.name %></td>
         <td><%= rank.description %></td>
         <td><%= link_to 'Show', rank %></td>

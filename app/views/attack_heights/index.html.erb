@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @attack_heights.each do |attack_height| %>
       <tr>
+        <td><%= attack_height.id %></td>
         <td><%= attack_height.name %></td>
         <td><%= attack_height.description %></td>
         <td><%= link_to 'Show', attack_height %></td>

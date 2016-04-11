@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @directions.each do |direction| %>
       <tr>
+        <td><%= direction.id %></td>
         <td><%= direction.name %></td>
         <td><%= direction.description %></td>
         <td><%= link_to 'Show', direction %></td>

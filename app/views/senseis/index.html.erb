@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -11,6 +12,7 @@
   <tbody>
     <% @senseis.each do |sensei| %>
       <tr>
+        <td><%= sensei.id %></td>
         <td><%= sensei.name %></td>
         <td><%= link_to 'Show', sensei %></td>
         <td><%= link_to 'Edit', edit_sensei_path(sensei) %></td>

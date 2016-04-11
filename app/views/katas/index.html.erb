@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -11,6 +12,7 @@
   <tbody>
     <% @katas.each do |kata| %>
       <tr>
+        <td><%= kata.id %></td>
         <td><%= kata.name %></td>
         <td><%= link_to 'Show', kata %></td>
         <td><%= link_to 'Edit', edit_kata_path(kata) %></td>

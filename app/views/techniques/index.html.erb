@@ -3,6 +3,7 @@
 <table class="table table-striped table-bordered">
   <thead>
     <tr>
+      <th>ID</th>
       <th>Name</th>
       <th>Description</th>
       <th></th>
@@ -14,6 +15,7 @@
   <tbody>
     <% @techniques.each do |technique| %>
       <tr>
+        <td><%= technique.id %></td>
         <td><%= technique.name %></td>
         <td><%= technique.description %></td>
         <td><%= link_to 'Show', technique %></td>
