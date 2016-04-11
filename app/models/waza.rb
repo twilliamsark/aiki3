@@ -198,9 +198,12 @@ class Waza < ActiveRecord::Base
   end
 
   def short_name
-    @short_tech_name ||= [stance,
-                          technique,
-                          direction].map{|a| a.name rescue nil}.compact.join(' ')
+    parts = [stance]
+    parts << attack if attack && attack.name != 'Katatedori'
+    parts << technique
+    parts << direction
+
+    @short_tech_name ||= parts.map{|a| a.name rescue nil}.compact.join(' ')
   end
 
   def inspect
@@ -222,6 +225,10 @@ class Waza < ActiveRecord::Base
   end
 
   def set_waza_name
-    self.name = short_name unless name.present?
+    do_set_waza_name unless name.present?
+  end
+
+  def do_set_waza_name
+    self.name = short_name
   end
 end
