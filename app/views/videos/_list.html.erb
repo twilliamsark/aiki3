@@ -9,6 +9,9 @@
       <th>Rank</th>
       <th>On test</th>
       <th>Youtube</th>
+      <% if current_user && can?(:update, :video) %>
+        <th>Needs Review</th>
+      <% end %>
       <th colspan="4">Actions</th>
     </tr>
   </thead>
@@ -31,6 +34,9 @@
         <td><%= video.rank %></td>
         <td><%= video.on_test %></td>
         <td><%= link_to video.youtube_id, "https://www.youtube.com/watch?v=#{video.youtube_id}" %></td>
+        <% if current_user && can?(:update, :video) %>
+          <td><%= video.needs_review? ? 'Needs Review' : '' %></td>
+        <% end %>
         <td><%= link_to 'Watch', waza_display_path(video.waza, video_id: video) %></td>
         <td><%= link_to 'Show', video %></td>
         <td><%= link_to 'Edit', edit_video_path(video) %></td>
