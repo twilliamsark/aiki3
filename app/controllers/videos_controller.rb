@@ -9,7 +9,12 @@ class VideosController < AdminController
   end
 
   def needs_review
-    @videos = Video.needs_review.page(params[:page])
+    if params[:search].present?
+      @search = params[:search]
+      @videos = Video.search(@search)
+    else
+      @videos = Video.needs_review.page(params[:page])
+    end
   end
 
   # GET /videos/1

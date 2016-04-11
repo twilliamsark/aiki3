@@ -18,7 +18,7 @@
       <tr>
         <td><%= video.id %></td>
         <td><%= link_to video.name, video %></td>
-        <td><%= link_to image_tag("http://img.youtube.com/vi/#{video.youtube_id}/default.jpg", class: "header_image", size: "120x90"),
+        <td><%= link_to image_tag("http://img.youtube.com/vi/#{video.youtube_id}/default.jpg", size: "120x90"),
                 waza_display_path(waza_id: video.waza.id, video_id: video.id) %></td>
         <td><%= link_to video.waza, waza_path(video.waza) %></td>
         <%

@@ -74,6 +74,8 @@ class Waza < ActiveRecord::Base
     master = Hash.new
     duplicates = Hash.new
 
+    user = options.fetch(:user) { nil }
+
     if options[:search].present?
       wazas = Video.wazas(Video.search(options[:search])) rescue []
     else
@@ -108,7 +110,7 @@ class Waza < ActiveRecord::Base
 
       master[waza][:name] = waza_name
       waza.videos.each do |video|
-        next if video.needs_review?
+        next if video.needs_review? && !user.has_role?(:superuser)
         next if options[:format] && options[:format] != video.format
         next if options[:rank] && options[:rank] != video.rank.name
         next if options[:stance] && options[:stance] != video.stance.name

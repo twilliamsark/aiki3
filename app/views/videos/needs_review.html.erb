@@ -1,5 +1,17 @@
-<h1>Unassigned Videos</h1>
-<%= will_paginate @videos %>
+<% @search ||= nil %>
+<h1>Unassigned Videos<%= @search.present? ? '' : " (#{Video.needs_review.count})" %></h1>
+
+<%= form_tag needs_review_videos_path, method: :get do %>
+  <div class="row">
+    <div class="col-md-4">
+      <%= render 'wazas/search_form' %>
+    </div>
+  </div>
+<% end %>
+
+<% unless @search %>
+  <%= will_paginate @videos %>
+<% end %>
 
 <table class="table table-striped table-bordered">
   <thead>
@@ -25,4 +37,7 @@
     <% end %>
   </tbody>
 </table>
-<%= will_paginate @videos %>
+
+<% unless @search %>
+  <%= will_paginate @videos %>
+<% end %>

@@ -1,6 +1,6 @@
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding AikiFormat
 # Written with the command:
 #
@@ -19,7 +19,7 @@ AikiFormat.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Attack
 # Written with the command:
 #
@@ -35,7 +35,7 @@ Attack.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding AttackHeight
 # Written with the command:
 #
@@ -49,7 +49,7 @@ AttackHeight.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Direction
 # Written with the command:
 #
@@ -62,7 +62,7 @@ Direction.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Entrance
 # Written with the command:
 #
@@ -78,7 +78,7 @@ Entrance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding HandAppliedTo
 # Written with the command:
 #
@@ -91,7 +91,7 @@ HandAppliedTo.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Kaiten
 # Written with the command:
 #
@@ -104,7 +104,7 @@ Kaiten.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Kata
 # Written with the command:
 #
@@ -131,7 +131,7 @@ Kata.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Level
 # Written with the command:
 #
@@ -145,7 +145,7 @@ Level.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding MakaKomi
 # Written with the command:
 #
@@ -158,7 +158,7 @@ MakaKomi.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Rank
 # Written with the command:
 #
@@ -178,7 +178,7 @@ Rank.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Role
 # Written with the command:
 #
@@ -194,7 +194,7 @@ Role.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Sensei
 # Written with the command:
 #
@@ -206,7 +206,7 @@ Sensei.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Stance
 # Written with the command:
 #
@@ -219,7 +219,7 @@ Stance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Style
 # Written with the command:
 #
@@ -233,7 +233,7 @@ Style.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Sword
 # Written with the command:
 #
@@ -246,7 +246,7 @@ Sword.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:45 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Technique
 # Written with the command:
 #
@@ -275,7 +275,7 @@ Technique.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:46 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Video
 # Written with the command:
 #
@@ -313,20 +313,20 @@ Video.seed(:id,
   {:id=>29, :name=>"Gyakuhanmi Katatedori Ikkyo Ura", :waza_id=>46, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"sk9YHsTBQck", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi ikkyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido sk9YHsTBQck gyakuhanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>false},
   {:id=>30, :name=>"Gyakuhanmi Katatedori Ikkyo Ura", :waza_id=>46, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"oSlynDDLxAE", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi ikkyo ura katatedori soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido oSlynDDLxAE gyakuhanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>false},
   {:id=>31, :name=>"Hiji Kata Both Sides", :waza_id=>22, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"EjWTPWkA0aw", :sensei_id=>nil, :style_id=>nil, :keywords=>"hiji kata hiji kata aikido EjWTPWkA0aw hiji kata both sides", :kata_id=>nil, :needs_review=>true},
-  {:id=>32, :name=>"Gyaku Hanmi Kokyu Ho", :waza_id=>23, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"C4cXvwoLASs", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kokyuho aikido C4cXvwoLASs gyaku hanmi kokyu ho", :kata_id=>nil, :needs_review=>true},
+  {:id=>32, :name=>"Gyakuhanmi Kokyuho", :waza_id=>50, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"C4cXvwoLASs", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi kokyuho katatedori tiado miscellaneous john bollinger tachi waza aikido C4cXvwoLASs gyakuhanmi kokyuho", :kata_id=>nil, :needs_review=>false},
   {:id=>33, :name=>"Zempo Gaidan Kushushi Nikyo", :waza_id=>49, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"9TqbdW6RfSg", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura zempo gedan kushushi katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido 9TqbdW6RfSg zempo gaidan kushushi nikyo", :kata_id=>nil, :needs_review=>false},
   {:id=>34, :name=>"Zempo Gaidan Kushushi Nikyo (free hand)", :waza_id=>49, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"yZylPH2fZ8s", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura zempo gedan kushushi katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido yZylPH2fZ8s zempo gaidan kushushi nikyo (free hand)", :kata_id=>nil, :needs_review=>false},
-  {:id=>35, :name=>"Ai Hanmi Udekimenage", :waza_id=>25, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"nZ1e6eDOq_M", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi udekimenage aikido nZ1e6eDOq_M ai hanmi udekimenage", :kata_id=>nil, :needs_review=>true},
+  {:id=>35, :name=>"Aihanmi Udekimenage", :waza_id=>51, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"nZ1e6eDOq_M", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi udekimenage katatedori tiado miscellaneous john bollinger tachi waza aikido nZ1e6eDOq_M aihanmi udekimenage", :kata_id=>nil, :needs_review=>false},
   {:id=>36, :name=>"Gyakuhanmi Katatedori Iriminage", :waza_id=>48, :aiki_format_id=>1, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"9uhFT_mfjgw", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi iriminage omote katatedori jodan soto kaiten sword out tiado 3rd kyu john bollinger tachi waza aikido 9uhFT_mfjgw gyakuhanmi katatedori iriminage", :kata_id=>nil, :needs_review=>false},
   {:id=>37, :name=>"Ken ti Ken Kote Gaeshi", :waza_id=>26, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"QQAX8ZqBkMA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi kotegaeshi aikido QQAX8ZqBkMA ken ti ken kote gaeshi", :kata_id=>nil, :needs_review=>true},
   {:id=>38, :name=>"Ken ti Jo Kote Gaeshi", :waza_id=>26, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"PZGCyP5rAu8", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi kotegaeshi aikido PZGCyP5rAu8 ken ti jo kote gaeshi", :kata_id=>nil, :needs_review=>true},
-  {:id=>39, :name=>"Ai Hanmi Nikyo", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"AuqYgpe3L2g", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido AuqYgpe3L2g ai hanmi nikyo", :kata_id=>nil, :needs_review=>true},
-  {:id=>40, :name=>"Ken ti Ken Nikyo", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"_rsfyrp1kJQ", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido _rsfyrp1kJQ ken ti ken nikyo", :kata_id=>nil, :needs_review=>true},
-  {:id=>41, :name=>"Ken ti Jo Nikyo", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"w-xOBqRGTgE", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido w-xOBqRGTgE ken ti jo nikyo", :kata_id=>nil, :needs_review=>true},
+  {:id=>39, :name=>"Aihanmi Nikyo", :waza_id=>53, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>true, :youtube_id=>"AuqYgpe3L2g", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi nikyo ura katatedori jodan soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido AuqYgpe3L2g aihanmi nikyo", :kata_id=>nil, :needs_review=>false},
+  {:id=>40, :name=>"Aihanmi Nikyo", :waza_id=>54, :aiki_format_id=>6, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"_rsfyrp1kJQ", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword out ken ti ken miscellaneous john bollinger tachi waza aikido _rsfyrp1kJQ aihanmi nikyo", :kata_id=>nil, :needs_review=>false},
+  {:id=>41, :name=>"Aihanmi Nikyo", :waza_id=>54, :aiki_format_id=>5, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"w-xOBqRGTgE", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword out ken ti jo miscellaneous john bollinger tachi waza aikido w-xOBqRGTgE aihanmi nikyo", :kata_id=>nil, :needs_review=>false},
   {:id=>42, :name=>"Jo Kata 1 Both Sides", :waza_id=>28, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"OAiSs3CKzPo", :sensei_id=>nil, :style_id=>nil, :keywords=>"jo kata jo kata aikido OAiSs3CKzPo jo kata 1 both sides", :kata_id=>nil, :needs_review=>true},
   {:id=>43, :name=>"Jo Kata 1 Right Side", :waza_id=>28, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"Ak0Tr9-PFtI", :sensei_id=>nil, :style_id=>nil, :keywords=>"jo kata jo kata aikido Ak0Tr9-PFtI jo kata 1 right side", :kata_id=>nil, :needs_review=>true},
   {:id=>44, :name=>"Katadori Menuchi Ikkyo Ura", :waza_id=>29, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"yRI3pvVzP1g", :sensei_id=>nil, :style_id=>nil, :keywords=>"ikkyo ura aikido yRI3pvVzP1g katadori menuchi ikkyo ura", :kata_id=>nil, :needs_review=>true},
-  {:id=>45, :name=>"Aihanmi Katatedori Ikkyo Ura", :waza_id=>30, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"hi2UNIuXzPA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi ikkyo ura aikido hi2UNIuXzPA aihanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>true},
+  {:id=>45, :name=>"Aihanmi Ikkyo Ura", :waza_id=>56, :aiki_format_id=>1, :rank_id=>2, :on_test=>true, :primary=>false, :youtube_id=>"hi2UNIuXzPA", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi ikkyo ura katatedori jodan soto kaiten sword out tiado 4th kyu john bollinger tachi waza aikido hi2UNIuXzPA aihanmi ikkyo ura", :kata_id=>nil, :needs_review=>false},
   {:id=>46, :name=>"Katadori Menuchi Exercise", :waza_id=>31, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"xylUslH5CKA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aikido xylUslH5CKA katadori menuchi exercise", :kata_id=>nil, :needs_review=>true},
   {:id=>47, :name=>"Gyakuhanmi Katatedori Nikyo (advanced)", :waza_id=>47, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"vsZk1BRlgXQ", :sensei_id=>1, :style_id=>1, :keywords=>"gyakuhanmi nikyo ura katatedori soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido vsZk1BRlgXQ gyakuhanmi katatedori nikyo (advanced)", :kata_id=>nil, :needs_review=>false},
   {:id=>48, :name=>"Tsuki Kotegaeshi", :waza_id=>32, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"aREff-Q21lI", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kotegaeshi aikido aREff-Q21lI tsuki kotegaeshi", :kata_id=>nil, :needs_review=>true},
@@ -361,8 +361,8 @@ Video.seed(:id,
   {:id=>77, :name=>"Shomenuchi Nikyo (Tiado)", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"BBLehwVNbZo", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido BBLehwVNbZo shomenuchi nikyo (tiado)", :kata_id=>nil, :needs_review=>true},
   {:id=>78, :name=>"Shomenuchi Nikyo (Tiado)", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"5LeaPAn3IkY", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido 5LeaPAn3IkY shomenuchi nikyo (tiado)", :kata_id=>nil, :needs_review=>true},
   {:id=>79, :name=>"Shomenuchi Nikyo (Ken ti Ken)", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"ft9HKqrv_Dg", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido ft9HKqrv_Dg shomenuchi nikyo (ken ti ken)", :kata_id=>nil, :needs_review=>true},
-  {:id=>80, :name=>"Aihanmi Katatedori Nikyo (Tiado)", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"WDNWPcMM0BQ", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido WDNWPcMM0BQ aihanmi katatedori nikyo (tiado)", :kata_id=>nil, :needs_review=>true},
-  {:id=>81, :name=>"Aihanmi Katatedori Nikyo (Ken no Tebiki)", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"ovCxgP5fRIk", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido ovCxgP5fRIk aihanmi katatedori nikyo (ken no tebiki)", :kata_id=>nil, :needs_review=>true},
+  {:id=>80, :name=>"Aihanmi Nikyo", :waza_id=>54, :aiki_format_id=>1, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"WDNWPcMM0BQ", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword out tiado miscellaneous john bollinger tachi waza aikido WDNWPcMM0BQ aihanmi nikyo", :kata_id=>nil, :needs_review=>false},
+  {:id=>81, :name=>"Aihanmi Nikyo", :waza_id=>54, :aiki_format_id=>4, :rank_id=>9, :on_test=>false, :primary=>false, :youtube_id=>"ovCxgP5fRIk", :sensei_id=>1, :style_id=>1, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword out ken no tebiki miscellaneous john bollinger tachi waza aikido ovCxgP5fRIk aihanmi nikyo", :kata_id=>nil, :needs_review=>false},
   {:id=>82, :name=>"Yokomenuchi Gokyo (Tiado)", :waza_id=>38, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"d9jxteuqlXw", :sensei_id=>nil, :style_id=>nil, :keywords=>"gokyo aikido d9jxteuqlXw yokomenuchi gokyo (tiado)", :kata_id=>nil, :needs_review=>true},
   {:id=>83, :name=>"Yokomenuchi Gokyo (Tiado)", :waza_id=>38, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"pDZTWgXda3g", :sensei_id=>nil, :style_id=>nil, :keywords=>"gokyo aikido pDZTWgXda3g yokomenuchi gokyo (tiado)", :kata_id=>nil, :needs_review=>true},
   {:id=>84, :name=>"Yokomenuchi Kotegaeshi (Tiado)", :waza_id=>32, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"1Mb0PtQUHac", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kotegaeshi aikido 1Mb0PtQUHac yokomenuchi kotegaeshi (tiado)", :kata_id=>nil, :needs_review=>true},
@@ -372,9 +372,9 @@ Video.seed(:id,
   {:id=>88, :name=>"Tsuki Ikkyo Ura", :waza_id=>30, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"2KThpahtC6w", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi ikkyo ura aikido 2KThpahtC6w tsuki ikkyo ura", :kata_id=>nil, :needs_review=>true},
   {:id=>89, :name=>"Tsuki Ikkyo Ura", :waza_id=>30, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"xIc2J7ukjOw", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi ikkyo ura aikido xIc2J7ukjOw tsuki ikkyo ura", :kata_id=>nil, :needs_review=>true},
   {:id=>90, :name=>"Aihanmi Katatedori Iriminage", :waza_id=>33, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"BewVTcwzWY0", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi aikido BewVTcwzWY0 aihanmi katatedori iriminage", :kata_id=>nil, :needs_review=>true},
-  {:id=>91, :name=>"Tekubiosae Iaijutsu Variation", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"38HIKUQxuL4", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido 38HIKUQxuL4 tekubiosae iaijutsu variation", :kata_id=>nil, :needs_review=>true},
+  {:id=>91, :name=>"Tekubiosae Iaijutsu Variation", :waza_id=>55, :aiki_format_id=>2, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"38HIKUQxuL4", :sensei_id=>1, :style_id=>nil, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword in aiki toho supplemental 3rd kyu john bollinger iaido 38HIKUQxuL4 tekubiosae iaijutsu variation", :kata_id=>16, :needs_review=>false},
   {:id=>92, :name=>"Sayugiri", :waza_id=>18, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"wqJz-nrijsM", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi shihonage aikido wqJz-nrijsM sayugiri", :kata_id=>nil, :needs_review=>true},
-  {:id=>93, :name=>"Tekubiosae", :waza_id=>27, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"faVfzKBCSfA", :sensei_id=>nil, :style_id=>nil, :keywords=>"aihanmi nikyo aikido faVfzKBCSfA tekubiosae", :kata_id=>nil, :needs_review=>true},
+  {:id=>93, :name=>"Tekubiosae", :waza_id=>55, :aiki_format_id=>2, :rank_id=>3, :on_test=>true, :primary=>false, :youtube_id=>"faVfzKBCSfA", :sensei_id=>1, :style_id=>nil, :keywords=>"aihanmi nikyo ura katatedori chudan soto kaiten sword in aiki toho kata 7 3rd kyu john bollinger iaido faVfzKBCSfA tekubiosae", :kata_id=>7, :needs_review=>false},
   {:id=>94, :name=>"Yokomenuchi Kotegaeshi (Aiki Toho)", :waza_id=>32, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"Owwddx3uOs0", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi kotegaeshi aikido Owwddx3uOs0 yokomenuchi kotegaeshi (aiki toho)", :kata_id=>nil, :needs_review=>true},
   {:id=>95, :name=>"Gyakuhanmi Katatedori Ikkyo Ura", :waza_id=>21, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"7pc89AZ18mw", :sensei_id=>nil, :style_id=>nil, :keywords=>"gyakuhanmi ikkyo ura aikido 7pc89AZ18mw gyakuhanmi katatedori ikkyo ura", :kata_id=>nil, :needs_review=>true},
   {:id=>96, :name=>"Tomesuemono", :waza_id=>19, :aiki_format_id=>nil, :rank_id=>nil, :on_test=>false, :primary=>false, :youtube_id=>"kFkegO6JPvg", :sensei_id=>nil, :style_id=>nil, :keywords=>"iaido only iaido only aikido kFkegO6JPvg tomesuemono", :kata_id=>nil, :needs_review=>true},
@@ -410,7 +410,7 @@ Video.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-03-18 18:08:46 -0500
+# Date: 2016-04-11 00:05:14 -0500
 # Seeding Waza
 # Written with the command:
 #
@@ -418,14 +418,9 @@ Video.seed(:id,
 #
 Waza.seed(:id,
   {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>5, "direction_id"=>nil, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>2, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>7, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>nil, "attack_id"=>2, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>2, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>2, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>1, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
@@ -438,9 +433,7 @@ Waza.seed(:id,
   {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>nil, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>11, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>14, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>16, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>13, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
@@ -464,6 +457,12 @@ Waza.seed(:id,
   {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
   {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>18, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>5}
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>5},
+  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>14, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>16, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>1, "level_id"=>nil, "entrance_id"=>nil},
+  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil}
 )
 # End auto-generated file.

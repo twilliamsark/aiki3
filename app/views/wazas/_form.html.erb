@@ -24,7 +24,7 @@
       <div class="field">
         <%= label_tag "waza_list", "Pre-Populate with:" %>
         <%= select_tag "waza_list",
-      options_for_select(Waza.order(:stance_id, :attack_id, :technique_id, :direction_id).collect {|k| [k.technical_name, k.id] },
+      options_for_select(Waza.order(:stance_id, :attack_id, :technique_id, :direction_id).collect {|k| ["(#{k.id}) #{k.technical_name}", k.id] },
                          waza.id),
       { include_blank: true } %>
       </div>

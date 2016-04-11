@@ -53,11 +53,11 @@ module SessionsHelper
   end
 
   def signed_in_user
-    if Rails.env.production? || Rails.env.test? || (Rails.env.development? && DEVELOPMENT_REQUIRE_LOGIN)
+    if Rails.env.production? || (!Rails.env.production? && DEVELOPMENT_REQUIRE_LOGIN)
       AppLogging.say("Require signed in user for #{request.url}")
       signin_check
-    elsif Rails.env.development? && !DEVELOPMENT_REQUIRE_LOGIN && !signed_in?
-      user = User.admin.first
+    elsif !signed_in?
+      user = User.with_role(:superuser).first
       if user
         sign_in(user, 3000)
       else

@@ -44,7 +44,7 @@ class WazasController < ApplicationController
   end
 
   def master_grid
-    options = {}
+    options = { user: current_user }
     if params[:stance].present?
       @stance = Stance.find_by(id: params[:stance]) rescue nil
       if @stance
