@@ -12,7 +12,9 @@
     <h4 class="panel-title">
       <ul class="ul_big">
         <li class="no_bullet_list">All <%= technique.name %></li>
-        <li class="no_bullet_list_indented">(<%= technique.description %>)</li>
+        <% if technique.description.present? %>
+          <li class="no_bullet_list_indented">(<%= technique.description %>)</li>
+        <% end %>
       </ul>
     </h4>
   </div>
