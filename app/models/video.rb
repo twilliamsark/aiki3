@@ -60,7 +60,7 @@ class Video < ActiveRecord::Base
     return unless video_params && !video_params.empty?
     self.assign_attributes(video_params)
     unless waza_params.empty?
-      waza = Waza.find_or_create_by(Waza.new(waza_params).to_h)
+      waza = Waza.find_or_create_by(Waza.new(waza_params).to_h.except(:id, :name))
       self.waza = waza if waza
     end
     save
