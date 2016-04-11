@@ -98,7 +98,7 @@ class WazasController < ApplicationController
   # GET /wazas
   # GET /wazas.json
   def index
-    @wazas = Waza.all.sort_by(&:name)
+    @wazas = Waza.all.sort_by{ |w| [w.name, w.id] }
     @count = Waza.count
     render action: "index", layout: "admin"
   end
