@@ -6,6 +6,7 @@ class VideosController < AdminController
   # GET /videos.json
   def index
     @videos = Video.has_waza.by_waza_name.page(params[:page])
+    @count = Video.has_waza.count
   end
 
   def needs_review

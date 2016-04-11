@@ -85,6 +85,8 @@ class Waza < ActiveRecord::Base
       end
     end
 
+    wazas = wazas.to_a rescue []
+
     wazas.compact.sort_by(&:name).each do |waza|
       next unless waza.videos.has_aiki_format.any?
       next unless include_based_on?(waza, options)
