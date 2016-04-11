@@ -1,6 +1,6 @@
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding AikiFormat
 # Written with the command:
 #
@@ -19,7 +19,7 @@ AikiFormat.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Attack
 # Written with the command:
 #
@@ -35,7 +35,7 @@ Attack.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding AttackHeight
 # Written with the command:
 #
@@ -49,7 +49,7 @@ AttackHeight.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Direction
 # Written with the command:
 #
@@ -62,7 +62,7 @@ Direction.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Entrance
 # Written with the command:
 #
@@ -78,7 +78,7 @@ Entrance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding HandAppliedTo
 # Written with the command:
 #
@@ -91,7 +91,7 @@ HandAppliedTo.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Kaiten
 # Written with the command:
 #
@@ -104,7 +104,7 @@ Kaiten.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Kata
 # Written with the command:
 #
@@ -131,7 +131,7 @@ Kata.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Level
 # Written with the command:
 #
@@ -145,7 +145,7 @@ Level.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding MakaKomi
 # Written with the command:
 #
@@ -158,7 +158,7 @@ MakaKomi.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Rank
 # Written with the command:
 #
@@ -178,7 +178,7 @@ Rank.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Role
 # Written with the command:
 #
@@ -194,7 +194,7 @@ Role.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Sensei
 # Written with the command:
 #
@@ -206,7 +206,7 @@ Sensei.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Stance
 # Written with the command:
 #
@@ -219,7 +219,7 @@ Stance.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Style
 # Written with the command:
 #
@@ -233,7 +233,7 @@ Style.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Sword
 # Written with the command:
 #
@@ -246,7 +246,7 @@ Sword.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Technique
 # Written with the command:
 #
@@ -275,7 +275,7 @@ Technique.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Video
 # Written with the command:
 #
@@ -410,59 +410,59 @@ Video.seed(:id,
 # End auto-generated file.
 # DO NOT MODIFY THIS FILE, it was auto-generated.
 #
-# Date: 2016-04-11 00:05:14 -0500
+# Date: 2016-04-11 01:24:09 -0500
 # Seeding Waza
 # Written with the command:
 #
 #   /Users/todd/.rvm/gems/ruby-2.2.4@aiki_gemset_213/bin/rake aiki:dump_to_seed_fu
 #
 Waza.seed(:id,
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>2, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>1, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>1, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>2, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>4, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>3, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>12, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>nil, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>11, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>13, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>nil, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>5, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>nil, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>9, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>14, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>3, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>nil, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>8, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>2, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>15, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>15, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>nil, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>4, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>4, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>1, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>6, "direction_id"=>1, "kaiten_id"=>2, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>18, "direction_id"=>1, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>5},
-  {"stance_id"=>2, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>14, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>nil, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>16, "direction_id"=>nil, "kaiten_id"=>nil, "sword_id"=>nil, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>2, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>2, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>1, "level_id"=>nil, "entrance_id"=>nil},
-  {"stance_id"=>1, "attack_id"=>1, "attack_height_id"=>1, "hand_applied_to_id"=>nil, "maka_komi_id"=>nil, "technique_id"=>1, "direction_id"=>2, "kaiten_id"=>1, "sword_id"=>2, "level_id"=>nil, "entrance_id"=>nil}
+  {:id=>1, :name=>"Kiriage Nikkyo", :stance_id=>1, :attack_id=>1, :attack_height_id=>2, :hand_applied_to_id=>nil, :maka_komi_id=>1, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>4, :name=>"Gyakuhanmi Kaitennage Omote", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>4, :direction_id=>1, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>6, :name=>"Ryotedori Shihonage Omote", :stance_id=>nil, :attack_id=>2, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>1, :kaiten_id=>2, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>8, :name=>"Aihanmi Ikkyo Omote", :stance_id=>1, :attack_id=>1, :attack_height_id=>2, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>1, :kaiten_id=>2, :sword_id=>1, :level_id=>nil, :entrance_id=>nil},
+  {:id=>10, :name=>"Aihanmi Shihonage Omote", :stance_id=>1, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>1, :kaiten_id=>2, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>11, :name=>"Gyakuhanmi Ikkyo Omote", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>1, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>12, :name=>"Aihanmi Kotegaeshi", :stance_id=>1, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>1, :technique_id=>5, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>13, :name=>"Aihanmi Kotegaeshi", :stance_id=>1, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>2, :technique_id=>5, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>14, :name=>"Shomenuchi Kotegaeshi", :stance_id=>1, :attack_id=>4, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>5, :direction_id=>2, :kaiten_id=>2, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>15, :name=>"Gyakuhanmi Kotegaeshi", :stance_id=>2, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>5, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>16, :name=>"Gyakuhanmi No Grab Kotegaeshi", :stance_id=>2, :attack_id=>1, :attack_height_id=>3, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>5, :direction_id=>2, :kaiten_id=>1, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>18, :name=>"Gyakuhanmi Shihonage", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>19, :name=>"Iaido Only", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>12, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>20, :name=>"Gyakuhanmi", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>nil, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>21, :name=>"Gyakuhanmi Ikkyo Ura", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>2, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>22, :name=>"Hiji Kata", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>11, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>24, :name=>"Gyakuhanmi Nikyo", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>26, :name=>"Aihanmi Kotegaeshi", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>5, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>27, :name=>"Aihanmi Nikyo", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>28, :name=>"Jo Kata", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>13, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>29, :name=>"Ikkyo Ura", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>2, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>30, :name=>"Aihanmi Ikkyo Ura", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>2, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>31, :name=>"", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>nil, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>32, :name=>"Gyakuhanmi Kotegaeshi", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>5, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>33, :name=>"Aihanmi", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>nil, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>34, :name=>"Bokken Suburi", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>9, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>35, :name=>"Aihanmi Ikkyo Omote", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>1, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>36, :name=>"Kokyuho", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>14, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>37, :name=>"Gyakuhanmi Sankyo", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>3, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>38, :name=>"Gokyo", :stance_id=>nil, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>8, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>39, :name=>"Aihanmi Shihonage Ura", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>2, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>40, :name=>"Gyakuhanmi Kokyunage", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>15, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>41, :name=>"Aihanmi Kokyunage", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>15, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>42, :name=>"Aihanmi Shihonage Omote", :stance_id=>1, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>1, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>43, :name=>"Gyakuhanmi Kaitennage Omote", :stance_id=>2, :attack_id=>nil, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>4, :direction_id=>1, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>44, :name=>"Aihanmi Ikkyo Omote", :stance_id=>1, :attack_id=>4, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>1, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>45, :name=>"Gyakuhanmi Shihonage Omote", :stance_id=>2, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>6, :direction_id=>1, :kaiten_id=>2, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>46, :name=>"Gyakuhanmi Ikkyo Ura", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>47, :name=>"Gyakuhanmi Nikyo Ura", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>48, :name=>"Gyakuhanmi Iriminage Omote", :stance_id=>2, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>18, :direction_id=>1, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>49, :name=>"Gyakuhanmi Nikyo Ura", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>5},
+  {:id=>50, :name=>"Gyakuhanmi Kokyuho", :stance_id=>2, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>14, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>51, :name=>"Aihanmi Udekimenage", :stance_id=>1, :attack_id=>1, :attack_height_id=>nil, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>16, :direction_id=>nil, :kaiten_id=>nil, :sword_id=>nil, :level_id=>nil, :entrance_id=>nil},
+  {:id=>53, :name=>"Aihanmi Nikyo Ura", :stance_id=>1, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>54, :name=>"Aihanmi Nikyo Ura", :stance_id=>1, :attack_id=>1, :attack_height_id=>2, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil},
+  {:id=>55, :name=>"Aihanmi Nikyo Ura", :stance_id=>1, :attack_id=>1, :attack_height_id=>2, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>2, :direction_id=>2, :kaiten_id=>1, :sword_id=>1, :level_id=>nil, :entrance_id=>nil},
+  {:id=>56, :name=>"Aihanmi Ikkyo Ura", :stance_id=>1, :attack_id=>1, :attack_height_id=>1, :hand_applied_to_id=>nil, :maka_komi_id=>nil, :technique_id=>1, :direction_id=>2, :kaiten_id=>1, :sword_id=>2, :level_id=>nil, :entrance_id=>nil}
 )
 # End auto-generated file.

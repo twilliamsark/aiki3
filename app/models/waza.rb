@@ -57,9 +57,9 @@ class Waza < ActiveRecord::Base
 
   validates :technique, presence: true
 
-  def to_h
-    attributes.select{|k,_| !%w(id created_at updated_at name).include?(k)}
-  end
+  # def to_h
+  #   attributes.select{|k,_| !%w(id created_at updated_at name).include?(k)}
+  # end
 
   def self.wazas_hash(wazas)
     h = {}
