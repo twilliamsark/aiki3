@@ -57,7 +57,14 @@
                     videos.each do |video|
                   %>
                     <li>
-                      <%= link_to "#{video} (#{video.rank})",
+                      <%
+                        display_name = if video.iaido?
+                          "#{video} (#{video.kata.name}) (#{video.rank})"
+                        else
+                          "#{video} (#{video.rank})"
+                        end
+                      %>
+                      <%= link_to display_name,
                                 waza_display_path(waza,
                                   video_id: video,
                                   stance: @stance,
