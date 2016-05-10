@@ -39,16 +39,22 @@
         <%= vid_form.text_field :youtube_id %>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <div class="field input_inline">
         <%= vid_form.label :on_test %><br>
         <%= vid_form.check_box :on_test %>
       </div>
     </div>
-    <div class="col-md-3">
+    <div class="col-md-2">
       <div class="field input_inline">
-        <%= vid_form.label :primary, "Primary for waza:" %><br>
+        <%= vid_form.label :primary, "Primary for Waza:" %><br>
         <%= vid_form.check_box :primary %>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="field input_inline">
+        <%= vid_form.label :public, "Visible to Public:" %><br>
+        <%= vid_form.check_box :public %>
       </div>
     </div>
   </div>
