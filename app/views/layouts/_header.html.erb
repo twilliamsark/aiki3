@@ -60,10 +60,6 @@
             <%= current_user.email %> <b class="caret"></b>
           </a>
           <ul class="ul_big dropdown-menu">
-            <% unless current_user.restricted? %>
-              <li><%= link_to "Change Password", '#' %></li>
-              <li class="divider"></li>
-            <% end %>
             <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
           </ul>
         </li>
