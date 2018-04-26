@@ -19,6 +19,7 @@ class Video < ActiveRecord::Base
   delegate :kaiten, to: :waza, allow_nil: true
   delegate :sword, to: :waza, allow_nil: true
   delegate :level, to: :waza, allow_nil: true
+  delegate :csv_headers, to: :class
 
   belongs_to :aiki_format
   delegate :iaido?, to: :aiki_format, allow_nil: true
@@ -54,6 +55,69 @@ class Video < ActiveRecord::Base
   def self.wazas(videos)
     videos.to_a unless videos.instance_of? Array
     videos.map(&:waza)
+  end
+
+  def self.to_csv
+    [].tap do |rows|
+      rows << csv_headers
+      Video.all.each do |video|
+        rows << video.to_csv
+      end
+    end
+  end
+
+  def self.csv_headers
+    [
+      "name",
+      "format",
+      "file_date",
+      "class_date",
+      "youtube",
+      "waza_id",
+      "video_id",
+      "stance",
+      "technique",
+      "direction",
+      "entrance",
+      "attack",
+      "attack_height",
+      "hand_applied_to",
+      "maka_komi",
+      "kaiten",
+      "sword",
+      "level",
+      "kata",
+      "style",
+      "sensei",
+      "rank",
+    ].join(",").freeze
+  end
+
+  def to_csv
+    [
+      name,
+      format,
+      nil,
+      nil,
+      youtube_id,
+      waza_id,
+      id,
+      stance.try(:name),
+      technique.try(:name),
+      direction.try(:name),
+      entrance.try(:name),
+      attack.try(:name),
+      attack_height.try(:name),
+      hand_applied_to.try(:name),
+      maka_komi.try(:name),
+      kaiten.try(:name),
+      sword.try(:name),
+      level.try(:name),
+      kata.try(:name),
+      style.try(:name),
+      sensei.try(:name),
+      rank.try(:name),
+    ].join(",").freeze
   end
 
   def update_video(video_params, waza_params={})

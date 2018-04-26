@@ -18,6 +18,7 @@
 /rcs
 
 # Ignore other unneeded files.
+heroku_console.sh
 database.yml
 doc/
 *.swp
