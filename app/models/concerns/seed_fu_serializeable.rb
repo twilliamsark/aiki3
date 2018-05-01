@@ -1,3 +1,4 @@
+# bin/rake db:seed_fu to load data
 module SeedFuSerializeable
   extend ActiveSupport::Concern
 
